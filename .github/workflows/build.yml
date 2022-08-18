@@ -1,0 +1,60 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Run maximize-build-space
+      uses: easimon/maximize-build-space@master
+      with:
+        remove-dotnet: 'true'
+
+    - name: Configure git
+      run: |
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Install repo
+      run: |
+        wget https://storage.googleapis.com/git-repo-downloads/repo -O /usr/local/bin/repo
+        chmod +x /usr/local/bin/repo
+
+    - name: Sync androidx-main
+      run: |
+        mkdir androidx-main
+        cd androidx-main
+        repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
+        repo sync -j16
+        repo manifest -r > manifest.xml
+
+    - name: Apply patches
+      working-directory: androidx-main
+      run: |
+        pushd frameworks/support
+        git fetch https://android.googlesource.com/platform/frameworks/support refs/changes/93/2155293/11 && git cherry-pick FETCH_HEAD~5..FETCH_HEAD
+        popd
+
+    - name: Build
+      working-directory: androidx-main/frameworks/support
+      run: |
+        ./gradlew \
+          camera:camera-core:assemble \
+          camera:camera-camera2:assemble \
+          camera:camera-lifecycle:assemble \
+          camera:camera-video:assemble \
+          camera:camera-view:assemble \
+          camera:camera-mlkit-vision:assemble \
+          camera:camera-extensions:assemble
+
+    - uses: actions/upload-artifact@v3
+      with:
+        path: |
+          androidx-main/manifest.xml
+          androidx-main/out/**/outputs/aar/*-release.aar
