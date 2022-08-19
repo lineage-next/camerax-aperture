@@ -53,8 +53,10 @@ jobs:
           camera:camera-mlkit-vision:assemble \
           camera:camera-extensions:assemble
 
-    - uses: actions/upload-artifact@v3
+    - uses: softprops/action-gh-release@v1
       with:
-        path: |
+        tag_name: ${{ github.run_id }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: |
           androidx-main/manifest.xml
           androidx-main/out/**/outputs/aar/*-release.aar
