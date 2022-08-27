@@ -39,6 +39,7 @@ jobs:
       run: |
         pushd frameworks/support
         git am $GITHUB_WORKSPACE/patches/2155293/*
+        git fetch https://android.googlesource.com/platform/frameworks/support refs/changes/75/2188775/7 && git cherry-pick FETCH_HEAD~5..FETCH_HEAD
         popd
 
     - name: Build
