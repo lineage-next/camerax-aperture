@@ -2,6 +2,11 @@ name: Build
 
 on:
   workflow_dispatch:
+    inputs:
+      update_manifest:
+        default: false
+        required: true
+        type: boolean
 
 jobs:
   build:
@@ -31,7 +36,11 @@ jobs:
         mkdir androidx-main
         cd androidx-main
         repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
-        repo sync -j16
+        if [[ "${{ inputs.update_manifest }}" = "true" ]]; then
+          repo sync -j16
+        else
+          repo sync -m $GITHUB_WORKSPACE/manifest.xml -j16
+        fi
         repo manifest -r > $GITHUB_WORKSPACE/manifest.xml
 
     - name: Apply patches
