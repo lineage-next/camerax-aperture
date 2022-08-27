@@ -1,0 +1,187 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-core",
+    "version": "1.2.0-beta02",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation-experimental",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-core-1.2.0-beta02.aar",
+          "url": "camera-core-1.2.0-beta02.aar",
+          "size": 1182534,
+          "sha512": "7dea2f3eb7bd4099e0d6b7ab19cc203870060feecd866ab614e7a6745232dad45481ebf9084599b75136880590cc67107558162e5a313ee82ed6f2450dba94d4",
+          "sha256": "57103ea9506ee983eea2bb596001dcfeefae9d45d8c9a8287f53ab79caff37e3",
+          "sha1": "8b8ff9eae72b353e86008a66fbd18f900d1f356d",
+          "md5": "32e00bf110c8e2c5c7578f23e01e98ec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation-experimental",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.exifinterface",
+          "module": "exifinterface",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-livedata",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-core-1.2.0-beta02.aar",
+          "url": "camera-core-1.2.0-beta02.aar",
+          "size": 1182534,
+          "sha512": "7dea2f3eb7bd4099e0d6b7ab19cc203870060feecd866ab614e7a6745232dad45481ebf9084599b75136880590cc67107558162e5a313ee82ed6f2450dba94d4",
+          "sha256": "57103ea9506ee983eea2bb596001dcfeefae9d45d8c9a8287f53ab79caff37e3",
+          "sha1": "8b8ff9eae72b353e86008a66fbd18f900d1f356d",
+          "md5": "32e00bf110c8e2c5c7578f23e01e98ec"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-core-1.2.0-beta02-sources.jar",
+          "url": "camera-core-1.2.0-beta02-sources.jar",
+          "size": 507363,
+          "sha512": "4c589b42944926e527bf8a59555177b26b37d54e82ef2791d183b9fae7dfe1a03e634f8f40182133d56f138b61758a930e750b67c1d3c902124d4cefe441f927",
+          "sha256": "e8177be78be4f4bdcc66a0583c0b2a7b99634d7617f9d1822e84f35a5f47c7a2",
+          "sha1": "e600087b9d633ddffe3afa2a20c834db0f3153a8",
+          "md5": "507e2f95751bb145ba2451c92834e728"
+        }
+      ]
+    }
+  ]
+}
