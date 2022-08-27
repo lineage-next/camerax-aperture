@@ -1,0 +1,605 @@
+From f54e38354b3c9cd6ed65ec8e12f7b7ec7e827e2f Mon Sep 17 00:00:00 2001
+From: mingdatsai <mingdatsai@google.com>
+Date: Thu, 3 Mar 2022 12:34:50 +0800
+Subject: [PATCH 3/5] Remove non-used codes
+
+Relnote: "Remove Metadata, OnVideoSavedCallback, OutputFileOptions
+and OutputFileResults classes that are no longer used after applying
+the new video capture API."
+
+Bug: 209528390
+Test: run VideoCaptureDeviceTest & CameraControllerFragmentTest in lab
+Change-Id: I38cd8bfb206ef7383a366dd6ac81d3e6c533baf4
+---
+ .../public_plus_experimental_1.2.0-beta01.txt |  37 ---
+ .../api/public_plus_experimental_current.txt  |  37 ---
+ .../androidx/camera/view/video/Metadata.java  |  72 -----
+ .../view/video/OnVideoSavedCallback.java      |  82 ------
+ .../camera/view/video/OutputFileOptions.java  | 245 ------------------
+ .../camera/view/video/OutputFileResults.java  |  60 -----
+ 6 files changed, 533 deletions(-)
+ delete mode 100644 camera/camera-view/src/main/java/androidx/camera/view/video/Metadata.java
+ delete mode 100644 camera/camera-view/src/main/java/androidx/camera/view/video/OnVideoSavedCallback.java
+ delete mode 100644 camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileOptions.java
+ delete mode 100644 camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileResults.java
+
+diff --git a/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt b/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
+index bd0b7ab2e5c..0f8b2c07f60 100644
+--- a/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
++++ b/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
+@@ -164,42 +164,5 @@ package androidx.camera.view.video {
+   @RequiresOptIn @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.CLASS) public @interface ExperimentalVideo {
+   }
+ 
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class Metadata {
+-    method public static androidx.camera.view.video.Metadata.Builder builder();
+-    method public abstract android.location.Location? getLocation();
+-  }
+-
+-  @com.google.auto.value.AutoValue.Builder public abstract static class Metadata.Builder {
+-    method public abstract androidx.camera.view.video.Metadata build();
+-    method public abstract androidx.camera.view.video.Metadata.Builder setLocation(android.location.Location?);
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo public interface OnVideoSavedCallback {
+-    method public void onError(int, String, Throwable?);
+-    method public void onVideoSaved(androidx.camera.view.video.OutputFileResults);
+-    field public static final int ERROR_ENCODER = 1; // 0x1
+-    field public static final int ERROR_FILE_IO = 4; // 0x4
+-    field public static final int ERROR_INVALID_CAMERA = 5; // 0x5
+-    field public static final int ERROR_MUXER = 2; // 0x2
+-    field public static final int ERROR_RECORDING_IN_PROGRESS = 3; // 0x3
+-    field public static final int ERROR_UNKNOWN = 0; // 0x0
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class OutputFileOptions {
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(java.io.File);
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(android.os.ParcelFileDescriptor);
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(android.content.ContentResolver, android.net.Uri, android.content.ContentValues);
+-    method public abstract androidx.camera.view.video.Metadata getMetadata();
+-  }
+-
+-  @com.google.auto.value.AutoValue.Builder public abstract static class OutputFileOptions.Builder {
+-    method public abstract androidx.camera.view.video.OutputFileOptions build();
+-    method public abstract androidx.camera.view.video.OutputFileOptions.Builder setMetadata(androidx.camera.view.video.Metadata);
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class OutputFileResults {
+-    method public abstract android.net.Uri? getSavedUri();
+-  }
+-
+ }
+ 
+diff --git a/camera/camera-view/api/public_plus_experimental_current.txt b/camera/camera-view/api/public_plus_experimental_current.txt
+index bd0b7ab2e5c..0f8b2c07f60 100644
+--- a/camera/camera-view/api/public_plus_experimental_current.txt
++++ b/camera/camera-view/api/public_plus_experimental_current.txt
+@@ -164,42 +164,5 @@ package androidx.camera.view.video {
+   @RequiresOptIn @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.CLASS) public @interface ExperimentalVideo {
+   }
+ 
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class Metadata {
+-    method public static androidx.camera.view.video.Metadata.Builder builder();
+-    method public abstract android.location.Location? getLocation();
+-  }
+-
+-  @com.google.auto.value.AutoValue.Builder public abstract static class Metadata.Builder {
+-    method public abstract androidx.camera.view.video.Metadata build();
+-    method public abstract androidx.camera.view.video.Metadata.Builder setLocation(android.location.Location?);
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo public interface OnVideoSavedCallback {
+-    method public void onError(int, String, Throwable?);
+-    method public void onVideoSaved(androidx.camera.view.video.OutputFileResults);
+-    field public static final int ERROR_ENCODER = 1; // 0x1
+-    field public static final int ERROR_FILE_IO = 4; // 0x4
+-    field public static final int ERROR_INVALID_CAMERA = 5; // 0x5
+-    field public static final int ERROR_MUXER = 2; // 0x2
+-    field public static final int ERROR_RECORDING_IN_PROGRESS = 3; // 0x3
+-    field public static final int ERROR_UNKNOWN = 0; // 0x0
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class OutputFileOptions {
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(java.io.File);
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(android.os.ParcelFileDescriptor);
+-    method public static androidx.camera.view.video.OutputFileOptions.Builder builder(android.content.ContentResolver, android.net.Uri, android.content.ContentValues);
+-    method public abstract androidx.camera.view.video.Metadata getMetadata();
+-  }
+-
+-  @com.google.auto.value.AutoValue.Builder public abstract static class OutputFileOptions.Builder {
+-    method public abstract androidx.camera.view.video.OutputFileOptions build();
+-    method public abstract androidx.camera.view.video.OutputFileOptions.Builder setMetadata(androidx.camera.view.video.Metadata);
+-  }
+-
+-  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo @com.google.auto.value.AutoValue public abstract class OutputFileResults {
+-    method public abstract android.net.Uri? getSavedUri();
+-  }
+-
+ }
+ 
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/video/Metadata.java b/camera/camera-view/src/main/java/androidx/camera/view/video/Metadata.java
+deleted file mode 100644
+index 121a020379c..00000000000
+--- a/camera/camera-view/src/main/java/androidx/camera/view/video/Metadata.java
++++ /dev/null
+@@ -1,72 +0,0 @@
+-/*
+- * Copyright 2020 The Android Open Source Project
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *      http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-
+-package androidx.camera.view.video;
+-
+-import android.location.Location;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.annotation.RequiresApi;
+-
+-import com.google.auto.value.AutoValue;
+-
+-/** Holder class for metadata that should be saved alongside captured video. */
+-@RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
+-@ExperimentalVideo
+-@AutoValue
+-public abstract class Metadata {
+-    /**
+-     * Returns a {@link Location} object representing the geographic location where the video was
+-     * taken.
+-     *
+-     * @return The location object or {@code null} if no location was set.
+-     */
+-    @Nullable
+-    public abstract Location getLocation();
+-
+-    /** Creates a {@link Builder}. */
+-    @NonNull
+-    public static Builder builder() {
+-        return new AutoValue_Metadata.Builder();
+-    }
+-
+-    // Don't allow inheritance outside of package
+-    Metadata() {
+-    }
+-
+-    /** The builder for {@link Metadata}. */
+-    @SuppressWarnings("StaticFinalBuilder")
+-    @AutoValue.Builder
+-    public abstract static class Builder {
+-        /**
+-         * Sets a {@link Location} object representing a geographic location where the video was
+-         * taken.
+-         *
+-         * <p>If {@code null}, no location information will be saved with the video. Default
+-         * value is {@code null}.
+-         */
+-        @NonNull
+-        public abstract Builder setLocation(@Nullable Location location);
+-
+-        /** Build the {@link Metadata} from this builder. */
+-        @NonNull
+-        public abstract Metadata build();
+-
+-        Builder() {
+-        }
+-    }
+-}
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/video/OnVideoSavedCallback.java b/camera/camera-view/src/main/java/androidx/camera/view/video/OnVideoSavedCallback.java
+deleted file mode 100644
+index 7e8e72911fb..00000000000
+--- a/camera/camera-view/src/main/java/androidx/camera/view/video/OnVideoSavedCallback.java
++++ /dev/null
+@@ -1,82 +0,0 @@
+-/*
+- * Copyright 2020 The Android Open Source Project
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *      http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-
+-package androidx.camera.view.video;
+-
+-import androidx.annotation.IntDef;
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.annotation.RequiresApi;
+-import androidx.annotation.RestrictTo;
+-import androidx.camera.core.VideoCapture;
+-
+-import java.lang.annotation.Retention;
+-import java.lang.annotation.RetentionPolicy;
+-
+-/** Listener containing callbacks for video file I/O events. */
+-@RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
+-@ExperimentalVideo
+-public interface OnVideoSavedCallback {
+-    /**
+-     * An unknown error occurred.
+-     *
+-     * <p>See message parameter in onError callback or log for more details.
+-     */
+-    int ERROR_UNKNOWN = VideoCapture.ERROR_UNKNOWN;
+-    /**
+-     * An error occurred with encoder state, either when trying to change state or when an
+-     * unexpected state change occurred.
+-     */
+-    int ERROR_ENCODER = VideoCapture.ERROR_ENCODER;
+-    /** An error with muxer state such as during creation or when stopping. */
+-    int ERROR_MUXER = VideoCapture.ERROR_MUXER;
+-    /**
+-     * An error indicating start recording was called when video recording is still in progress.
+-     */
+-    int ERROR_RECORDING_IN_PROGRESS = VideoCapture.ERROR_RECORDING_IN_PROGRESS;
+-    /**
+-     * An error indicating the file saving operations.
+-     */
+-    int ERROR_FILE_IO = VideoCapture.ERROR_FILE_IO;
+-    /**
+-     * An error indicating this VideoCapture is not bound to a camera.
+-     */
+-    int ERROR_INVALID_CAMERA = VideoCapture.ERROR_INVALID_CAMERA;
+-
+-    /**
+-     * Describes the error that occurred during video capture operations.
+-     *
+-     * <p>This is a parameter sent to the error callback functions set in listeners such as {@link
+-     * OnVideoSavedCallback#onError(int, String, Throwable)}.
+-     *
+-     * <p>See message parameter in onError callback or log for more details.
+-     *
+-     * @hide
+-     */
+-    @IntDef({ERROR_UNKNOWN, ERROR_ENCODER, ERROR_MUXER, ERROR_RECORDING_IN_PROGRESS,
+-            ERROR_FILE_IO, ERROR_INVALID_CAMERA})
+-    @Retention(RetentionPolicy.SOURCE)
+-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+-    @interface VideoCaptureError {
+-    }
+-
+-    /** Called when the video has been successfully saved. */
+-    void onVideoSaved(@NonNull OutputFileResults outputFileResults);
+-
+-    /** Called when an error occurs while attempting to save the video. */
+-    void onError(@VideoCaptureError int videoCaptureError, @NonNull String message,
+-            @Nullable Throwable cause);
+-}
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileOptions.java b/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileOptions.java
+deleted file mode 100644
+index 1b30cf883a8..00000000000
+--- a/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileOptions.java
++++ /dev/null
+@@ -1,245 +0,0 @@
+-/*
+- * Copyright 2020 The Android Open Source Project
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *      http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-
+-package androidx.camera.view.video;
+-
+-import static androidx.annotation.RestrictTo.Scope.LIBRARY;
+-
+-import android.content.ContentResolver;
+-import android.content.ContentValues;
+-import android.net.Uri;
+-import android.os.Build;
+-import android.os.ParcelFileDescriptor;
+-import android.provider.MediaStore;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.annotation.RequiresApi;
+-import androidx.annotation.RestrictTo;
+-import androidx.camera.core.VideoCapture;
+-import androidx.core.util.Preconditions;
+-
+-import com.google.auto.value.AutoValue;
+-
+-import java.io.File;
+-
+-/**
+- * Options for saving newly captured video.
+- *
+- * <p> this class is used to configure save location and metadata. Save location can be
+- * either a {@link File}, {@link MediaStore}. The metadata will be
+- * stored with the saved video.
+- */
+-@RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
+-@ExperimentalVideo
+-@AutoValue
+-public abstract class OutputFileOptions {
+-
+-    // Empty metadata object used as a placeholder for no user-supplied metadata.
+-    // Should be initialized to all default values.
+-    private static final Metadata EMPTY_METADATA = Metadata.builder().build();
+-
+-    // Restrict constructor to same package
+-    OutputFileOptions() {
+-    }
+-
+-    /**
+-     * Creates options to write captured video to a {@link File}.
+-     *
+-     * @param file save location of the video.
+-     */
+-    @NonNull
+-    public static Builder builder(@NonNull File file) {
+-        return new AutoValue_OutputFileOptions.Builder().setMetadata(EMPTY_METADATA).setFile(file);
+-    }
+-
+-    /**
+-     * Creates options to write captured video to a {@link ParcelFileDescriptor}.
+-     *
+-     * <p>Using a ParcelFileDescriptor to record a video is only supported for Android 8.0 or
+-     * above.
+-     *
+-     * @param fileDescriptor to save the video.
+-     * @throws IllegalArgumentException when the device is not running Android 8.0 or above.
+-     */
+-    @NonNull
+-    public static Builder builder(@NonNull ParcelFileDescriptor fileDescriptor) {
+-        Preconditions.checkArgument(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O,
+-                "Using a ParcelFileDescriptor to record a video is only supported for Android 8"
+-                        + ".0 or above.");
+-
+-        return new AutoValue_OutputFileOptions.Builder().setMetadata(
+-                EMPTY_METADATA).setFileDescriptor(fileDescriptor);
+-    }
+-
+-    /**
+-     * Creates options to write captured video to {@link MediaStore}.
+-     *
+-     * Example:
+-     *
+-     * <pre>{@code
+-     *
+-     * ContentValues contentValues = new ContentValues();
+-     * contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, "NEW_VIDEO");
+-     * contentValues.put(MediaStore.MediaColumns.MIME_TYPE, "video/mp4");
+-     *
+-     * OutputFileOptions options = OutputFileOptions.builder(
+-     *         getContentResolver(),
+-     *         MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+-     *         contentValues).build();
+-     *
+-     * }</pre>
+-     *
+-     * @param contentResolver to access {@link MediaStore}
+-     * @param saveCollection  The URI of the table to insert into.
+-     * @param contentValues   to be included in the created video file.
+-     */
+-    @NonNull
+-    public static Builder builder(@NonNull ContentResolver contentResolver,
+-            @NonNull Uri saveCollection,
+-            @NonNull ContentValues contentValues) {
+-        return new AutoValue_OutputFileOptions.Builder()
+-                .setMetadata(EMPTY_METADATA)
+-                .setContentResolver(contentResolver)
+-                .setSaveCollection(saveCollection).setContentValues(contentValues);
+-    }
+-
+-    /**
+-     * Returns the File object which is set by the {@link OutputFileOptions.Builder}.
+-     */
+-    @Nullable
+-    abstract File getFile();
+-
+-    /**
+-     * Returns the ParcelFileDescriptor object which is set by the
+-     * {@link OutputFileOptions.Builder}.
+-     */
+-    @Nullable
+-    abstract ParcelFileDescriptor getFileDescriptor();
+-
+-    /**
+-     * Returns the content resolver which is set by the {@link OutputFileOptions.Builder}.
+-     */
+-    @Nullable
+-    abstract ContentResolver getContentResolver();
+-
+-    /**
+-     * Returns the URI which is set by the {@link OutputFileOptions.Builder}.
+-     */
+-    @Nullable
+-    abstract Uri getSaveCollection();
+-
+-    /**
+-     * Returns the content values which is set by the {@link OutputFileOptions.Builder}.
+-     */
+-    @Nullable
+-    abstract ContentValues getContentValues();
+-
+-    /** Returns the metadata which is set by the {@link OutputFileOptions.Builder}. */
+-    @NonNull
+-    public abstract Metadata getMetadata();
+-
+-    /**
+-     * Checking the caller wants to save video to MediaStore.
+-     */
+-    private boolean isSavingToMediaStore() {
+-        return getSaveCollection() != null && getContentResolver() != null
+-                && getContentValues() != null;
+-    }
+-
+-    /**
+-     * Checking the caller wants to save video to a File.
+-     */
+-    private boolean isSavingToFile() {
+-        return getFile() != null;
+-    }
+-
+-    /**
+-     * Checking the caller wants to save video to a ParcelFileDescriptor.
+-     */
+-    private boolean isSavingToFileDescriptor() {
+-        return getFileDescriptor() != null;
+-    }
+-
+-    /**
+-     * Converts to a {@link VideoCapture.OutputFileOptions}.
+-     *
+-     * @hide
+-     */
+-    @RestrictTo(LIBRARY)
+-    @NonNull
+-    public VideoCapture.OutputFileOptions toVideoCaptureOutputFileOptions() {
+-        VideoCapture.OutputFileOptions.Builder internalOutputFileOptionsBuilder;
+-        if (isSavingToFile()) {
+-            internalOutputFileOptionsBuilder =
+-                    new VideoCapture.OutputFileOptions.Builder(
+-                            Preconditions.checkNotNull(getFile()));
+-        } else if (isSavingToFileDescriptor()) {
+-            internalOutputFileOptionsBuilder =
+-                    new VideoCapture.OutputFileOptions.Builder(
+-                            Preconditions.checkNotNull(getFileDescriptor()).getFileDescriptor());
+-        } else {
+-            Preconditions.checkState(isSavingToMediaStore());
+-            internalOutputFileOptionsBuilder =
+-                    new VideoCapture.OutputFileOptions.Builder(
+-                            Preconditions.checkNotNull(getContentResolver()),
+-                            Preconditions.checkNotNull(getSaveCollection()),
+-                            Preconditions.checkNotNull(getContentValues()));
+-        }
+-
+-        VideoCapture.Metadata internalMetadata = new VideoCapture.Metadata();
+-        internalMetadata.location = getMetadata().getLocation();
+-        internalOutputFileOptionsBuilder.setMetadata(internalMetadata);
+-
+-        return internalOutputFileOptionsBuilder.build();
+-    }
+-
+-    /**
+-     * Builder class for {@link OutputFileOptions}.
+-     */
+-    @AutoValue.Builder
+-    @SuppressWarnings("StaticFinalBuilder")
+-    public abstract static class Builder {
+-
+-        // Restrict construction to same package
+-        Builder() {
+-        }
+-
+-        abstract Builder setFile(@Nullable File file);
+-
+-        abstract Builder setFileDescriptor(@Nullable ParcelFileDescriptor fileDescriptor);
+-
+-        abstract Builder setContentResolver(@Nullable ContentResolver contentResolver);
+-
+-        abstract Builder setSaveCollection(@Nullable Uri uri);
+-
+-        abstract Builder setContentValues(@Nullable ContentValues contentValues);
+-
+-        /**
+-         * Sets the metadata to be stored with the saved video.
+-         *
+-         * @param metadata Metadata to be stored with the saved video.
+-         */
+-        @NonNull
+-        public abstract Builder setMetadata(@NonNull Metadata metadata);
+-
+-        /**
+-         * Builds {@link OutputFileOptions}.
+-         */
+-        @NonNull
+-        public abstract OutputFileOptions build();
+-    }
+-}
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileResults.java b/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileResults.java
+deleted file mode 100644
+index d9a64a059ef..00000000000
+--- a/camera/camera-view/src/main/java/androidx/camera/view/video/OutputFileResults.java
++++ /dev/null
+@@ -1,60 +0,0 @@
+-/*
+- * Copyright 2020 The Android Open Source Project
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *      http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-
+-package androidx.camera.view.video;
+-
+-import android.content.ContentResolver;
+-import android.content.ContentValues;
+-import android.net.Uri;
+-import android.provider.MediaStore;
+-
+-import androidx.annotation.NonNull;
+-import androidx.annotation.Nullable;
+-import androidx.annotation.RequiresApi;
+-import androidx.annotation.RestrictTo;
+-
+-import com.google.auto.value.AutoValue;
+-
+-/**
+- * Info about the saved video file.
+- */
+-@RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
+-@ExperimentalVideo
+-@AutoValue
+-public abstract class OutputFileResults {
+-
+-    // Restrict constructor to package
+-    OutputFileResults() {
+-    }
+-
+-    /** @hide */
+-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+-    @NonNull
+-    public static OutputFileResults create(@Nullable Uri savedUri) {
+-        return new AutoValue_OutputFileResults(savedUri);
+-    }
+-
+-    /**
+-     * Returns the {@link Uri} of the saved video file.
+-     *
+-     * @return URI of saved video file if the {@link OutputFileOptions} is backed by
+-     * {@link MediaStore} using
+-     * {@link OutputFileOptions#builder(ContentResolver, Uri, ContentValues)}, {@code null}
+-     * otherwise.
+-     */
+-    @Nullable
+-    public abstract Uri getSavedUri();
+-}
+-- 
+2.37.2
+
