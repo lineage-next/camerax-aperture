@@ -42,11 +42,11 @@
         {
           "name": "camera-video-1.2.0-beta02.aar",
           "url": "camera-video-1.2.0-beta02.aar",
-          "size": 259814,
-          "sha512": "562b0201d9bcd989c4de02b481e5b07c6e2abeb842026706f534313820d2409471dfd88d51e5ab11cc82a7fb16ff88eca15482d9da19bb197404b08a77936060",
-          "sha256": "611aa5621a7057b25f641620b60c055e6fda888de2d8899a8cead134fb8e4bb6",
-          "sha1": "2f633d7b9e563c08efd891b12eff189e0178d4dc",
-          "md5": "115234ca9bfbdd91beb32b4ad1db51a4"
+          "size": 270642,
+          "sha512": "536047644b5f5b7a063ed03c5f6f4b1e7637a1a4676c4b73806c25a8464f232d580eba2be0333aef8b6a851f746614af5bcc26153fcf9b5af9079415075c5a0d",
+          "sha256": "41d4873b0564958820f140c2d833827864704e7e82d61f32581888055e5114b5",
+          "sha1": "f7617deb4db29ec2421e1700f93e9dde44f1f84c",
+          "md5": "f31222bb6411665d2524f3b3488cdd3a"
         }
       ]
     },
@@ -99,11 +99,11 @@
         {
           "name": "camera-video-1.2.0-beta02.aar",
           "url": "camera-video-1.2.0-beta02.aar",
-          "size": 259814,
-          "sha512": "562b0201d9bcd989c4de02b481e5b07c6e2abeb842026706f534313820d2409471dfd88d51e5ab11cc82a7fb16ff88eca15482d9da19bb197404b08a77936060",
-          "sha256": "611aa5621a7057b25f641620b60c055e6fda888de2d8899a8cead134fb8e4bb6",
-          "sha1": "2f633d7b9e563c08efd891b12eff189e0178d4dc",
-          "md5": "115234ca9bfbdd91beb32b4ad1db51a4"
+          "size": 270642,
+          "sha512": "536047644b5f5b7a063ed03c5f6f4b1e7637a1a4676c4b73806c25a8464f232d580eba2be0333aef8b6a851f746614af5bcc26153fcf9b5af9079415075c5a0d",
+          "sha256": "41d4873b0564958820f140c2d833827864704e7e82d61f32581888055e5114b5",
+          "sha1": "f7617deb4db29ec2421e1700f93e9dde44f1f84c",
+          "md5": "f31222bb6411665d2524f3b3488cdd3a"
         }
       ]
     },
@@ -119,11 +119,11 @@
         {
           "name": "camera-video-1.2.0-beta02-sources.jar",
           "url": "camera-video-1.2.0-beta02-sources.jar",
-          "size": 183973,
-          "sha512": "86c450b86025bf55c2364180dcf6f234540b0abb5e77eabc452ba5e5fb0ee40345634d1692e3f7cbcfdd5ad7a3a1c592d4a2b48d3f075e508502f56bfce84efc",
-          "sha256": "ef9f48bc4160079bd280bad4a89b2c0310a71874d1528218aac1c4870123fef8",
-          "sha1": "597327f0a5e511d5b6f5efc90e59d326e9c8dd5e",
-          "md5": "d76d58c9ea8d2314eaa82bdb7d1c20ff"
+          "size": 188048,
+          "sha512": "2d0c82313639246c2a3a8a301ae32a0c9fe7fc722dfc713d9e2496867af4257149833bc8cbb5df9d5e9f6db3164adbb1af0d32fd7e0eec9f085ef3c1583e5e16",
+          "sha256": "fab2f201e6928c679d959283619558d7bb1b0b927fe01046a41615586d140afc",
+          "sha1": "45e0250734eef080fc9760b149a85e0d6a408471",
+          "md5": "34175f41a5f59715a162faa09db72a16"
         }
       ]
     }
