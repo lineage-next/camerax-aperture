@@ -32,7 +32,7 @@ jobs:
         cd androidx-main
         repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
         repo sync -j16
-        repo manifest -r > manifest.xml
+        repo manifest -r > $GITHUB_WORKSPACE/manifest.xml
 
     - name: Apply patches
       working-directory: androidx-main
@@ -55,10 +55,12 @@ jobs:
           camera:camera-mlkit-vision:publishToMavenLocal \
           camera:camera-extensions:publishToMavenLocal
 
-    - name: Commit .m2 changes
+    - name: Commit changes
       run: |
         git add .m2
         git commit -m "Publish maven artifacts" || true
+        git add manifest.xml
+        git commit -m "Update manifest" || true
 
     - name: Push changes to repo
       uses: ad-m/github-push-action@master
