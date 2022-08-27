@@ -1,0 +1,595 @@
+From 64549de09eeda77bfe3de3299bd1fd57ede5da40 Mon Sep 17 00:00:00 2001
+From: mingdatsai <mingdatsai@google.com>
+Date: Tue, 15 Feb 2022 11:02:07 +0800
+Subject: [PATCH 4/5] Add audio enable/disable feature
+
+Relnote: "Add AudioConfig class to handle the audio related setting
+while recording video. The @RequiresPermission annotation is moved
+from startRecording functions to AudioConfig to avoid unnecessary
+permission requests for the cases that audio is not needed."
+
+Bug: 209528390
+Test: run CameraControllerTest, VideoCaptureDeviceTest
+& CameraControllerFragmentTest
+
+Change-Id: I28755ca547aa91ee5d4de3440ab9e691c9a856a7
+---
+ .../public_plus_experimental_1.2.0-beta01.txt | 12 +++-
+ .../api/public_plus_experimental_current.txt  | 12 +++-
+ .../camera/view/VideoCaptureDeviceTest.kt     | 71 +++++++++++++------
+ .../camera/view/CameraController.java         | 61 +++++++++++-----
+ .../camera/view/video/AudioConfig.java        | 63 ++++++++++++++++
+ .../view/CameraControllerFragment.java        |  6 +-
+ 6 files changed, 178 insertions(+), 47 deletions(-)
+ create mode 100644 camera/camera-view/src/main/java/androidx/camera/view/video/AudioConfig.java
+
+diff --git a/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt b/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
+index 0f8b2c07f60..a371cb48482 100644
+--- a/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
++++ b/camera/camera-view/api/public_plus_experimental_1.2.0-beta01.txt
+@@ -45,9 +45,9 @@ package androidx.camera.view {
+     method @MainThread public void setTapToFocusEnabled(boolean);
+     method @MainThread @androidx.camera.view.video.ExperimentalVideo public void setVideoCaptureTargetQuality(androidx.camera.video.Quality?);
+     method @MainThread public com.google.common.util.concurrent.ListenableFuture<java.lang.Void!> setZoomRatio(float);
+-    method @MainThread @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+-    method @MainThread @RequiresApi(26) @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileDescriptorOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+-    method @MainThread @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.MediaStoreOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @RequiresApi(26) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileDescriptorOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.MediaStoreOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+     method @MainThread public void takePicture(androidx.camera.core.ImageCapture.OutputFileOptions, java.util.concurrent.Executor, androidx.camera.core.ImageCapture.OnImageSavedCallback);
+     method @MainThread public void takePicture(java.util.concurrent.Executor, androidx.camera.core.ImageCapture.OnImageCapturedCallback);
+     field public static final int COORDINATE_SYSTEM_VIEW_REFERENCED = 1; // 0x1
+@@ -161,6 +161,12 @@ package androidx.camera.view.transform {
+ 
+ package androidx.camera.view.video {
+ 
++  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo public class AudioConfig {
++    method @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) public static androidx.camera.view.video.AudioConfig create(boolean);
++    method public boolean getAudioEnabled();
++    field public static final androidx.camera.view.video.AudioConfig AUDIO_DISABLED;
++  }
++
+   @RequiresOptIn @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.CLASS) public @interface ExperimentalVideo {
+   }
+ 
+diff --git a/camera/camera-view/api/public_plus_experimental_current.txt b/camera/camera-view/api/public_plus_experimental_current.txt
+index 0f8b2c07f60..a371cb48482 100644
+--- a/camera/camera-view/api/public_plus_experimental_current.txt
++++ b/camera/camera-view/api/public_plus_experimental_current.txt
+@@ -45,9 +45,9 @@ package androidx.camera.view {
+     method @MainThread public void setTapToFocusEnabled(boolean);
+     method @MainThread @androidx.camera.view.video.ExperimentalVideo public void setVideoCaptureTargetQuality(androidx.camera.video.Quality?);
+     method @MainThread public com.google.common.util.concurrent.ListenableFuture<java.lang.Void!> setZoomRatio(float);
+-    method @MainThread @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+-    method @MainThread @RequiresApi(26) @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileDescriptorOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+-    method @MainThread @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.MediaStoreOutputOptions, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @RequiresApi(26) @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.FileDescriptorOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
++    method @MainThread @androidx.camera.view.video.ExperimentalVideo public androidx.camera.video.Recording startRecording(androidx.camera.video.MediaStoreOutputOptions, androidx.camera.view.video.AudioConfig, java.util.concurrent.Executor, androidx.core.util.Consumer<androidx.camera.video.VideoRecordEvent!>);
+     method @MainThread public void takePicture(androidx.camera.core.ImageCapture.OutputFileOptions, java.util.concurrent.Executor, androidx.camera.core.ImageCapture.OnImageSavedCallback);
+     method @MainThread public void takePicture(java.util.concurrent.Executor, androidx.camera.core.ImageCapture.OnImageCapturedCallback);
+     field public static final int COORDINATE_SYSTEM_VIEW_REFERENCED = 1; // 0x1
+@@ -161,6 +161,12 @@ package androidx.camera.view.transform {
+ 
+ package androidx.camera.view.video {
+ 
++  @RequiresApi(21) @androidx.camera.view.video.ExperimentalVideo public class AudioConfig {
++    method @RequiresPermission(android.Manifest.permission.RECORD_AUDIO) public static androidx.camera.view.video.AudioConfig create(boolean);
++    method public boolean getAudioEnabled();
++    field public static final androidx.camera.view.video.AudioConfig AUDIO_DISABLED;
++  }
++
+   @RequiresOptIn @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.CLASS) public @interface ExperimentalVideo {
+   }
+ 
+diff --git a/camera/camera-view/src/androidTest/java/androidx/camera/view/VideoCaptureDeviceTest.kt b/camera/camera-view/src/androidTest/java/androidx/camera/view/VideoCaptureDeviceTest.kt
+index 1d81f1d6cc8..32d117f3acc 100644
+--- a/camera/camera-view/src/androidTest/java/androidx/camera/view/VideoCaptureDeviceTest.kt
++++ b/camera/camera-view/src/androidTest/java/androidx/camera/view/VideoCaptureDeviceTest.kt
+@@ -43,6 +43,7 @@ import androidx.camera.video.VideoRecordEvent
+ import androidx.camera.video.VideoRecordEvent.Finalize.ERROR_SOURCE_INACTIVE
+ import androidx.camera.view.CameraController.IMAGE_ANALYSIS
+ import androidx.camera.view.CameraController.VIDEO_CAPTURE
++import androidx.camera.view.video.AudioConfig
+ import androidx.core.util.Consumer
+ import androidx.test.core.app.ApplicationProvider
+ import androidx.test.ext.junit.rules.ActivityScenarioRule
+@@ -135,6 +136,8 @@ class VideoCaptureDeviceTest(
+ 
+     private val instrumentation = InstrumentationRegistry.getInstrumentation()
+     private val context: Context = ApplicationProvider.getApplicationContext()
++    private val audioEnabled = AudioConfig.create(true)
++    private val audioDisabled = AudioConfig.AUDIO_DISABLED
+     private lateinit var previewView: PreviewView
+     private lateinit var lifecycleOwner: FakeLifecycleOwner
+     private lateinit var cameraController: LifecycleCameraController
+@@ -205,7 +208,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = createMediaStoreOutputOptions(resolver)
+ 
+         // Act.
+-        recordVideoCompletely(outputOptions)
++        recordVideoCompletely(outputOptions, audioEnabled)
+ 
+         // Verify.
+         val uri = finalize.outputResults.outputUri
+@@ -225,7 +228,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileDescriptorOutputOptions.Builder(fileDescriptor).build()
+ 
+         // Act.
+-        recordVideoCompletely(outputOptions)
++        recordVideoCompletely(outputOptions, audioEnabled)
+ 
+         // Verify.
+         val uri = Uri.fromFile(file)
+@@ -243,7 +246,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoCompletely(outputOptions)
++        recordVideoCompletely(outputOptions, audioEnabled)
+ 
+         // Verify.
+         val uri = Uri.fromFile(file)
+@@ -254,6 +257,24 @@ class VideoCaptureDeviceTest(
+         file.delete()
+     }
+ 
++    @Test
++    fun canRecordToFile_withoutAudio_whenAudioDisabled() {
++        // Arrange.
++        val file = createTempFile()
++        val outputOptions = FileOutputOptions.Builder(file).build()
++
++        // Act.
++        recordVideoCompletely(outputOptions, audioDisabled)
++
++        // Verify.
++        val uri = Uri.fromFile(file)
++        checkFileOnlyHasVideo(uri)
++        assertThat(finalize.outputResults.outputUri).isEqualTo(uri)
++
++        // Cleanup.
++        file.delete()
++    }
++
+     @Test
+     fun canRecordToFile_whenLifecycleStops() {
+         // Arrange.
+@@ -261,7 +282,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 lifecycleOwner.pauseAndStop()
+             }
+@@ -284,7 +305,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 cameraController.videoCaptureTargetQuality = nextQuality.get()
+             }
+@@ -307,7 +328,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 cameraController.setEnabledUseCases(IMAGE_ANALYSIS)
+             }
+@@ -333,7 +354,7 @@ class VideoCaptureDeviceTest(
+ 
+         // Pre Act.
+         latchForVideoSaved = CountDownLatch(VIDEO_SAVED_COUNT_DOWN)
+-        recordVideo(outputOptions1)
++        recordVideo(outputOptions1, audioEnabled)
+         instrumentation.runOnMainSync {
+             activeRecording.stop()
+             assertThat(cameraController.isRecording).isFalse()
+@@ -341,7 +362,7 @@ class VideoCaptureDeviceTest(
+ 
+         // Act.
+         instrumentation.runOnMainSync {
+-            startRecording(outputOptions2)
++            startRecording(outputOptions2, audioEnabled)
+             assertThat(cameraController.isRecording).isTrue()
+         }
+ 
+@@ -384,7 +405,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 activeRecording.pause()
+             }
+@@ -416,7 +437,7 @@ class VideoCaptureDeviceTest(
+         val outputOptions = FileOutputOptions.Builder(file).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 activeRecording.pause()
+             }
+@@ -450,11 +471,12 @@ class VideoCaptureDeviceTest(
+         val outputOptions2 = FileOutputOptions.Builder(file2).build()
+ 
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions1) {
++        recordVideoWithInterruptAction(outputOptions1, audioEnabled) {
+             instrumentation.runOnMainSync {
+                 assertThrows(java.lang.IllegalStateException::class.java) {
+                     activeRecording = cameraController.startRecording(
+                         outputOptions2,
++                        audioEnabled,
+                         CameraXExecutors.directExecutor()
+                     ) {}
+                 }
+@@ -514,9 +536,9 @@ class VideoCaptureDeviceTest(
+             .build()
+     }
+ 
+-    private fun recordVideoCompletely(outputOptions: OutputOptions) {
++    private fun recordVideoCompletely(outputOptions: OutputOptions, audioConfig: AudioConfig) {
+         // Act.
+-        recordVideoWithInterruptAction(outputOptions) {
++        recordVideoWithInterruptAction(outputOptions, audioConfig) {
+             instrumentation.runOnMainSync {
+                 activeRecording.stop()
+             }
+@@ -528,13 +550,14 @@ class VideoCaptureDeviceTest(
+ 
+     private fun recordVideoWithInterruptAction(
+         outputOptions: OutputOptions,
++        audioConfig: AudioConfig,
+         runInterruptAction: () -> Unit
+     ) {
+         // Arrange.
+         latchForVideoSaved = CountDownLatch(VIDEO_SAVED_COUNT_DOWN)
+ 
+         // Act.
+-        recordVideo(outputOptions)
++        recordVideo(outputOptions, audioConfig)
+         runInterruptAction()
+ 
+         // Verify.
+@@ -546,14 +569,14 @@ class VideoCaptureDeviceTest(
+         }
+     }
+ 
+-    private fun recordVideo(outputOptions: OutputOptions) {
++    private fun recordVideo(outputOptions: OutputOptions, audioConfig: AudioConfig) {
+         // Arrange.
+         latchForVideoStarted = CountDownLatch(VIDEO_STARTED_COUNT_DOWN)
+         latchForVideoRecording = CountDownLatch(VIDEO_RECORDING_COUNT_DOWN)
+ 
+         // Act.
+         instrumentation.runOnMainSync {
+-            startRecording(outputOptions)
++            startRecording(outputOptions, audioConfig)
+             assertThat(cameraController.isRecording).isTrue()
+         }
+ 
+@@ -565,10 +588,11 @@ class VideoCaptureDeviceTest(
+     }
+ 
+     @MainThread
+-    private fun startRecording(outputOptions: OutputOptions) {
++    private fun startRecording(outputOptions: OutputOptions, audioConfig: AudioConfig) {
+         if (outputOptions is FileOutputOptions) {
+             activeRecording = cameraController.startRecording(
+                 outputOptions,
++                audioConfig,
+                 CameraXExecutors.directExecutor(),
+                 videoRecordEventListener
+             )
+@@ -576,6 +600,7 @@ class VideoCaptureDeviceTest(
+             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                 activeRecording = cameraController.startRecording(
+                     outputOptions,
++                    audioConfig,
+                     CameraXExecutors.directExecutor(),
+                     videoRecordEventListener
+                 )
+@@ -587,6 +612,7 @@ class VideoCaptureDeviceTest(
+         } else if (outputOptions is MediaStoreOutputOptions) {
+             activeRecording = cameraController.startRecording(
+                 outputOptions,
++                audioConfig,
+                 CameraXExecutors.directExecutor(),
+                 videoRecordEventListener
+             )
+@@ -595,9 +621,14 @@ class VideoCaptureDeviceTest(
+         }
+     }
+ 
++    private fun checkFileOnlyHasVideo(uri: Uri) {
++        checkFileHasVideo(uri)
++        checkFileHasAudio(uri, false)
++    }
++
+     private fun checkFileHasAudioAndVideo(uri: Uri) {
+         checkFileHasVideo(uri)
+-        checkFileHasAudio(uri)
++        checkFileHasAudio(uri, true)
+     }
+ 
+     private fun checkFileHasVideo(uri: Uri) {
+@@ -609,13 +640,13 @@ class VideoCaptureDeviceTest(
+         }
+     }
+ 
+-    private fun checkFileHasAudio(uri: Uri) {
++    private fun checkFileHasAudio(uri: Uri, hasAudio: Boolean) {
+         val mediaRetriever = MediaMetadataRetriever()
+         mediaRetriever.apply {
+             setDataSource(context, uri)
+             val value = extractMetadata(MediaMetadataRetriever.METADATA_KEY_HAS_AUDIO)
+ 
+-            assertThat(value).isEqualTo("yes")
++            assertThat(value).isEqualTo(if (hasAudio) "yes" else null)
+         }
+     }
+ }
+\ No newline at end of file
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+index 8fad5143176..98473ce51df 100644
+--- a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
++++ b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+@@ -83,7 +83,9 @@ import androidx.camera.video.Recording;
+ import androidx.camera.video.VideoCapture;
+ import androidx.camera.video.VideoRecordEvent;
+ import androidx.camera.view.transform.OutputTransform;
++import androidx.camera.view.video.AudioConfig;
+ import androidx.camera.view.video.ExperimentalVideo;
++import androidx.core.content.PermissionChecker;
+ import androidx.core.util.Consumer;
+ import androidx.core.util.Preconditions;
+ import androidx.lifecycle.LiveData;
+@@ -1155,26 +1157,28 @@ public abstract class CameraController {
+      * will be the first event sent to the provided listener, and information about the error can
+      * be found in that event's {@link VideoRecordEvent.Finalize#getError()} method.
+      *
+-     * <p> Recording requires the {@link android.Manifest.permission#RECORD_AUDIO} permission;
+-     * without it, starting a recording will fail with a {@link SecurityException}.
++     * <p> Recording with audio requires the {@link android.Manifest.permission#RECORD_AUDIO}
++     * permission; without it, starting a recording will fail with a {@link SecurityException}.
+      *
+      * @param outputOptions the options to store the newly captured video.
++     * @param audioConfig the configuration of audio.
+      * @param executor the executor that the event listener will be run on.
+      * @param listener the event listener to handle video record events.
+      * @return a {@link Recording} that provides controls for new active recordings.
+      * @throws IllegalStateException if there is an unfinished active recording.
+-     * @throws SecurityException if the {@link android.Manifest.permission#RECORD_AUDIO}
+-     * permission is denied.
++     * @throws SecurityException if the audio config specifies audio should be enabled but the
++     * {@link android.Manifest.permission#RECORD_AUDIO} permission is denied.
+      */
+-    @RequiresPermission(Manifest.permission.RECORD_AUDIO)
++    @SuppressLint("MissingPermission")
+     @ExperimentalVideo
+     @MainThread
+     @NonNull
+     public Recording startRecording(
+             @NonNull FileOutputOptions outputOptions,
++            @NonNull AudioConfig audioConfig,
+             @NonNull Executor executor,
+             @NonNull Consumer<VideoRecordEvent> listener) {
+-        return startRecordingInternal(outputOptions, executor, listener);
++        return startRecordingInternal(outputOptions, audioConfig, executor, listener);
+     }
+ 
+     /**
+@@ -1193,27 +1197,29 @@ public abstract class CameraController {
+      * will be the first event sent to the provided listener, and information about the error can
+      * be found in that event's {@link VideoRecordEvent.Finalize#getError()} method.
+      *
+-     * <p> Recording requires the {@link android.Manifest.permission#RECORD_AUDIO} permission;
+-     * without it, starting a recording will fail with a {@link SecurityException}.
++     * <p> Recording with audio requires the {@link android.Manifest.permission#RECORD_AUDIO}
++     * permission; without it, starting a recording will fail with a {@link SecurityException}.
+      *
+      * @param outputOptions the options to store the newly captured video.
++     * @param audioConfig the configuration of audio.
+      * @param executor the executor that the event listener will be run on.
+      * @param listener the event listener to handle video record events.
+      * @return a {@link Recording} that provides controls for new active recordings.
+      * @throws IllegalStateException if there is an unfinished active recording.
+-     * @throws SecurityException if the {@link android.Manifest.permission#RECORD_AUDIO}
+-     * permission is denied.
++     * @throws SecurityException if the audio config specifies audio should be enabled but the
++     * {@link android.Manifest.permission#RECORD_AUDIO} permission is denied.
+      */
+-    @RequiresPermission(Manifest.permission.RECORD_AUDIO)
++    @SuppressLint("MissingPermission")
+     @ExperimentalVideo
+     @RequiresApi(26)
+     @MainThread
+     @NonNull
+     public Recording startRecording(
+             @NonNull FileDescriptorOutputOptions outputOptions,
++            @NonNull AudioConfig audioConfig,
+             @NonNull Executor executor,
+             @NonNull Consumer<VideoRecordEvent> listener) {
+-        return startRecordingInternal(outputOptions, executor, listener);
++        return startRecordingInternal(outputOptions, audioConfig, executor, listener);
+     }
+ 
+     /**
+@@ -1229,26 +1235,28 @@ public abstract class CameraController {
+      * will be the first event sent to the provided listener, and information about the error can
+      * be found in that event's {@link VideoRecordEvent.Finalize#getError()} method.
+      *
+-     * <p> Recording requires the {@link android.Manifest.permission#RECORD_AUDIO} permission;
+-     * without it, starting a recording will fail with a {@link SecurityException}.
++     * <p> Recording with audio requires the {@link android.Manifest.permission#RECORD_AUDIO}
++     * permission; without it, starting a recording will fail with a {@link SecurityException}.
+      *
+      * @param outputOptions the options to store the newly captured video.
++     * @param audioConfig the configuration of audio.
+      * @param executor the executor that the event listener will be run on.
+      * @param listener the event listener to handle video record events.
+      * @return a {@link Recording} that provides controls for new active recordings.
+      * @throws IllegalStateException if there is an unfinished active recording.
+-     * @throws SecurityException if the {@link android.Manifest.permission#RECORD_AUDIO}
+-     * permission is denied.
++     * @throws SecurityException if the audio config specifies audio should be enabled but the
++     * {@link android.Manifest.permission#RECORD_AUDIO} permission is denied.
+      */
+-    @RequiresPermission(Manifest.permission.RECORD_AUDIO)
++    @SuppressLint("MissingPermission")
+     @ExperimentalVideo
+     @MainThread
+     @NonNull
+     public Recording startRecording(
+             @NonNull MediaStoreOutputOptions outputOptions,
++            @NonNull AudioConfig audioConfig,
+             @NonNull Executor executor,
+             @NonNull Consumer<VideoRecordEvent> listener) {
+-        return startRecordingInternal(outputOptions, executor, listener);
++        return startRecordingInternal(outputOptions, audioConfig, executor, listener);
+     }
+ 
+     @RequiresPermission(Manifest.permission.RECORD_AUDIO)
+@@ -1256,6 +1264,7 @@ public abstract class CameraController {
+     @MainThread
+     private Recording startRecordingInternal(
+             @NonNull OutputOptions outputOptions,
++            @NonNull AudioConfig audioConfig,
+             @NonNull Executor executor,
+             @NonNull Consumer<VideoRecordEvent> listener) {
+         checkMainThread();
+@@ -1265,13 +1274,27 @@ public abstract class CameraController {
+ 
+         Consumer<VideoRecordEvent> wrappedListener =
+                 wrapListenerToDeactivateRecordingOnFinalized(listener);
+-        PendingRecording pendingRecording = prepareRecording(outputOptions).withAudioEnabled();
++        PendingRecording pendingRecording = prepareRecording(outputOptions);
++        boolean isAudioEnabled = audioConfig.getAudioEnabled();
++        if (isAudioEnabled) {
++            checkAudioPermissionGranted();
++            pendingRecording.withAudioEnabled();
++        }
+         Recording recording = pendingRecording.start(executor, wrappedListener);
+         setActiveRecording(recording, wrappedListener);
+ 
+         return recording;
+     }
+ 
++    private void checkAudioPermissionGranted() {
++        int permissionState = PermissionChecker.checkSelfPermission(mAppContext,
++                Manifest.permission.RECORD_AUDIO);
++        if (permissionState == PermissionChecker.PERMISSION_DENIED) {
++            throw new SecurityException("Attempted to start recording with audio, but "
++                    + "application does not have RECORD_AUDIO permission granted.");
++        }
++    }
++
+     /**
+      * Generates a {@link PendingRecording} instance for starting a recording.
+      *
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/video/AudioConfig.java b/camera/camera-view/src/main/java/androidx/camera/view/video/AudioConfig.java
+new file mode 100644
+index 00000000000..67977b72076
+--- /dev/null
++++ b/camera/camera-view/src/main/java/androidx/camera/view/video/AudioConfig.java
+@@ -0,0 +1,63 @@
++/*
++ * Copyright 2022 The Android Open Source Project
++ *
++ * Licensed under the Apache License, Version 2.0 (the "License");
++ * you may not use this file except in compliance with the License.
++ * You may obtain a copy of the License at
++ *
++ *      http://www.apache.org/licenses/LICENSE-2.0
++ *
++ * Unless required by applicable law or agreed to in writing, software
++ * distributed under the License is distributed on an "AS IS" BASIS,
++ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ */
++
++package androidx.camera.view.video;
++
++import android.Manifest;
++
++import androidx.annotation.NonNull;
++import androidx.annotation.RequiresApi;
++import androidx.annotation.RequiresPermission;
++
++/**
++ * A class providing configuration for audio settings in the video recording.
++ */
++@RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
++@ExperimentalVideo
++public class AudioConfig {
++
++    /**
++     * The audio configuration with audio disabled.
++     */
++    @NonNull
++    public static final AudioConfig AUDIO_DISABLED = new AudioConfig(false);
++
++    private final boolean mIsAudioEnabled;
++
++    AudioConfig(boolean audioEnabled) {
++        mIsAudioEnabled = audioEnabled;
++    }
++
++    /**
++     * Creates a default {@link AudioConfig} with the given audio enabled state.
++     *
++     * <p> The {@link android.Manifest.permission#RECORD_AUDIO} permission is required to
++     * enable audio in video recording; for the use cases where audio is always disabled, please
++     * use {@link AudioConfig#AUDIO_DISABLED} instead, which has no permission requirements.
++     */
++    @RequiresPermission(Manifest.permission.RECORD_AUDIO)
++    @NonNull
++    public static AudioConfig create(boolean enableAudio) {
++        return new AudioConfig(enableAudio);
++    }
++
++    /**
++     * Get the audio enabled state.
++     */
++    public boolean getAudioEnabled() {
++        return mIsAudioEnabled;
++    }
++}
+diff --git a/camera/integration-tests/viewtestapp/src/main/java/androidx/camera/integration/view/CameraControllerFragment.java b/camera/integration-tests/viewtestapp/src/main/java/androidx/camera/integration/view/CameraControllerFragment.java
+index e3f7c96973b..db5f1428dff 100644
+--- a/camera/integration-tests/viewtestapp/src/main/java/androidx/camera/integration/view/CameraControllerFragment.java
++++ b/camera/integration-tests/viewtestapp/src/main/java/androidx/camera/integration/view/CameraControllerFragment.java
+@@ -63,6 +63,7 @@ import androidx.camera.view.CameraController;
+ import androidx.camera.view.LifecycleCameraController;
+ import androidx.camera.view.PreviewView;
+ import androidx.camera.view.RotationProvider;
++import androidx.camera.view.video.AudioConfig;
+ import androidx.camera.view.video.ExperimentalVideo;
+ import androidx.core.util.Consumer;
+ import androidx.fragment.app.Fragment;
+@@ -577,8 +578,9 @@ public class CameraControllerFragment extends Fragment {
+     @OptIn(markerClass = ExperimentalVideo.class)
+     void startRecording(Consumer<VideoRecordEvent> listener) {
+         MediaStoreOutputOptions outputOptions = getNewVideoOutputMediaStoreOptions();
+-        mActiveRecording = mCameraController.startRecording(outputOptions, mExecutorService,
+-                listener);
++        AudioConfig audioConfig = AudioConfig.create(true);
++        mActiveRecording = mCameraController.startRecording(outputOptions, audioConfig,
++                mExecutorService, listener);
+     }
+ 
+     @VisibleForTesting
+-- 
+2.37.2
+

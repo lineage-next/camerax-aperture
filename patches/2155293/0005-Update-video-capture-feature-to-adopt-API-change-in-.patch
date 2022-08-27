@@ -1,0 +1,116 @@
+From 454ad3d6466e5194992e05a8f2d77f66a79b316d Mon Sep 17 00:00:00 2001
+From: mingdatsai <mingdatsai@google.com>
+Date: Fri, 15 Jul 2022 16:02:07 +0800
+Subject: [PATCH 5/5] Update video capture feature to adopt API change in
+ camera-view
+
+CameraController uses the new VideoCapture APIs from camera-video to
+replace the legacy one in camera-core. Update the captureVideo() method
+to adopt the change.
+
+Please check go/CameraX-apply-video-apis-to-camera-view for more information.
+
+Bug: 209528390
+Test: manual testing with device
+Change-Id: Id2d5655f27db0f693535f979ed668d2b2bc827d6
+---
+ .../integration/diagnose/MainActivity.kt      | 49 +++++++++----------
+ 1 file changed, 23 insertions(+), 26 deletions(-)
+
+diff --git a/camera/integration-tests/diagnosetestapp/src/main/java/androidx/camera/integration/diagnose/MainActivity.kt b/camera/integration-tests/diagnosetestapp/src/main/java/androidx/camera/integration/diagnose/MainActivity.kt
+index cab06b97b4c..6e9e5f78400 100644
+--- a/camera/integration-tests/diagnosetestapp/src/main/java/androidx/camera/integration/diagnose/MainActivity.kt
++++ b/camera/integration-tests/diagnosetestapp/src/main/java/androidx/camera/integration/diagnose/MainActivity.kt
+@@ -32,15 +32,16 @@ import androidx.annotation.OptIn
+ import androidx.appcompat.app.AppCompatActivity
+ import androidx.camera.core.ImageCapture
+ import androidx.camera.core.ImageCaptureException
++import androidx.camera.video.MediaStoreOutputOptions
++import androidx.camera.video.Recording
++import androidx.camera.video.VideoRecordEvent
+ import androidx.camera.view.CameraController
+ import androidx.camera.view.CameraController.IMAGE_CAPTURE
+ import androidx.camera.view.CameraController.VIDEO_CAPTURE
+ import androidx.camera.view.LifecycleCameraController
+ import androidx.camera.view.PreviewView
++import androidx.camera.view.video.AudioConfig
+ import androidx.camera.view.video.ExperimentalVideo
+-import androidx.camera.view.video.OnVideoSavedCallback
+-import androidx.camera.view.video.OutputFileOptions
+-import androidx.camera.view.video.OutputFileResults
+ import androidx.core.app.ActivityCompat
+ import androidx.core.content.ContextCompat
+ import java.text.SimpleDateFormat
+@@ -66,6 +67,7 @@ import kotlinx.coroutines.withContext
+ class MainActivity : AppCompatActivity() {
+ 
+     private lateinit var cameraController: LifecycleCameraController
++    private lateinit var activeRecording: Recording
+     private lateinit var previewView: PreviewView
+     private lateinit var overlayView: OverlayView
+     private lateinit var executor: Executor
+@@ -185,7 +187,7 @@ class MainActivity : AppCompatActivity() {
+         videoCaptureBtn.setOnClickListener {
+             // determine whether the onclick is to start recording or stop recording
+             if (cameraController.isRecording) {
+-                cameraController.stopRecording()
++                activeRecording.stop()
+                 videoCaptureBtn.setText(R.string.start_video_capture)
+                 val msg = "video stopped recording"
+                 showToast(msg)
+@@ -200,35 +202,30 @@ class MainActivity : AppCompatActivity() {
+                         put(MediaStore.Video.Media.RELATIVE_PATH, "Movies/CameraX-Video")
+                     }
+                 }
+-                val outputFileOptions = OutputFileOptions
+-                    .builder(
+-                        contentResolver,
+-                        MediaStore.Video.Media.EXTERNAL_CONTENT_URI,
+-                        contentValues
+-                    )
++                val outputOptions = MediaStoreOutputOptions
++                    .Builder(contentResolver, MediaStore.Video.Media.EXTERNAL_CONTENT_URI)
++                    .setContentValues(contentValues)
+                     .build()
+                 Log.d(TAG, "finished composing video name")
+ 
++                val audioConfig = AudioConfig.create(true)
++
+                 // start recording
+                 try {
+-                    cameraController.startRecording(
+-                        outputFileOptions,
+-                        executor,
+-                        object : OnVideoSavedCallback {
+-                            override fun onVideoSaved(outputFileResults: OutputFileResults) {
+-                                val msg = "Video record succeeded: " + outputFileResults.savedUri
+-                                showToast(msg)
+-                            }
+-
+-                            override fun onError(
+-                                videoCaptureError: Int,
+-                                message: String,
+-                                cause: Throwable?
+-                            ) {
+-                                Log.e(TAG, "Video saving failed: $message")
++                    activeRecording = cameraController.startRecording(
++                        outputOptions, audioConfig, executor
++                    ) { event ->
++                        if (event is VideoRecordEvent.Finalize) {
++                            val uri = event.outputResults.outputUri
++                            if (event.error == VideoRecordEvent.Finalize.ERROR_NONE) {
++                                val msg = "Video record succeeded: $uri"
++                                Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
++                                Log.d(TAG, msg)
++                            } else {
++                                Log.e(TAG, "Video saving failed: ${event.cause}")
+                             }
+                         }
+-                    )
++                    }
+                     videoCaptureBtn.setText(R.string.stop_video_capture)
+                     val msg = "video recording"
+                     showToast(msg)
+-- 
+2.37.2
+

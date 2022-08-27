@@ -38,7 +38,7 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch https://android.googlesource.com/platform/frameworks/support refs/changes/93/2155293/11 && git cherry-pick FETCH_HEAD~5..FETCH_HEAD
+        git am $GITHUB_WORKSPACE/patches/2155293/*
         popd
 
     - name: Build
