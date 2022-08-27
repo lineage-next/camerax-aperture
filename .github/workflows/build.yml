@@ -56,6 +56,7 @@ jobs:
     - uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ github.run_id }}
+        target_commitish: ${{ github.sha }}
         token: ${{ secrets.GITHUB_TOKEN }}
         files: |
           androidx-main/manifest.xml
