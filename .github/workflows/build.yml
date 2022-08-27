@@ -44,20 +44,23 @@ jobs:
     - name: Build
       working-directory: androidx-main/frameworks/support
       run: |
+        rm -rf $GITHUB_WORKSPACE/.m2 || true
         ./gradlew \
-          camera:camera-core:assemble \
-          camera:camera-camera2:assemble \
-          camera:camera-lifecycle:assemble \
-          camera:camera-video:assemble \
-          camera:camera-view:assemble \
-          camera:camera-mlkit-vision:assemble \
-          camera:camera-extensions:assemble
+          -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
+          camera:camera-core:publishToMavenLocal \
+          camera:camera-camera2:publishToMavenLocal \
+          camera:camera-lifecycle:publishToMavenLocal \
+          camera:camera-video:publishToMavenLocal \
+          camera:camera-view:publishToMavenLocal \
+          camera:camera-mlkit-vision:publishToMavenLocal \
+          camera:camera-extensions:publishToMavenLocal
 
-    - uses: softprops/action-gh-release@v1
+    - name: Commit .m2 changes
+      run: |
+        git add .m2
+        git commit -m "Publish maven artifacts" || true
+
+    - name: Push changes to repo
+      uses: ad-m/github-push-action@master
       with:
-        tag_name: ${{ github.run_id }}
-        target_commitish: ${{ github.sha }}
-        token: ${{ secrets.GITHUB_TOKEN }}
-        files: |
-          androidx-main/manifest.xml
-          androidx-main/out/**/outputs/aar/*-release.aar
+        branch: ${{ github.ref }}
