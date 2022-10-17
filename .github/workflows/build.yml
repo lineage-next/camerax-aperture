@@ -2,11 +2,6 @@ name: Build
 
 on:
   workflow_dispatch:
-    inputs:
-      update_manifest:
-        default: false
-        required: true
-        type: boolean
 
 jobs:
   build:
@@ -36,17 +31,17 @@ jobs:
         mkdir androidx-main
         cd androidx-main
         repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
-        if [[ "${{ inputs.update_manifest }}" = "true" ]]; then
-          repo sync -j16
-        else
-          repo sync -m $GITHUB_WORKSPACE/manifest.xml -j16
-        fi
+        repo sync -j16
         repo manifest -r > $GITHUB_WORKSPACE/manifest.xml
+        git clone https://android.googlesource.com/platform/external/doclava external/doclava --depth=1
+        cp -R $GITHUB_WORKSPACE/.androidx-main/* .
 
     - name: Apply patches
       working-directory: androidx-main
       run: |
         pushd frameworks/support
+        git fetch aosp 5d604e91d9a14a5194876be00e3eb1242537c6ce
+        git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/2155293/*
         git fetch https://android.googlesource.com/platform/frameworks/support refs/changes/75/2188775/7 && git cherry-pick FETCH_HEAD~5..FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
