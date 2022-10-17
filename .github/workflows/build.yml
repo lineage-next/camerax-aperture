@@ -49,6 +49,7 @@ jobs:
         pushd frameworks/support
         git am $GITHUB_WORKSPACE/patches/2155293/*
         git fetch https://android.googlesource.com/platform/frameworks/support refs/changes/75/2188775/7 && git cherry-pick FETCH_HEAD~5..FETCH_HEAD
+        git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         popd
 
     - name: Build

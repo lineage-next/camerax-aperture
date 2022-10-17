@@ -1,0 +1,70 @@
+From db5e25c97d4b6f0386af92bcc568976cfeee26c6 Mon Sep 17 00:00:00 2001
+From: LuK1337 <priv.luk@gmail.com>
+Date: Mon, 17 Oct 2022 19:03:07 +0200
+Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
+ compatible
+
+Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
+---
+ .../camera2/internal/Camera2CameraFactory.java  | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
+index 4cb23e34ee4..d4b45bff683 100644
+--- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
++++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
+@@ -19,6 +19,7 @@ package androidx.camera.camera2.internal;
+ import static android.hardware.camera2.CameraMetadata.REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE;
+ 
+ import android.content.Context;
++import android.content.res.Resources;
+ import android.hardware.camera2.CameraCharacteristics;
+ import android.os.Build;
+ 
+@@ -37,6 +38,7 @@ import androidx.camera.core.impl.CameraStateRegistry;
+ import androidx.camera.core.impl.CameraThreadConfig;
+ 
+ import java.util.ArrayList;
++import java.util.Arrays;
+ import java.util.HashMap;
+ import java.util.LinkedHashSet;
+ import java.util.List;
+@@ -54,6 +56,7 @@ public final class Camera2CameraFactory implements CameraFactory {
+     private final CameraStateRegistry mCameraStateRegistry;
+     private final CameraManagerCompat mCameraManager;
+     private final List<String> mAvailableCameraIds;
++    private final List<String> mBackwardCompatibleCameraIds;
+     private final DisplayInfoManager mDisplayInfoManager;
+     private final Map<String, Camera2CameraInfoImpl> mCameraInfos = new HashMap<>();
+ 
+@@ -66,6 +69,16 @@ public final class Camera2CameraFactory implements CameraFactory {
+         mCameraManager = CameraManagerCompat.from(context, mThreadConfig.getSchedulerHandler());
+         mDisplayInfoManager = DisplayInfoManager.getInstance(context);
+ 
++        Resources resources = context.getResources();
++        int backwardCompatibleCameraIds = resources.getIdentifier(
++                "config_backwardCompatibleCameraIds", "array", context.getPackageName());
++        if (backwardCompatibleCameraIds > 0) {
++            mBackwardCompatibleCameraIds = Arrays.asList(
++                    resources.getStringArray(backwardCompatibleCameraIds));
++        } else {
++            mBackwardCompatibleCameraIds = new ArrayList<>();
++        }
++
+         List<String> optimizedCameraIds = CameraSelectionOptimizer.getSelectedAvailableCameraIds(
+                 this, availableCamerasSelector);
+         mAvailableCameraIds = getBackwardCompatibleCameraIds(optimizedCameraIds);
+@@ -143,6 +156,10 @@ public final class Camera2CameraFactory implements CameraFactory {
+             return true;
+         }
+ 
++        if (mBackwardCompatibleCameraIds.contains(cameraId)) {
++            return true;
++        }
++
+         int[] availableCapabilities;
+ 
+         try {
+-- 
+2.37.3
+
