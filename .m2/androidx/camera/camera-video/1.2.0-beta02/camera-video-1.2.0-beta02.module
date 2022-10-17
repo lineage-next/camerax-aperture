@@ -43,10 +43,10 @@
           "name": "camera-video-1.2.0-beta02.aar",
           "url": "camera-video-1.2.0-beta02.aar",
           "size": 270642,
-          "sha512": "536047644b5f5b7a063ed03c5f6f4b1e7637a1a4676c4b73806c25a8464f232d580eba2be0333aef8b6a851f746614af5bcc26153fcf9b5af9079415075c5a0d",
-          "sha256": "41d4873b0564958820f140c2d833827864704e7e82d61f32581888055e5114b5",
-          "sha1": "f7617deb4db29ec2421e1700f93e9dde44f1f84c",
-          "md5": "f31222bb6411665d2524f3b3488cdd3a"
+          "sha512": "ba4a195311cf3917be30ae905a6904ece303de9ee3e77248cbdd4c9cda385ed18939abbd5017b1e5fe275299b1c19e319e7b4f961a007177bdf8029d2128e0ff",
+          "sha256": "3279bb66065942990697fab216e3365542fdcf9fee87dae92d680af8722e0154",
+          "sha1": "157deb220823b18f029b3f373840716995f590ad",
+          "md5": "c08d2d484b901f0c648f59f9d8ffdd44"
         }
       ]
     },
@@ -100,10 +100,10 @@
           "name": "camera-video-1.2.0-beta02.aar",
           "url": "camera-video-1.2.0-beta02.aar",
           "size": 270642,
-          "sha512": "536047644b5f5b7a063ed03c5f6f4b1e7637a1a4676c4b73806c25a8464f232d580eba2be0333aef8b6a851f746614af5bcc26153fcf9b5af9079415075c5a0d",
-          "sha256": "41d4873b0564958820f140c2d833827864704e7e82d61f32581888055e5114b5",
-          "sha1": "f7617deb4db29ec2421e1700f93e9dde44f1f84c",
-          "md5": "f31222bb6411665d2524f3b3488cdd3a"
+          "sha512": "ba4a195311cf3917be30ae905a6904ece303de9ee3e77248cbdd4c9cda385ed18939abbd5017b1e5fe275299b1c19e319e7b4f961a007177bdf8029d2128e0ff",
+          "sha256": "3279bb66065942990697fab216e3365542fdcf9fee87dae92d680af8722e0154",
+          "sha1": "157deb220823b18f029b3f373840716995f590ad",
+          "md5": "c08d2d484b901f0c648f59f9d8ffdd44"
         }
       ]
     },

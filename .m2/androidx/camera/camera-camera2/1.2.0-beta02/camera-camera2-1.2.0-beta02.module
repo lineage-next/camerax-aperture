@@ -42,11 +42,11 @@
         {
           "name": "camera-camera2-1.2.0-beta02.aar",
           "url": "camera-camera2-1.2.0-beta02.aar",
-          "size": 383399,
-          "sha512": "3d7f18ebe7cefd056b2f7e524f94ab9eef61c99c1f5e11e657eb163ff7aa403544edbf4d4178e5ad3d87568925340445475205bf77172d385c483e67abe6dd19",
-          "sha256": "7b691fa3afb224c6b26537e2ad485e1ef4a1e6cb29b7e17487bdda6d6d9a77bc",
-          "sha1": "6fb5eb65d187e3ed6dd1ebdeaa69c78db31b9148",
-          "md5": "46649c4e089c0d47c30a4913d5d7bcf8"
+          "size": 383700,
+          "sha512": "557cbecf50588df30b78ad8b89e02f488a63602e196f584f14a27189f6116cbce20e59808eee775aaf289dda7b06967392cc034849464e4f76972a1a762ebcb4",
+          "sha256": "02ac0be0ec7fee76e12ea02b2e49923b72d0b2b422572a5dad1b63277a401465",
+          "sha1": "d8a11daeebd6895ee174a1513b49d83a6da6fa1b",
+          "md5": "a788d53955455e14cc60eb0cb974b0ec"
         }
       ]
     },
@@ -106,11 +106,11 @@
         {
           "name": "camera-camera2-1.2.0-beta02.aar",
           "url": "camera-camera2-1.2.0-beta02.aar",
-          "size": 383399,
-          "sha512": "3d7f18ebe7cefd056b2f7e524f94ab9eef61c99c1f5e11e657eb163ff7aa403544edbf4d4178e5ad3d87568925340445475205bf77172d385c483e67abe6dd19",
-          "sha256": "7b691fa3afb224c6b26537e2ad485e1ef4a1e6cb29b7e17487bdda6d6d9a77bc",
-          "sha1": "6fb5eb65d187e3ed6dd1ebdeaa69c78db31b9148",
-          "md5": "46649c4e089c0d47c30a4913d5d7bcf8"
+          "size": 383700,
+          "sha512": "557cbecf50588df30b78ad8b89e02f488a63602e196f584f14a27189f6116cbce20e59808eee775aaf289dda7b06967392cc034849464e4f76972a1a762ebcb4",
+          "sha256": "02ac0be0ec7fee76e12ea02b2e49923b72d0b2b422572a5dad1b63277a401465",
+          "sha1": "d8a11daeebd6895ee174a1513b49d83a6da6fa1b",
+          "md5": "a788d53955455e14cc60eb0cb974b0ec"
         }
       ]
     },
@@ -126,11 +126,11 @@
         {
           "name": "camera-camera2-1.2.0-beta02-sources.jar",
           "url": "camera-camera2-1.2.0-beta02-sources.jar",
-          "size": 301752,
-          "sha512": "a8535df81007a1de6e57ae629d093fe1faf2466f597b091eb173cebda91bfc382e7ecea63f62351ef23bfff26dac0566cdd207d44f016c5655d821156f3135a7",
-          "sha256": "b33632da959449cc4a20e33ab1f6470c73bdf4b80d7ae511965ee07a293d959e",
-          "sha1": "8b24f0450faa3f771995da2c123ca99226d8a72d",
-          "md5": "2a803a5119dc51c5ccc683ae00f1b8fd"
+          "size": 301885,
+          "sha512": "e1e97accfe2d7ad255952cb952c98e7c1862f8f6a55a05be045c11197aa660d98b1b7634b306497b038f06c41749934a890aa38826bd8de1799eb3ba52ddc512",
+          "sha256": "f82f89dbd07083a71e88ef55c9b75200b9086769e4cfe38a3c7d9b787868ced6",
+          "sha1": "5c1facba12fe5b23891fdf27b2b31197bd281b93",
+          "md5": "ef6f756e601b1eb8dfbba39623448bbd"
         }
       ]
     }

@@ -50,10 +50,10 @@
           "name": "camera-lifecycle-1.2.0-beta02.aar",
           "url": "camera-lifecycle-1.2.0-beta02.aar",
           "size": 20241,
-          "sha512": "04a66eef27a610006c2bcc130581e2d34dcdc2eaed625fb468d156f1d17df7bf7b60f4a56a313f50ef64095ab851a3b0fa6c10d31c96c959595d37367634d88e",
-          "sha256": "1764693b3cf202970b08b9648e8c0ae3177a0690a50c8cf3ff87d7fef51867c2",
-          "sha1": "cc7087c12e4cd11517f4e6562a779487973ce43b",
-          "md5": "bf6210c328856fc87cc41ea942f91f13"
+          "sha512": "bfeba2f0852e964886523a19c69202b4850567c8679f8392152049c4d849f0f63fb883db32bb719fa8b94844810d9e9c6303cd6ab3af53de71907174942a48af",
+          "sha256": "1e3c0fa379759518f8111fea2e12ecf2210c00f5f1a3414ed9ff261936ef86e3",
+          "sha1": "a0fa9c25ec65054ae4b540f15284b1e8615f1900",
+          "md5": "1cb14500c91ada3b77d7738225fccdd0"
         }
       ]
     },
@@ -114,10 +114,10 @@
           "name": "camera-lifecycle-1.2.0-beta02.aar",
           "url": "camera-lifecycle-1.2.0-beta02.aar",
           "size": 20241,
-          "sha512": "04a66eef27a610006c2bcc130581e2d34dcdc2eaed625fb468d156f1d17df7bf7b60f4a56a313f50ef64095ab851a3b0fa6c10d31c96c959595d37367634d88e",
-          "sha256": "1764693b3cf202970b08b9648e8c0ae3177a0690a50c8cf3ff87d7fef51867c2",
-          "sha1": "cc7087c12e4cd11517f4e6562a779487973ce43b",
-          "md5": "bf6210c328856fc87cc41ea942f91f13"
+          "sha512": "bfeba2f0852e964886523a19c69202b4850567c8679f8392152049c4d849f0f63fb883db32bb719fa8b94844810d9e9c6303cd6ab3af53de71907174942a48af",
+          "sha256": "1e3c0fa379759518f8111fea2e12ecf2210c00f5f1a3414ed9ff261936ef86e3",
+          "sha1": "a0fa9c25ec65054ae4b540f15284b1e8615f1900",
+          "md5": "1cb14500c91ada3b77d7738225fccdd0"
         }
       ]
     },
