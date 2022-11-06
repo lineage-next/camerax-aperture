@@ -32,7 +32,6 @@ jobs:
         cd androidx-main
         repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
         repo sync -j16
-        repo manifest -r > $GITHUB_WORKSPACE/manifest.xml
         git clone https://android.googlesource.com/platform/external/doclava external/doclava --depth=1
         cp -R $GITHUB_WORKSPACE/.androidx-main/* .
 
@@ -65,8 +64,6 @@ jobs:
       run: |
         git add .m2
         git commit -m "Publish maven artifacts" || true
-        git add manifest.xml
-        git commit -m "Update manifest" || true
 
     - name: Push changes to repo
       uses: ad-m/github-push-action@master
