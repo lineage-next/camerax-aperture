@@ -7,13 +7,13 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>androidx.camera</groupId>
-  <artifactId>camera-video</artifactId>
-  <version>1.2.0-rc02</version>
+  <artifactId>camera-view</artifactId>
+  <version>1.2.0</version>
   <packaging>aar</packaging>
-  <name>Jetpack Camera Video Library</name>
-  <description>Video components for the Jetpack Camera Library, a library providing a consistent and reliable camera foundation that enables great camera driven experiences across all of Android.</description>
-  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0-rc02</url>
-  <inceptionYear>2020</inceptionYear>
+  <name>Jetpack Camera View Library</name>
+  <description>UI tools for the Jetpack Camera Library, a library providing a consistent and reliable camera foundation that enables great camera driven experiences across all of Android.</description>
+  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0</url>
+  <inceptionYear>2019</inceptionYear>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -38,9 +38,35 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>androidx.annotation</groupId>
+      <artifactId>annotation-experimental</artifactId>
+      <version>1.1.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
+      <version>1.1.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.2.0-rc02]</version>
+      <version>[1.2.0]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-lifecycle</artifactId>
+      <version>[1.2.0]</version>
+      <scope>runtime</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-video</artifactId>
+      <version>[1.2.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -53,13 +79,25 @@
     <dependency>
       <groupId>androidx.core</groupId>
       <artifactId>core</artifactId>
-      <version>1.1.0</version>
+      <version>1.3.2</version>
       <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-common</artifactId>
+      <version>2.0.0</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.auto.value</groupId>
       <artifactId>auto-value-annotations</artifactId>
       <version>1.6.3</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>listenablefuture</artifactId>
+      <version>1.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

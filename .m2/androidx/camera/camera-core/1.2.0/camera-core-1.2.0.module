@@ -3,7 +3,7 @@
   "component": {
     "group": "androidx.camera",
     "module": "camera-core",
-    "version": "1.2.0-rc02",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -61,13 +61,13 @@
       ],
       "files": [
         {
-          "name": "camera-core-1.2.0-rc02.aar",
-          "url": "camera-core-1.2.0-rc02.aar",
-          "size": 734054,
-          "sha512": "906892e0452919bcb39ef5643c5d6f7aa9355a6ce4e59cd444cfff68faad33c5651827a14ed0d888e33d681443b80740c0cacff0efd35b1d7ec150cb147a43a0",
-          "sha256": "761d48704a14ec71e50eda5fe378b6c90a1c3b479c1a4e1093709c1049838bec",
-          "sha1": "c171e32b7be62406dd3c5c1b9d279fcd9bdc14a4",
-          "md5": "40006b7888812fdf53db8b02a6ac47b7"
+          "name": "camera-core-1.2.0.aar",
+          "url": "camera-core-1.2.0.aar",
+          "size": 734050,
+          "sha512": "4e10e2db6d18cce7f30ae9c003f47fd3240015b3c4968c50c28221af08d0b1d2de09649ef1e5705afb16a6185f8839beafd6d8b4b0d824024e54d90ad1764f70",
+          "sha256": "4d7a9c51551de7a2e02097cc3e2be03d55a5177b917678d67d28e354856faeba",
+          "sha1": "dcdcdaf3c1a4e1b1fdbb16f02c72a197b4cec4b0",
+          "md5": "a4111c0cf4a0b2220d0a79f709a4803b"
         }
       ]
     },
@@ -153,13 +153,13 @@
       ],
       "files": [
         {
-          "name": "camera-core-1.2.0-rc02.aar",
-          "url": "camera-core-1.2.0-rc02.aar",
-          "size": 734054,
-          "sha512": "906892e0452919bcb39ef5643c5d6f7aa9355a6ce4e59cd444cfff68faad33c5651827a14ed0d888e33d681443b80740c0cacff0efd35b1d7ec150cb147a43a0",
-          "sha256": "761d48704a14ec71e50eda5fe378b6c90a1c3b479c1a4e1093709c1049838bec",
-          "sha1": "c171e32b7be62406dd3c5c1b9d279fcd9bdc14a4",
-          "md5": "40006b7888812fdf53db8b02a6ac47b7"
+          "name": "camera-core-1.2.0.aar",
+          "url": "camera-core-1.2.0.aar",
+          "size": 734050,
+          "sha512": "4e10e2db6d18cce7f30ae9c003f47fd3240015b3c4968c50c28221af08d0b1d2de09649ef1e5705afb16a6185f8839beafd6d8b4b0d824024e54d90ad1764f70",
+          "sha256": "4d7a9c51551de7a2e02097cc3e2be03d55a5177b917678d67d28e354856faeba",
+          "sha1": "dcdcdaf3c1a4e1b1fdbb16f02c72a197b4cec4b0",
+          "md5": "a4111c0cf4a0b2220d0a79f709a4803b"
         }
       ]
     },
@@ -173,8 +173,8 @@
       },
       "files": [
         {
-          "name": "camera-core-1.2.0-rc02-sources.jar",
-          "url": "camera-core-1.2.0-rc02-sources.jar",
+          "name": "camera-core-1.2.0-sources.jar",
+          "url": "camera-core-1.2.0-sources.jar",
           "size": 543440,
           "sha512": "f248e6c56bb6cc32e967bc2e4cc3ca7eb428f3faeef3d4709da240b7af76c493328c39dd9f9cf5f5027e802e369dc5ee6b3aba1cd050e90fe8026cea0727941a",
           "sha256": "0e0e56cd2702f833b7876a0fea4caef67603e562302642d03acd3c6208b75deb",

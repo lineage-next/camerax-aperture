@@ -3,7 +3,7 @@
   "component": {
     "group": "androidx.camera",
     "module": "camera-view",
-    "version": "1.2.0-rc02",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -34,14 +34,14 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -54,13 +54,13 @@
       ],
       "files": [
         {
-          "name": "camera-view-1.2.0-rc02.aar",
-          "url": "camera-view-1.2.0-rc02.aar",
-          "size": 82445,
-          "sha512": "c581d8bb6a1789e3d165b9804dd783071a52694f43a32452f3552c5844b5dd9fc5e7d3d4fd92ce499c2efb4cc1720cfd005ec44510f8b0fdbb96eccddba9c53d",
-          "sha256": "4ec8d937c45e18ae72170979de19c865d170377672307b558d6fbc5c09c482be",
-          "sha1": "3ca6b7f76161ae8ea5972321dbdb6b745d889321",
-          "md5": "14304781b3db35116773676ca226cbb4"
+          "name": "camera-view-1.2.0.aar",
+          "url": "camera-view-1.2.0.aar",
+          "size": 82442,
+          "sha512": "03d5d8c793fe1313b0e4736e73944519887e67a763882e946edaee1171ef1bc0cb9b7973de369167efc46a4deb96d4dac8f60e94d38ea0b8086e1ff60d035f8a",
+          "sha256": "e31fe6713cd43b12f4c2033e2d62cc436a4d7049f59d4dac174598a687a127eb",
+          "sha1": "ecaf6f65f41279ca8f501998880ac39a4d8e55c1",
+          "md5": "10bee297303a64e8ca375cdc76226d8c"
         }
       ]
     },
@@ -84,7 +84,7 @@
           "group": "androidx.annotation",
           "module": "annotation-experimental",
           "version": {
-            "requires": "1.1.0-rc01"
+            "requires": "1.1.0"
           }
         },
         {
@@ -98,21 +98,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -153,13 +153,13 @@
       ],
       "files": [
         {
-          "name": "camera-view-1.2.0-rc02.aar",
-          "url": "camera-view-1.2.0-rc02.aar",
-          "size": 82445,
-          "sha512": "c581d8bb6a1789e3d165b9804dd783071a52694f43a32452f3552c5844b5dd9fc5e7d3d4fd92ce499c2efb4cc1720cfd005ec44510f8b0fdbb96eccddba9c53d",
-          "sha256": "4ec8d937c45e18ae72170979de19c865d170377672307b558d6fbc5c09c482be",
-          "sha1": "3ca6b7f76161ae8ea5972321dbdb6b745d889321",
-          "md5": "14304781b3db35116773676ca226cbb4"
+          "name": "camera-view-1.2.0.aar",
+          "url": "camera-view-1.2.0.aar",
+          "size": 82442,
+          "sha512": "03d5d8c793fe1313b0e4736e73944519887e67a763882e946edaee1171ef1bc0cb9b7973de369167efc46a4deb96d4dac8f60e94d38ea0b8086e1ff60d035f8a",
+          "sha256": "e31fe6713cd43b12f4c2033e2d62cc436a4d7049f59d4dac174598a687a127eb",
+          "sha1": "ecaf6f65f41279ca8f501998880ac39a4d8e55c1",
+          "md5": "10bee297303a64e8ca375cdc76226d8c"
         }
       ]
     },
@@ -173,8 +173,8 @@
       },
       "files": [
         {
-          "name": "camera-view-1.2.0-rc02-sources.jar",
-          "url": "camera-view-1.2.0-rc02-sources.jar",
+          "name": "camera-view-1.2.0-sources.jar",
+          "url": "camera-view-1.2.0-sources.jar",
           "size": 67917,
           "sha512": "635b1449310528537863f9092a8b61af878945c672ce376858fe01a875aa3d183986ffb9ad95fac15ca28cd0619a8b043c3f95e0e2255d8ad3ad2ede481d08fe",
           "sha256": "bd363b7926bf8d0dc4749d21447e0c7850f1de37e57c28088119720b2daedea8",

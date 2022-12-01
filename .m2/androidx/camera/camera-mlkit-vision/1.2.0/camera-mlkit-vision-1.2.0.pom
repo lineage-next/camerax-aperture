@@ -8,11 +8,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>androidx.camera</groupId>
   <artifactId>camera-mlkit-vision</artifactId>
-  <version>1.2.0-rc02</version>
+  <version>1.2.0</version>
   <packaging>aar</packaging>
   <name>Jetpack Camera MLKit Vision Library</name>
   <description>MLKit vision components for the Jetpack Camera Library, a library providing a seamless integration that enables camera driven computer vision features across all of Android.</description>
-  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0-rc02</url>
+  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0</url>
   <inceptionYear>2022</inceptionYear>
   <licenses>
     <license>
@@ -40,14 +40,14 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.2.0-rc02]</version>
+      <version>[1.2.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-view</artifactId>
-      <version>[1.2.0-rc02]</version>
+      <version>[1.2.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>

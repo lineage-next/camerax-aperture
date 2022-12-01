@@ -7,12 +7,12 @@
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
   <groupId>androidx.camera</groupId>
-  <artifactId>camera-camera2</artifactId>
-  <version>1.2.0-rc02</version>
+  <artifactId>camera-lifecycle</artifactId>
+  <version>1.2.0</version>
   <packaging>aar</packaging>
-  <name>Jetpack Camera Library Camera2 Implementation/Extensions</name>
-  <description>Camera2 implementation and extensions for the Jetpack Camera Library, a library providing a consistent and reliable camera foundation that enables great camera driven experiences across all of Android.</description>
-  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0-rc02</url>
+  <name>Jetpack Camera Lifecycle Library</name>
+  <description>Lifecycle components for the Jetpack Camera Library, a library providing a consistent and reliable camera foundation that enables great camera driven experiences across all of Android.</description>
+  <url>https://developer.android.com/jetpack/androidx/releases/camera#1.2.0</url>
   <inceptionYear>2019</inceptionYear>
   <licenses>
     <license>
@@ -32,15 +32,9 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>androidx.annotation</groupId>
-      <artifactId>annotation</artifactId>
-      <version>1.2.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.2.0-rc02]</version>
+      <version>[1.2.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -57,6 +51,12 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-common</artifactId>
+      <version>2.1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.google.auto.value</groupId>
       <artifactId>auto-value-annotations</artifactId>
       <version>1.6.3</version>
@@ -66,7 +66,7 @@
       <groupId>com.google.guava</groupId>
       <artifactId>listenablefuture</artifactId>
       <version>1.0</version>
-      <scope>runtime</scope>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 </project>

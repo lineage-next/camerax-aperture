@@ -2,8 +2,8 @@
   "formatVersion": "1.1",
   "component": {
     "group": "androidx.camera",
-    "module": "camera-camera2",
-    "version": "1.2.0-rc02",
+    "module": "camera-video",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -34,19 +34,19 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         }
       ],
       "files": [
         {
-          "name": "camera-camera2-1.2.0-rc02.aar",
-          "url": "camera-camera2-1.2.0-rc02.aar",
-          "size": 388252,
-          "sha512": "530f25810669eedfe878c86af657fe4f4817566bb6c69145177206e97622151a58871d50607ba3103d2f8f58f41e27c5ef9a2ddea8ae05cbdb01afbe9ea39b7d",
-          "sha256": "b3b49ae87a1740e30371920a5244a3bf2b970f942648aa3e468de0617143869b",
-          "sha1": "bfea718148d1170d6f461c4d7e9bf1faacf3b2f8",
-          "md5": "0c4e03da24be7ac5328d8ada978d1792"
+          "name": "camera-video-1.2.0.aar",
+          "url": "camera-video-1.2.0.aar",
+          "size": 283711,
+          "sha512": "99bcd320665b4376405d095de5d238f31021352b7f028832b33bab44e0479a6e482e5d4d3f201acf4958c8747a6b861f6e6bb5993956625ce382be1470d3eb86",
+          "sha256": "dfae2ba94a40a6680e1a09dcafbad7fb4348d0ff6cf08418cf6af30996c5caa2",
+          "sha1": "62ffef99b6b9402b4f251833f0fcf39412661479",
+          "md5": "0867de6cc82b4b645abfcbbf9fc92f8a"
         }
       ]
     },
@@ -70,7 +70,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -93,24 +93,17 @@
           "version": {
             "requires": "1.6.3"
           }
-        },
-        {
-          "group": "com.google.guava",
-          "module": "listenablefuture",
-          "version": {
-            "requires": "1.0"
-          }
         }
       ],
       "files": [
         {
-          "name": "camera-camera2-1.2.0-rc02.aar",
-          "url": "camera-camera2-1.2.0-rc02.aar",
-          "size": 388252,
-          "sha512": "530f25810669eedfe878c86af657fe4f4817566bb6c69145177206e97622151a58871d50607ba3103d2f8f58f41e27c5ef9a2ddea8ae05cbdb01afbe9ea39b7d",
-          "sha256": "b3b49ae87a1740e30371920a5244a3bf2b970f942648aa3e468de0617143869b",
-          "sha1": "bfea718148d1170d6f461c4d7e9bf1faacf3b2f8",
-          "md5": "0c4e03da24be7ac5328d8ada978d1792"
+          "name": "camera-video-1.2.0.aar",
+          "url": "camera-video-1.2.0.aar",
+          "size": 283711,
+          "sha512": "99bcd320665b4376405d095de5d238f31021352b7f028832b33bab44e0479a6e482e5d4d3f201acf4958c8747a6b861f6e6bb5993956625ce382be1470d3eb86",
+          "sha256": "dfae2ba94a40a6680e1a09dcafbad7fb4348d0ff6cf08418cf6af30996c5caa2",
+          "sha1": "62ffef99b6b9402b4f251833f0fcf39412661479",
+          "md5": "0867de6cc82b4b645abfcbbf9fc92f8a"
         }
       ]
     },
@@ -124,13 +117,13 @@
       },
       "files": [
         {
-          "name": "camera-camera2-1.2.0-rc02-sources.jar",
-          "url": "camera-camera2-1.2.0-rc02-sources.jar",
-          "size": 303082,
-          "sha512": "4782fde3c1b2424cea701fde4ba1c5211d3008afb10df153bad9aca74f74dcd1952b279935b1cad41d91f5f2069747c40b0d5e784de4e318ce19ef8b2f8196b4",
-          "sha256": "91d2a108d173f504d95200079cb3b5a8ef0eb4b638b7b74d50cc18ecd8e07567",
-          "sha1": "899f242df9911c0bc3e133534cf43ba44c7ea954",
-          "md5": "e3c47223329b7eaaf0c141f29d7d9322"
+          "name": "camera-video-1.2.0-sources.jar",
+          "url": "camera-video-1.2.0-sources.jar",
+          "size": 205193,
+          "sha512": "4ba0cc9a6fbdf9fbcf6903f63923a9af35f339e413823e3f94f4e554c04d11d3d476440175971ec4729895d5ba53a8b8b243581ba0f9b8e532a409e6135fc0da",
+          "sha256": "a0dece201885a3e14d3d5d98e128fb82ff058243c74f72531ba37373438b5240",
+          "sha1": "c5f96f0ab06c3f4ac09b9a73c20c2ae469c28877",
+          "md5": "b728f0f7b95502cf5a69106f04df4cf5"
         }
       ]
     }

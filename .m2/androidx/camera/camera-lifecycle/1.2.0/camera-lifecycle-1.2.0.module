@@ -2,8 +2,8 @@
   "formatVersion": "1.1",
   "component": {
     "group": "androidx.camera",
-    "module": "camera-extensions",
-    "version": "1.2.0-rc02",
+    "module": "camera-lifecycle",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -27,7 +27,14 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.1.0"
           }
         },
         {
@@ -40,13 +47,13 @@
       ],
       "files": [
         {
-          "name": "camera-extensions-1.2.0-rc02.aar",
-          "url": "camera-extensions-1.2.0-rc02.aar",
-          "size": 87638,
-          "sha512": "6a84e805d7c2ea0f5486fe9ff37110165352f7e7989d428ab2489b665affb9cfc21ee941aab17e93576c44ce1fb0ce5c13ac472570b52747e90ef54088436a4c",
-          "sha256": "25a47c110b97794529b2364b95b84d1fb7164703bc895b3ddb3c6afbd645d56c",
-          "sha1": "8f1c7ae08fa72589058ce5eb8e8e45c9796e466f",
-          "md5": "af1b4d2ed873e7cc55ae9c85338bef3f"
+          "name": "camera-lifecycle-1.2.0.aar",
+          "url": "camera-lifecycle-1.2.0.aar",
+          "size": 20447,
+          "sha512": "2ccea9e9154755de364265331debb2af8e1518e9cd17d8a4a43213dadf74a992e5f742be20d82956db892b88e3f3e0066f04534e06eb01487ddcd741edc98935",
+          "sha256": "2de58b0d5d284d5d1b81358bf9edff8862782807a4ee53239abb3e24de657637",
+          "sha1": "0d5cd3873ed8236395426ac1fab67dced229fdac",
+          "md5": "178709f406503025c4a55c1ff6f4f90c"
         }
       ]
     },
@@ -61,16 +68,9 @@
       "dependencies": [
         {
           "group": "androidx.camera",
-          "module": "camera-camera2",
-          "version": {
-            "requires": "1.2.0-rc02"
-          }
-        },
-        {
-          "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -84,7 +84,14 @@
           "group": "androidx.core",
           "module": "core",
           "version": {
-            "requires": "1.0.0"
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.1.0"
           }
         },
         {
@@ -104,13 +111,13 @@
       ],
       "files": [
         {
-          "name": "camera-extensions-1.2.0-rc02.aar",
-          "url": "camera-extensions-1.2.0-rc02.aar",
-          "size": 87638,
-          "sha512": "6a84e805d7c2ea0f5486fe9ff37110165352f7e7989d428ab2489b665affb9cfc21ee941aab17e93576c44ce1fb0ce5c13ac472570b52747e90ef54088436a4c",
-          "sha256": "25a47c110b97794529b2364b95b84d1fb7164703bc895b3ddb3c6afbd645d56c",
-          "sha1": "8f1c7ae08fa72589058ce5eb8e8e45c9796e466f",
-          "md5": "af1b4d2ed873e7cc55ae9c85338bef3f"
+          "name": "camera-lifecycle-1.2.0.aar",
+          "url": "camera-lifecycle-1.2.0.aar",
+          "size": 20447,
+          "sha512": "2ccea9e9154755de364265331debb2af8e1518e9cd17d8a4a43213dadf74a992e5f742be20d82956db892b88e3f3e0066f04534e06eb01487ddcd741edc98935",
+          "sha256": "2de58b0d5d284d5d1b81358bf9edff8862782807a4ee53239abb3e24de657637",
+          "sha1": "0d5cd3873ed8236395426ac1fab67dced229fdac",
+          "md5": "178709f406503025c4a55c1ff6f4f90c"
         }
       ]
     },
@@ -124,13 +131,13 @@
       },
       "files": [
         {
-          "name": "camera-extensions-1.2.0-rc02-sources.jar",
-          "url": "camera-extensions-1.2.0-rc02-sources.jar",
-          "size": 65908,
-          "sha512": "4ce8d41355375785133ad78bed325052abd4c0dd101461ef8bedbf2e64cd52af7443913d4153002e4f0762faa33a2d0364e155d0d9ed8fa56d72035f542ce64d",
-          "sha256": "31adc49b573ae8225b4e615ce5203a1c1acc54e038a5ff3468067468955f3e4b",
-          "sha1": "ddad5f2ed6c08110189fb035c975ff120fdde0b4",
-          "md5": "b2b9cc5db487f3d6eb4544bab414f2e0"
+          "name": "camera-lifecycle-1.2.0-sources.jar",
+          "url": "camera-lifecycle-1.2.0-sources.jar",
+          "size": 17337,
+          "sha512": "cf0398c7c6ec7515f6ed522c0d01e06605626f3301abd93f303b861c315b62b30b230addb81355219310e93212a51df6cf49f3a0d93b9af1b817cb9960e638c4",
+          "sha256": "c5b07109d2e7fb4b0b362eaa1f5bea12c309a4eb6ca782274b59071dae2d879f",
+          "sha1": "207884d7016947db3582f2bfc8f2073a390745ff",
+          "md5": "b7b6068d83aba5939fd5ab2c5cac3e74"
         }
       ]
     }

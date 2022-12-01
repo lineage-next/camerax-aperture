@@ -3,7 +3,7 @@
   "component": {
     "group": "androidx.camera",
     "module": "camera-mlkit-vision",
-    "version": "1.2.0-rc02",
+    "version": "1.2.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -34,14 +34,14 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-view",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -55,13 +55,13 @@
       ],
       "files": [
         {
-          "name": "camera-mlkit-vision-1.2.0-rc02.aar",
-          "url": "camera-mlkit-vision-1.2.0-rc02.aar",
-          "size": 7826,
-          "sha512": "8a64b1d5ce2076c895ace94d5fb5aa539c51efec32ceb5032095642e48d2816ebae62e71ca2446d7cf11c26c072228aaa0fed2fe704b218b6b318789d0ea5493",
-          "sha256": "1dee3a9b815120b9d0db59047a59fbd23c3eed7b47a732a4ca51128ffbaa9980",
-          "sha1": "a88886057b054f07592e94bc28fe32d9121ebf9b",
-          "md5": "9ef1e34f8ef281adf39fb34726605931"
+          "name": "camera-mlkit-vision-1.2.0.aar",
+          "url": "camera-mlkit-vision-1.2.0.aar",
+          "size": 7820,
+          "sha512": "6b8cbdcdf57877d12319f503a681a8feba895bd733bf08f752dce249b64c612c940682be799e894c75e0f6b0270d304520be6ada4a3bf0b46d374389766df33d",
+          "sha256": "35f7165a677cc9d46ee226794c0424893dbe7934d1cbde2254bf54ef8941402d",
+          "sha1": "f81c39f844d81128ef907b119032ea41f9c01d4b",
+          "md5": "5c94c06cc421f15f2bea5839ad503ac2"
         }
       ]
     },
@@ -85,14 +85,14 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-view",
           "version": {
-            "requires": "1.2.0-rc02"
+            "requires": "1.2.0"
           }
         },
         {
@@ -106,13 +106,13 @@
       ],
       "files": [
         {
-          "name": "camera-mlkit-vision-1.2.0-rc02.aar",
-          "url": "camera-mlkit-vision-1.2.0-rc02.aar",
-          "size": 7826,
-          "sha512": "8a64b1d5ce2076c895ace94d5fb5aa539c51efec32ceb5032095642e48d2816ebae62e71ca2446d7cf11c26c072228aaa0fed2fe704b218b6b318789d0ea5493",
-          "sha256": "1dee3a9b815120b9d0db59047a59fbd23c3eed7b47a732a4ca51128ffbaa9980",
-          "sha1": "a88886057b054f07592e94bc28fe32d9121ebf9b",
-          "md5": "9ef1e34f8ef281adf39fb34726605931"
+          "name": "camera-mlkit-vision-1.2.0.aar",
+          "url": "camera-mlkit-vision-1.2.0.aar",
+          "size": 7820,
+          "sha512": "6b8cbdcdf57877d12319f503a681a8feba895bd733bf08f752dce249b64c612c940682be799e894c75e0f6b0270d304520be6ada4a3bf0b46d374389766df33d",
+          "sha256": "35f7165a677cc9d46ee226794c0424893dbe7934d1cbde2254bf54ef8941402d",
+          "sha1": "f81c39f844d81128ef907b119032ea41f9c01d4b",
+          "md5": "5c94c06cc421f15f2bea5839ad503ac2"
         }
       ]
     },
@@ -126,8 +126,8 @@
       },
       "files": [
         {
-          "name": "camera-mlkit-vision-1.2.0-rc02-sources.jar",
-          "url": "camera-mlkit-vision-1.2.0-rc02-sources.jar",
+          "name": "camera-mlkit-vision-1.2.0-sources.jar",
+          "url": "camera-mlkit-vision-1.2.0-sources.jar",
           "size": 5446,
           "sha512": "762be0bafb03ad603ee3f7805066607c9b0963244e2219428161a5dde8b1c21b3f13c03366b90a21e9c65efc55cb907b08c27e18e4b378064be6caedd6b5aca3",
           "sha256": "49f229de7c0b08d986a578be20fa9f3b7cb03e962f3f51df6753fe3438e0267f",
