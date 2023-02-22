@@ -1,0 +1,34 @@
+From 503a8177810b72edaa13e0b4b20c054f90a5d96a Mon Sep 17 00:00:00 2001
+From: LuK1337 <priv.luk@gmail.com>
+Date: Wed, 22 Feb 2023 20:24:06 +0100
+Subject: [PATCH] Downgrade to Kotlin 1.7.21
+
+Change-Id: I513c93c42e7b2ceb17b6139c6ac33d7e686bf379
+---
+ gradle/libs.versions.toml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/gradle/libs.versions.toml b/gradle/libs.versions.toml
+index 4e54d42ddcf..f8e50e20328 100644
+--- a/gradle/libs.versions.toml
++++ b/gradle/libs.versions.toml
+@@ -36,13 +36,13 @@ guavaJre = "31.1-jre"
+ hilt = "2.44"
+ incap = "0.2"
+ jcodec = "0.2.5"
+-kotlin = "1.8.10"
++kotlin = "1.7.21"
+ kotlinBenchmark = "0.4.7"
+-kotlinNative = "1.8.10"
++kotlinNative = "1.7.21"
+ kotlinCompileTesting = "1.4.9"
+ kotlinCoroutines = "1.6.4"
+ kotlinSerialization = "1.3.3"
+-ksp = "1.8.10-1.0.9"
++ksp = "1.7.21-1.0.8"
+ ktlint = "0.46.0-20220520.192227-74"
+ leakcanary = "2.8.1"
+ media3 = "1.0.0-beta03"
+-- 
+2.39.2
+

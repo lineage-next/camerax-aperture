@@ -37,11 +37,12 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp ff35d3c81caf7392850e60f0410a04265fd95b80
+        git fetch aosp e29b9d5011a682544cb10226575971c514437eae
         git checkout FETCH_HEAD
-        git revert --no-edit ef5fb011e4da9afc82398065d079ef22b21d775d # Revert "Kotlin 1.8.0 Rebase"
-        git fetch aosp e789bdac7450f9741ef0061cb44d7994303479b5 && git cherry-pick FETCH_HEAD # Upgradle to 8.0-rc-2
+        git fetch aosp 65323ccc37c4a3a445668218b7809cb2e786ca1a && git cherry-pick FETCH_HEAD # Revert "AGP 8.1.0-alpha03"
+        git fetch aosp 65920d38393d6e820fde4c3ee13c44f6dcc80897 && git cherry-pick FETCH_HEAD # Upgrade to AGP 8.0.0-beta03
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
+        git am $GITHUB_WORKSPACE/patches/0001-Downgrade-to-Kotlin-1.7.21.patch
         popd
 
     - name: Remove .repo to save some space
