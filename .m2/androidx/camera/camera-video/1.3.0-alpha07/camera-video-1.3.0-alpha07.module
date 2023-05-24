@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-video",
+    "version": "1.3.0-alpha07",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.3.0-alpha07"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.3.0-alpha07.aar",
+          "url": "camera-video-1.3.0-alpha07.aar",
+          "size": 348520,
+          "sha512": "0b74c3ba2b1c546ee41015b6bb5be721c71c634731266932eeeecd25312613cffdcaa3e849d03dbae603288579c9849c14980f788d733176873b180120a0507c",
+          "sha256": "480c6dc681b9e8c862fed9351142c07e61ecda8d637246f7ec4345312ec78cf9",
+          "sha1": "6d577c5b14b237304f0cbb55d988ce4a101877be",
+          "md5": "b3357a2704fef46f2673b8af3189f4be"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.3.0-alpha07"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.3.0-alpha07.aar",
+          "url": "camera-video-1.3.0-alpha07.aar",
+          "size": 348520,
+          "sha512": "0b74c3ba2b1c546ee41015b6bb5be721c71c634731266932eeeecd25312613cffdcaa3e849d03dbae603288579c9849c14980f788d733176873b180120a0507c",
+          "sha256": "480c6dc681b9e8c862fed9351142c07e61ecda8d637246f7ec4345312ec78cf9",
+          "sha1": "6d577c5b14b237304f0cbb55d988ce4a101877be",
+          "md5": "b3357a2704fef46f2673b8af3189f4be"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-video-1.3.0-alpha07-sources.jar",
+          "url": "camera-video-1.3.0-alpha07-sources.jar",
+          "size": 252148,
+          "sha512": "cb5b20976cf97b51a950c415077645ac29398d00bc66ad6805014f5d88d43df3a390ce241daba8b6a57680096b95052f8aae50f14aef010f694c4ae8e8ca6640",
+          "sha256": "98cc795f7e432a545c7717aa6ca1a10988fb4b279c647fba0014af893a30c676",
+          "sha1": "7eb00c5409752e3316dfced6d74fb9a55337cb75",
+          "md5": "0e0577782d40a31ac4c577dd6e5c342b"
+        }
+      ]
+    }
+  ]
+}

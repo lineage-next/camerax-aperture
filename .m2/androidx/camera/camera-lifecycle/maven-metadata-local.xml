@@ -3,11 +3,11 @@
   <groupId>androidx.camera</groupId>
   <artifactId>camera-lifecycle</artifactId>
   <versioning>
-    <latest>1.3.0-alpha06</latest>
-    <release>1.3.0-alpha06</release>
+    <latest>1.3.0-alpha07</latest>
+    <release>1.3.0-alpha07</release>
     <versions>
-      <version>1.3.0-alpha06</version>
+      <version>1.3.0-alpha07</version>
     </versions>
-    <lastUpdated>20230425180255</lastUpdated>
+    <lastUpdated>20230524181230</lastUpdated>
   </versioning>
 </metadata>
