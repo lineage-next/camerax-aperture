@@ -43,6 +43,7 @@ jobs:
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-Downgrade-to-Kotlin-1.7.21.patch
+        git fetch aosp refs/changes/89/2621689/1 && git cherry-pick FETCH_HEAD # Move CameraController to ResolutionSelector
         popd
 
     - name: Remove .repo to save some space
