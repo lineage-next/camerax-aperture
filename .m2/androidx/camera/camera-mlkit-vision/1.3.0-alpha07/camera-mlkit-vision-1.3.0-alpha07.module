@@ -58,10 +58,10 @@
           "name": "camera-mlkit-vision-1.3.0-alpha07.aar",
           "url": "camera-mlkit-vision-1.3.0-alpha07.aar",
           "size": 7828,
-          "sha512": "afdb2db6583f220783c023e34d159418c2e5328b2f89e0408db8b00bf3977d1b3f688033ae933b9f82b5b289a616dbd52416321f6687e2c3b2bb58e8656eb149",
-          "sha256": "8100809fb1f0986a4d96e2d142ac692f285a5b2ac8be77dbfb37bbccccb27e4b",
-          "sha1": "b45dba02780a0e599441e77c7f3e59d98621e105",
-          "md5": "3168f9fd32b7bb351f1024567a07108d"
+          "sha512": "db9632be541b5f0ead9863600d5ed98e6b625ad7e9e00415229071106d3dfbcc29f0799c7962d985172f425131728c48c0e729dbaa907e6a947790ee7e0d3404",
+          "sha256": "4d6bf8692eebfa791cf1fb2fbe4e362a5d0151594c2bc71ce9040e03726ba074",
+          "sha1": "126a6ee901f00184b926ac612fcf676b7902bdc1",
+          "md5": "a135569b011630bcadd6ec997d454080"
         }
       ]
     },
@@ -109,10 +109,10 @@
           "name": "camera-mlkit-vision-1.3.0-alpha07.aar",
           "url": "camera-mlkit-vision-1.3.0-alpha07.aar",
           "size": 7828,
-          "sha512": "afdb2db6583f220783c023e34d159418c2e5328b2f89e0408db8b00bf3977d1b3f688033ae933b9f82b5b289a616dbd52416321f6687e2c3b2bb58e8656eb149",
-          "sha256": "8100809fb1f0986a4d96e2d142ac692f285a5b2ac8be77dbfb37bbccccb27e4b",
-          "sha1": "b45dba02780a0e599441e77c7f3e59d98621e105",
-          "md5": "3168f9fd32b7bb351f1024567a07108d"
+          "sha512": "db9632be541b5f0ead9863600d5ed98e6b625ad7e9e00415229071106d3dfbcc29f0799c7962d985172f425131728c48c0e729dbaa907e6a947790ee7e0d3404",
+          "sha256": "4d6bf8692eebfa791cf1fb2fbe4e362a5d0151594c2bc71ce9040e03726ba074",
+          "sha1": "126a6ee901f00184b926ac612fcf676b7902bdc1",
+          "md5": "a135569b011630bcadd6ec997d454080"
         }
       ]
     },

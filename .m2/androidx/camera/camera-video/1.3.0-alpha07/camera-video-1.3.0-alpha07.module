@@ -43,10 +43,10 @@
           "name": "camera-video-1.3.0-alpha07.aar",
           "url": "camera-video-1.3.0-alpha07.aar",
           "size": 348520,
-          "sha512": "0b74c3ba2b1c546ee41015b6bb5be721c71c634731266932eeeecd25312613cffdcaa3e849d03dbae603288579c9849c14980f788d733176873b180120a0507c",
-          "sha256": "480c6dc681b9e8c862fed9351142c07e61ecda8d637246f7ec4345312ec78cf9",
-          "sha1": "6d577c5b14b237304f0cbb55d988ce4a101877be",
-          "md5": "b3357a2704fef46f2673b8af3189f4be"
+          "sha512": "53c7c2c0a5df4e35e0013e9df80780a4147d93b0bcb06d968b5133ef9fc61a8d75b7135f2f5897cdb0598937b43bc001dd44e01fb0dce9774281c65c7771864e",
+          "sha256": "55b8f0beb7ef86933216a9470af4a04922c55b88cdf3b0fd25543c8aba38b5f0",
+          "sha1": "9e4910ddeee39173aee6b7d92edfef14187d5a63",
+          "md5": "2e93717eaa0a35b4c70716c70978ba93"
         }
       ]
     },
@@ -100,10 +100,10 @@
           "name": "camera-video-1.3.0-alpha07.aar",
           "url": "camera-video-1.3.0-alpha07.aar",
           "size": 348520,
-          "sha512": "0b74c3ba2b1c546ee41015b6bb5be721c71c634731266932eeeecd25312613cffdcaa3e849d03dbae603288579c9849c14980f788d733176873b180120a0507c",
-          "sha256": "480c6dc681b9e8c862fed9351142c07e61ecda8d637246f7ec4345312ec78cf9",
-          "sha1": "6d577c5b14b237304f0cbb55d988ce4a101877be",
-          "md5": "b3357a2704fef46f2673b8af3189f4be"
+          "sha512": "53c7c2c0a5df4e35e0013e9df80780a4147d93b0bcb06d968b5133ef9fc61a8d75b7135f2f5897cdb0598937b43bc001dd44e01fb0dce9774281c65c7771864e",
+          "sha256": "55b8f0beb7ef86933216a9470af4a04922c55b88cdf3b0fd25543c8aba38b5f0",
+          "sha1": "9e4910ddeee39173aee6b7d92edfef14187d5a63",
+          "md5": "2e93717eaa0a35b4c70716c70978ba93"
         }
       ]
     },

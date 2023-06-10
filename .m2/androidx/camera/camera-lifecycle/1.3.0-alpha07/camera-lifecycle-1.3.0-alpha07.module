@@ -50,10 +50,10 @@
           "name": "camera-lifecycle-1.3.0-alpha07.aar",
           "url": "camera-lifecycle-1.3.0-alpha07.aar",
           "size": 22418,
-          "sha512": "75e1ef8fdd8e26f71382050fe01965dfd0e0c75704e94a7d96a97c53e5c4d8a2453edfdab30d1eb5952873a45c56fb73cc3ede5e896fdd45d42126ca8d617a4f",
-          "sha256": "b1b454815675912419560a50b6a53e5c3fdbeece6476b39d54b56a54ee925520",
-          "sha1": "9b635d7f92ace2ded348c8ee4bbdbb1c26165fe2",
-          "md5": "1c139404661cf4990f0cfae9c6ef9bf6"
+          "sha512": "21ed14306270bc83fb831a4048bc2980f63b8f029d0774d296b3bcb5873a3fb3b7a797b2b69e3a94da4d4580968029ad7bdd86f494ff4c868687f1c201b2277c",
+          "sha256": "e4b37e08dcb58996bb2973fd2a5743f6c8ed585c935226f98bcf1883e63f41ec",
+          "sha1": "6accb3c56ccf2a491ea8229463b1a54dd5ead01b",
+          "md5": "d61a1efa4e9bec9badd7779dd4414478"
         }
       ]
     },
@@ -114,10 +114,10 @@
           "name": "camera-lifecycle-1.3.0-alpha07.aar",
           "url": "camera-lifecycle-1.3.0-alpha07.aar",
           "size": 22418,
-          "sha512": "75e1ef8fdd8e26f71382050fe01965dfd0e0c75704e94a7d96a97c53e5c4d8a2453edfdab30d1eb5952873a45c56fb73cc3ede5e896fdd45d42126ca8d617a4f",
-          "sha256": "b1b454815675912419560a50b6a53e5c3fdbeece6476b39d54b56a54ee925520",
-          "sha1": "9b635d7f92ace2ded348c8ee4bbdbb1c26165fe2",
-          "md5": "1c139404661cf4990f0cfae9c6ef9bf6"
+          "sha512": "21ed14306270bc83fb831a4048bc2980f63b8f029d0774d296b3bcb5873a3fb3b7a797b2b69e3a94da4d4580968029ad7bdd86f494ff4c868687f1c201b2277c",
+          "sha256": "e4b37e08dcb58996bb2973fd2a5743f6c8ed585c935226f98bcf1883e63f41ec",
+          "sha1": "6accb3c56ccf2a491ea8229463b1a54dd5ead01b",
+          "md5": "d61a1efa4e9bec9badd7779dd4414478"
         }
       ]
     },
