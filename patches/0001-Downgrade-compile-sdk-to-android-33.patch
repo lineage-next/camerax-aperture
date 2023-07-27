@@ -1,0 +1,42 @@
+From 273c314dd45de156ee2b822dcaad26a4d1d829d6 Mon Sep 17 00:00:00 2001
+From: LuK1337 <priv.luk@gmail.com>
+Date: Thu, 27 Jul 2023 14:11:00 +0200
+Subject: [PATCH] Downgrade compile sdk to android-33
+
+Change-Id: I6f17a8d6b3361ec17117f675a9fa8d090e149366
+---
+ gradle.properties                            | 4 ++--
+ playground-common/androidx-shared.properties | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/gradle.properties b/gradle.properties
+index 842f5363243..0d7419f08c6 100644
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -35,8 +35,8 @@ androidx.allowCustomCompileSdk=false
+ # Don't warn about needing to update AGP
+ android.suppressUnsupportedCompileSdk=UpsideDownCake,VanillaIceCream,33,34
+ 
+-androidx.compileSdkVersion=android-34
+-androidx.targetSdkVersion=34
++androidx.compileSdkVersion=android-33
++androidx.targetSdkVersion=33
+ 
+ # Disable features we do not use
+ android.defaults.buildfeatures.aidl=false
+diff --git a/playground-common/androidx-shared.properties b/playground-common/androidx-shared.properties
+index e4ec300221e..5f89a3cc1a6 100644
+--- a/playground-common/androidx-shared.properties
++++ b/playground-common/androidx-shared.properties
+@@ -44,7 +44,7 @@ android.experimental.lint.missingBaselineIsEmptyBaseline=true
+ # Generate versioned API files
+ androidx.writeVersionedApiFiles=true
+ 
+-androidx.compileSdkVersion=android-34
++androidx.compileSdkVersion=android-33
+ androidx.targetSdkVersion=34
+ 
+ # Disable features we do not use
+-- 
+2.41.0
+

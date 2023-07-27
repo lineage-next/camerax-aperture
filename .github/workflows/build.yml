@@ -43,11 +43,15 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp bef05e5a3f6d09babb620159f75c659bcc7df495
+        git fetch aosp a5d48fc5725f8aac203c2ae3bd24e0e53dafbd4d
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git am $GITHUB_WORKSPACE/patches/0001-Downgrade-to-Kotlin-1.7.21.patch
+        git am $GITHUB_WORKSPACE/patches/0001-Downgrade-compile-sdk-to-android-33.patch
         git fetch aosp refs/changes/89/2621689/1 && git cherry-pick FETCH_HEAD # Move CameraController to ResolutionSelector
+        popd
+        pushd prebuilts/fullsdk-linux/platforms
+        git fetch --unshallow
+        git checkout 9698c0ff01d4b3e24cab840903c06a282db785b3 android-33
         popd
 
     - name: Build
