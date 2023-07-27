@@ -35,6 +35,10 @@ jobs:
         repo init -u https://android.googlesource.com/platform/manifest -b androidx-main --depth=1
         repo sync -j16
 
+    - name: Remove .repo/project-objects/platform/prebuilts/androidx to save some space
+      working-directory: androidx-main
+      run: rm -rf .repo/project-objects/platform/prebuilts/androidx
+
     - name: Apply patches
       working-directory: androidx-main
       run: |
@@ -45,10 +49,6 @@ jobs:
         git am $GITHUB_WORKSPACE/patches/0001-Downgrade-to-Kotlin-1.7.21.patch
         git fetch aosp refs/changes/89/2621689/1 && git cherry-pick FETCH_HEAD # Move CameraController to ResolutionSelector
         popd
-
-    - name: Remove .repo to save some space
-      working-directory: androidx-main
-      run: rm -rf .repo
 
     - name: Build
       working-directory: androidx-main/frameworks/support
