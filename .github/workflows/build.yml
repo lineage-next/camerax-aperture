@@ -45,11 +45,12 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp a5d48fc5725f8aac203c2ae3bd24e0e53dafbd4d
+        git fetch aosp e2a76338ab0e3f3c8be9b898fbc326c5b0e16711
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-Downgrade-compile-sdk-to-android-33.patch
         git fetch aosp refs/changes/89/2621689/1 && git cherry-pick FETCH_HEAD # Move CameraController to ResolutionSelector
+        git fetch aosp androidx-main && git checkout FETCH_HEAD gradle/wrapper/gradle-wrapper.properties # Use gradle from androidx-main
         popd
         pushd prebuilts/fullsdk-linux/platforms
         git fetch --unshallow
