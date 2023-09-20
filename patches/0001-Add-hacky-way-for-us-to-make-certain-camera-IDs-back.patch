@@ -1,4 +1,4 @@
-From e2907a78b496e1158d3d8f8f91754972d7532861 Mon Sep 17 00:00:00 2001
+From ce647fd4237866f22fe2f4fc6e64be21302e7b4c Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Mon, 17 Oct 2022 19:03:07 +0200
 Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
@@ -10,7 +10,7 @@ Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
  1 file changed, 17 insertions(+)
 
 diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
-index 0f531be880e..d26063669b6 100644
+index 5027fef8090..c115c276945 100644
 --- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
 +++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
 @@ -19,6 +19,7 @@ package androidx.camera.camera2.internal;
@@ -29,15 +29,15 @@ index 0f531be880e..d26063669b6 100644
  import java.util.HashMap;
  import java.util.LinkedHashSet;
  import java.util.List;
-@@ -57,6 +59,7 @@ public final class Camera2CameraFactory implements CameraFactory {
+@@ -61,6 +63,7 @@ public final class Camera2CameraFactory implements CameraFactory {
      private final CameraStateRegistry mCameraStateRegistry;
      private final CameraManagerCompat mCameraManager;
      private final List<String> mAvailableCameraIds;
 +    private final List<String> mBackwardCompatibleCameraIds;
      private final DisplayInfoManager mDisplayInfoManager;
+     private final long mCameraOpenRetryMaxTimeoutInMs;
      private final Map<String, Camera2CameraInfoImpl> mCameraInfos = new HashMap<>();
- 
-@@ -68,6 +71,16 @@ public final class Camera2CameraFactory implements CameraFactory {
+@@ -75,6 +78,16 @@ public final class Camera2CameraFactory implements CameraFactory {
          mCameraManager = CameraManagerCompat.from(context, mThreadConfig.getSchedulerHandler());
          mDisplayInfoManager = DisplayInfoManager.getInstance(context);
  
@@ -54,7 +54,7 @@ index 0f531be880e..d26063669b6 100644
          List<String> optimizedCameraIds = CameraSelectionOptimizer.getSelectedAvailableCameraIds(
                  this, availableCamerasSelector);
          mAvailableCameraIds = getBackwardCompatibleCameraIds(optimizedCameraIds);
-@@ -156,6 +169,10 @@ public final class Camera2CameraFactory implements CameraFactory {
+@@ -165,6 +178,10 @@ public final class Camera2CameraFactory implements CameraFactory {
              return true;
          }
  
@@ -66,5 +66,5 @@ index 0f531be880e..d26063669b6 100644
  
          try {
 -- 
-2.40.0
+2.41.0
 
