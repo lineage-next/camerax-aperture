@@ -45,11 +45,10 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp fca6737d0d4b9dda7d8ea4168cf8c85771227653
+        git fetch aosp 354ebb67b2265fff0e9169750bcf7341d723a159
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-Downgrade-compile-sdk-to-android-33.patch
-        git fetch aosp 515c08fffd723fae917b164ca22dcc04142ef396 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 8.4 stable
         popd
         pushd prebuilts/fullsdk-linux/platforms
         git fetch --unshallow
