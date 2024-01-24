@@ -45,10 +45,11 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 354ebb67b2265fff0e9169750bcf7341d723a159
+        git fetch aosp cc8546da2e453883b157aa38bbd034b8ae5bbac8
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-Downgrade-compile-sdk-to-android-33.patch
+        sed -i "s/androidx.annotation:annotation-experimental:1.4.0/androidx.annotation:annotation-experimental:1.3.1/g" camera/**/*.gradle
         popd
         pushd prebuilts/fullsdk-linux/platforms
         git fetch --unshallow
