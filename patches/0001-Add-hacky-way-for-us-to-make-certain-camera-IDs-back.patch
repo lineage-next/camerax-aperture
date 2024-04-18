@@ -1,4 +1,4 @@
-From ce647fd4237866f22fe2f4fc6e64be21302e7b4c Mon Sep 17 00:00:00 2001
+From e80ba76597fe8bd06ce3042af20afd82d4dfc2e6 Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Mon, 17 Oct 2022 19:03:07 +0200
 Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
@@ -6,59 +6,44 @@ Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
 
 Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
 ---
- .../camera2/internal/Camera2CameraFactory.java  | 17 +++++++++++++++++
- 1 file changed, 17 insertions(+)
+ .../camera/camera2/internal/CameraIdUtil.java      | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
 
-diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
-index 5027fef8090..c115c276945 100644
---- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
-+++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/Camera2CameraFactory.java
-@@ -19,6 +19,7 @@ package androidx.camera.camera2.internal;
- import static android.hardware.camera2.CameraMetadata.REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE;
+diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
+index 8052ec897f0..6b2f09ad1bd 100644
+--- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
++++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
+@@ -29,16 +29,24 @@ import androidx.camera.camera2.internal.compat.CameraAccessExceptionCompat;
+ import androidx.camera.camera2.internal.compat.CameraManagerCompat;
+ import androidx.camera.core.InitializationException;
  
- import android.content.Context;
-+import android.content.res.Resources;
- import android.hardware.camera2.CameraCharacteristics;
- import android.os.Build;
- 
-@@ -39,6 +40,7 @@ import androidx.camera.core.impl.CameraStateRegistry;
- import androidx.camera.core.impl.CameraThreadConfig;
- 
- import java.util.ArrayList;
-+import java.util.Arrays;
- import java.util.HashMap;
- import java.util.LinkedHashSet;
- import java.util.List;
-@@ -61,6 +63,7 @@ public final class Camera2CameraFactory implements CameraFactory {
-     private final CameraStateRegistry mCameraStateRegistry;
-     private final CameraManagerCompat mCameraManager;
-     private final List<String> mAvailableCameraIds;
-+    private final List<String> mBackwardCompatibleCameraIds;
-     private final DisplayInfoManager mDisplayInfoManager;
-     private final long mCameraOpenRetryMaxTimeoutInMs;
-     private final Map<String, Camera2CameraInfoImpl> mCameraInfos = new HashMap<>();
-@@ -75,6 +78,16 @@ public final class Camera2CameraFactory implements CameraFactory {
-         mCameraManager = CameraManagerCompat.from(context, mThreadConfig.getSchedulerHandler());
-         mDisplayInfoManager = DisplayInfoManager.getInstance(context);
- 
-+        Resources resources = context.getResources();
-+        int backwardCompatibleCameraIds = resources.getIdentifier(
-+                "config_backwardCompatibleCameraIds", "array", context.getPackageName());
-+        if (backwardCompatibleCameraIds > 0) {
-+            mBackwardCompatibleCameraIds = Arrays.asList(
-+                    resources.getStringArray(backwardCompatibleCameraIds));
-+        } else {
-+            mBackwardCompatibleCameraIds = new ArrayList<>();
-+        }
++import java.util.ArrayList;
++import java.util.List;
 +
-         List<String> optimizedCameraIds = CameraSelectionOptimizer.getSelectedAvailableCameraIds(
-                 this, availableCamerasSelector);
-         mAvailableCameraIds = getBackwardCompatibleCameraIds(optimizedCameraIds);
-@@ -165,6 +178,10 @@ public final class Camera2CameraFactory implements CameraFactory {
+ /**
+  * Utility class to enumerate and filter camera ids.
+  */
+ @RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
+-@RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
+ public final class CameraIdUtil {
+ 
++    private static List<String> sBackwardCompatibleCameraIds = new ArrayList<String>();
++
+     private CameraIdUtil() {
+     }
+ 
++    public static void setBackwardCompatibleCameraIds(List<String> cameraIds) {
++        sBackwardCompatibleCameraIds = cameraIds;
++    }
++
+     /**
+      * Checks whether the camera has
+      * {@link CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE} or not.
+@@ -60,6 +68,10 @@ public final class CameraIdUtil {
              return true;
          }
  
-+        if (mBackwardCompatibleCameraIds.contains(cameraId)) {
++        if (sBackwardCompatibleCameraIds.contains(cameraId)) {
 +            return true;
 +        }
 +
@@ -66,5 +51,5 @@ index 5027fef8090..c115c276945 100644
  
          try {
 -- 
-2.41.0
+2.44.0
 
