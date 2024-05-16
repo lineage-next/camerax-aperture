@@ -62,6 +62,7 @@ jobs:
           camera:camera-lifecycle:publishToMavenLocal \
           camera:camera-video:publishToMavenLocal \
           camera:camera-view:publishToMavenLocal \
+          camera:camera-viewfinder:publishToMavenLocal \
           camera:camera-mlkit-vision:publishToMavenLocal \
           camera:camera-extensions:publishToMavenLocal
 
