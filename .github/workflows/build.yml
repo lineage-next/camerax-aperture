@@ -55,6 +55,7 @@ jobs:
       run: |
         rm -rf $GITHUB_WORKSPACE/.m2 || true
         ./gradlew \
+          -Dgradle.user.home=$GITHUB_WORKSPACE/.gradle \
           -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
           camera:camera-core:publishToMavenLocal \
           camera:camera-camera2:publishToMavenLocal \
