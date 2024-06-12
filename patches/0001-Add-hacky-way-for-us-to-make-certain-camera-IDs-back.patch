@@ -1,4 +1,4 @@
-From e80ba76597fe8bd06ce3042af20afd82d4dfc2e6 Mon Sep 17 00:00:00 2001
+From 7a392a7c01dbf2a8d134e3d322e9688bfc5ea164 Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Mon, 17 Oct 2022 19:03:07 +0200
 Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
@@ -10,10 +10,10 @@ Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
  1 file changed, 13 insertions(+), 1 deletion(-)
 
 diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-index 8052ec897f0..6b2f09ad1bd 100644
+index aeb2b49fee3..1cc77ad6f10 100644
 --- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
 +++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-@@ -29,16 +29,24 @@ import androidx.camera.camera2.internal.compat.CameraAccessExceptionCompat;
+@@ -28,15 +28,23 @@ import androidx.camera.camera2.internal.compat.CameraAccessExceptionCompat;
  import androidx.camera.camera2.internal.compat.CameraManagerCompat;
  import androidx.camera.core.InitializationException;
  
@@ -23,7 +23,6 @@ index 8052ec897f0..6b2f09ad1bd 100644
  /**
   * Utility class to enumerate and filter camera ids.
   */
- @RequiresApi(21) // TODO(b/200306659): Remove and replace with annotation on package-info.java
 -@RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
  public final class CameraIdUtil {
  
@@ -39,7 +38,7 @@ index 8052ec897f0..6b2f09ad1bd 100644
      /**
       * Checks whether the camera has
       * {@link CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE} or not.
-@@ -60,6 +68,10 @@ public final class CameraIdUtil {
+@@ -58,6 +66,10 @@ public final class CameraIdUtil {
              return true;
          }
  
@@ -51,5 +50,5 @@ index 8052ec897f0..6b2f09ad1bd 100644
  
          try {
 -- 
-2.44.0
+2.45.2
 
