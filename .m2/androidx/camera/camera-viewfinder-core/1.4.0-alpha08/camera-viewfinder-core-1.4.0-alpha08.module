@@ -1,0 +1,194 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-viewfinder-core",
+    "version": "1.4.0-alpha08",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.9"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-viewfinder-core-1.4.0-alpha08-sources.jar",
+          "url": "camera-viewfinder-core-1.4.0-alpha08-sources.jar",
+          "size": 46506,
+          "sha512": "e70ad11d9ba4f63cae90871b4311d69a4a453526747e9e20d26bac8fb64e3d6d2a834ecde1cd7f4cdbb203768ce4d4397b453065ec3d04267150ad0aeacba50c",
+          "sha256": "0747c11177282d630245834eac8d2a235e1b544a4e817181520c261dd6f91f88",
+          "sha1": "71748bbdc91aef6f685aca58875a4a40bc843d25",
+          "md5": "82393591d92822cacb56dfcb28352f37"
+        },
+        {
+          "name": "camera-viewfinder-core-1.4.0-alpha08-samples-sources.jar",
+          "url": "camera-viewfinder-core-1.4.0-alpha08-samples-sources.jar",
+          "size": 6222,
+          "sha512": "04a5a889c158140181cfd5b192227c501407fb075e7691645b2da078c12dcd802cbd8d477966a2f2074362f9e99c6cdbc84004a7157b3b86da04b20e206db1d6",
+          "sha256": "81cb9c03e0cddc3dc810586ef3535728f46c22928e98c5b976eda1d7bca114be",
+          "sha1": "b8e89c45536cfd469ea44491fb8f81fc0c78b0b7",
+          "md5": "e1cc1f72cc43cf4b452ab810529b28a8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-viewfinder-core-1.4.0-alpha08.aar",
+          "url": "camera-viewfinder-core-1.4.0-alpha08.aar",
+          "size": 89035,
+          "sha512": "511ef47e56c275f773f812a0ad17cc6ca9b49ba2c0873ff13440ed31447969f990c4b8e39534a0627367afad708bf8eba064090e2f3cef4ae92cb93be4b6bab9",
+          "sha256": "8ad951d3744db9fd95721e04ae7f453e4618b18bf99c6d596c120bed8609a499",
+          "sha1": "2d84b005f6b4ce381e81563e60a532081bf397c8",
+          "md5": "9e486efdfd4923f2d3a38fb400aa27e3"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation-experimental",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures-ktx",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-idling-resource",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-viewfinder-core-1.4.0-alpha08.aar",
+          "url": "camera-viewfinder-core-1.4.0-alpha08.aar",
+          "size": 89035,
+          "sha512": "511ef47e56c275f773f812a0ad17cc6ca9b49ba2c0873ff13440ed31447969f990c4b8e39534a0627367afad708bf8eba064090e2f3cef4ae92cb93be4b6bab9",
+          "sha256": "8ad951d3744db9fd95721e04ae7f453e4618b18bf99c6d596c120bed8609a499",
+          "sha1": "2d84b005f6b4ce381e81563e60a532081bf397c8",
+          "md5": "9e486efdfd4923f2d3a38fb400aa27e3"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-viewfinder-core-1.4.0-alpha08-versionMetadata.json",
+          "url": "camera-viewfinder-core-1.4.0-alpha08-versionMetadata.json",
+          "size": 6863,
+          "sha512": "7a89e751a67eabb1e0a9daa1dfebc8e68d68149d0b2e239e26eec14df4c54ba091e70548ba37819e86cebf9d485d64737e7703b788d974e13c884cbaceca03cc",
+          "sha256": "18a4b321759d6f2d8bc044a70a8bd80919b0b66f7ff4e9a092273efc53ae9e0c",
+          "sha1": "3a48eef32c798228ca5c0ef8f08309fc59e82e1e",
+          "md5": "dcc61d56d46f756f54afc633c7e7a3a6"
+        }
+      ]
+    }
+  ]
+}
