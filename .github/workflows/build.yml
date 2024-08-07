@@ -45,10 +45,11 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 97ce0972adadb34722870dfe4d0a6bb0540d13e7
+        git fetch aosp 95c324b1e196c9c30883678f411faafdf32f2a63
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git fetch aosp 9f03521e12598194d8163a9dae306e426a34c073 && git cherry-pick FETCH_HEAD # Upgradle to 8.8 stable
+        git fetch aosp 640c136bbe31fd6b6ecb54a70736f1e1cfe088b4 && git cherry-pick FETCH_HEAD # [ndk] Upgrade repository to NDK r27
+        sed -i 's/35.0.0-rc1/35.0.0/' buildSrc/public/src/main/kotlin/androidx/build/AndroidXConfig.kt
         popd
 
     - name: Build
@@ -63,6 +64,7 @@ jobs:
           camera:camera-lifecycle:publishToMavenLocal \
           camera:camera-video:publishToMavenLocal \
           camera:camera-view:publishToMavenLocal \
+          camera:camera-viewfinder-core:publishToMavenLocal \
           camera:camera-viewfinder:publishToMavenLocal \
           camera:camera-mlkit-vision:publishToMavenLocal \
           camera:camera-extensions:publishToMavenLocal
