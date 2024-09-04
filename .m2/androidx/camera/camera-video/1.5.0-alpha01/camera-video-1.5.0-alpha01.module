@@ -1,0 +1,150 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-video",
+    "version": "1.5.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-video-1.5.0-alpha01-sources.jar",
+          "url": "camera-video-1.5.0-alpha01-sources.jar",
+          "size": 283690,
+          "sha512": "1085bb878e07e486b14a53018ced786ee26fb78da9d3a71bd717f61ee1ce905fca16dbdbaaba017d4074520b68e2bc10e0c54d0aa3b9153bcb509450a6865618",
+          "sha256": "9743efbbfde776fa27e749d465c37338078d88a34836e6497253d3cd05f3d6e6",
+          "sha1": "1f9f04cb4dcb93f534518e59009e7ed74fc2c43c",
+          "md5": "7c4ada9816a331bcd8b9c20c9c6ef995"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.5.0-alpha01.aar",
+          "url": "camera-video-1.5.0-alpha01.aar",
+          "size": 411302,
+          "sha512": "90c35a34b162091b0f529c528c40e0d4c87b3c786d99bf77b35f327423f73568dacdca4bfaf3bd1d6b05b1942182aec498acaf3675c2b76c29c101078e08ec6c",
+          "sha256": "c8744b71b6bbf3031e6f0ea53b178097036444195f541cb4b4a06c0fb3b3df54",
+          "sha1": "95dcfcd6e6bcc59d8684b6049481aa686900e714",
+          "md5": "29b15be6778f244a23b748f01a55e1f1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.5.0-alpha01.aar",
+          "url": "camera-video-1.5.0-alpha01.aar",
+          "size": 411302,
+          "sha512": "90c35a34b162091b0f529c528c40e0d4c87b3c786d99bf77b35f327423f73568dacdca4bfaf3bd1d6b05b1942182aec498acaf3675c2b76c29c101078e08ec6c",
+          "sha256": "c8744b71b6bbf3031e6f0ea53b178097036444195f541cb4b4a06c0fb3b3df54",
+          "sha1": "95dcfcd6e6bcc59d8684b6049481aa686900e714",
+          "md5": "29b15be6778f244a23b748f01a55e1f1"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-video-1.5.0-alpha01-versionMetadata.json",
+          "url": "camera-video-1.5.0-alpha01-versionMetadata.json",
+          "size": 10644,
+          "sha512": "109ace36f5de4b554a1106e749b2a3e1a82a76e61e64639e838591332478cd61a8102a1f7e038cc9706207dcc201b075e22e50a3560f787becb3c7ed3f4489ae",
+          "sha256": "49db3cf94a5504ed4564beb8e6ce55cbced9c0ae3efc3a3d6df81714029ff7af",
+          "sha1": "aed2975c554343d20e184abe25dd9a01e6346bee",
+          "md5": "9557ed0a93a8cf8bedc4f6bfa207eeed"
+        }
+      ]
+    }
+  ]
+}

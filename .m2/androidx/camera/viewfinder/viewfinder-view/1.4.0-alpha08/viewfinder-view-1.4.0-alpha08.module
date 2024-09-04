@@ -1,0 +1,199 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.viewfinder",
+    "module": "viewfinder-view",
+    "version": "1.4.0-alpha08",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "viewfinder-view-1.4.0-alpha08-sources.jar",
+          "url": "viewfinder-view-1.4.0-alpha08-sources.jar",
+          "size": 47102,
+          "sha512": "adebf3cce3cdc14ab5e81d327d5e29afcd8d8f631eb8452d6e359defc81c76fff10a5f71bb127c7e522d167899ece86e980eeb66673e13348d0d861d8d4431e0",
+          "sha256": "d7a371892519c936141fc24cc456300d9f622d88df7ee09c600efdbce219d85d",
+          "sha1": "42d872b573d7f4a5a4d9e0f7b15e58dcebd52d5b",
+          "md5": "e3ce0a26fe8d693e0ca95800ce85912f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha08"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.4.0-alpha08.aar",
+          "url": "viewfinder-view-1.4.0-alpha08.aar",
+          "size": 59675,
+          "sha512": "6da956009663864dd25ac1154fc0ba8404e800a75975cc22c157c00dfeb75e5c23c9889d6a697f4ad4af43d3771a165d10acc7412deb3e060ab752efaf26c566",
+          "sha256": "9de3dab7c4123be8611d9f38b6588336327d1331a08926594ae1d693cda6c35e",
+          "sha1": "1b311e32ad64a67c1a976419af5ac441b269c09f",
+          "md5": "b32c0a98b68049f9f32607a1bd51a88a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation-experimental",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha08"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures-ktx",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-idling-resource",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.4.0-alpha08.aar",
+          "url": "viewfinder-view-1.4.0-alpha08.aar",
+          "size": 59675,
+          "sha512": "6da956009663864dd25ac1154fc0ba8404e800a75975cc22c157c00dfeb75e5c23c9889d6a697f4ad4af43d3771a165d10acc7412deb3e060ab752efaf26c566",
+          "sha256": "9de3dab7c4123be8611d9f38b6588336327d1331a08926594ae1d693cda6c35e",
+          "sha1": "1b311e32ad64a67c1a976419af5ac441b269c09f",
+          "md5": "b32c0a98b68049f9f32607a1bd51a88a"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "viewfinder-view-1.4.0-alpha08-versionMetadata.json",
+          "url": "viewfinder-view-1.4.0-alpha08-versionMetadata.json",
+          "size": 4588,
+          "sha512": "e49fe1321e0c816b2ec976f26b16be513d5e72bd80f5615e577333069ccf329924ff36f12168edc1a1104f49a605897a670a646c1c152f64d865fbd2daaa0e2b",
+          "sha256": "4b9eedad0a555b5f24241956b614eb760622db5c94fd9612a9f219f2ea1c2982",
+          "sha1": "29fdcb473ee61bd79c321e142823311936d5e865",
+          "md5": "0612eb68971165d02167cbe518707dce"
+        }
+      ]
+    }
+  ]
+}

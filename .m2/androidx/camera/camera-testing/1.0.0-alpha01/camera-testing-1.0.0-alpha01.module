@@ -1,0 +1,241 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-testing",
+    "version": "1.0.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-testing-1.0.0-alpha01-sources.jar",
+          "url": "camera-testing-1.0.0-alpha01-sources.jar",
+          "size": 159180,
+          "sha512": "03d1577bb27d889da9e33452748377d2a404caf6471dcc65be9e7f11f6b2a7396dbac2b3dc3ad543dfd8abdcd1898b3480d5fa6ed92b4a687d207cb2d6e38a0d",
+          "sha256": "5fa1ff95cb63cd8343b03559419efbbe81a28d7b6c3697391e5a981462d02628",
+          "sha1": "84cb54a9803ac2517184e012d86ed429900213c8",
+          "md5": "ba60a5d4b8daa1b48b4b0c7cd5712287"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-testing-1.0.0-alpha01.aar",
+          "url": "camera-testing-1.0.0-alpha01.aar",
+          "size": 347659,
+          "sha512": "419c3f0066b9d1b99d1cff0f8bd179ded2bec6580c85d0b26382b1d9783ef9b991cdc2c1444334e05352ac76fdab8292df87bc8ddb4611e182870f13a055d36d",
+          "sha256": "25e6ca8ab3a8131c1d17f46fa9542d3e2b19ea625687782a7901e0ce7299a36a",
+          "sha1": "1e1b5e6a00bcaedf7c4b300e18670e601a786130",
+          "md5": "a951f6a5d1408a110d0bf4caae57a041"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "rules",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.5.2"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-core",
+          "version": {
+            "requires": "3.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-idling-resource",
+          "version": {
+            "requires": "3.5.0"
+          }
+        },
+        {
+          "group": "androidx.test.uiautomator",
+          "module": "uiautomator",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "com.google.truth",
+          "module": "truth",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-testing-1.0.0-alpha01.aar",
+          "url": "camera-testing-1.0.0-alpha01.aar",
+          "size": 347659,
+          "sha512": "419c3f0066b9d1b99d1cff0f8bd179ded2bec6580c85d0b26382b1d9783ef9b991cdc2c1444334e05352ac76fdab8292df87bc8ddb4611e182870f13a055d36d",
+          "sha256": "25e6ca8ab3a8131c1d17f46fa9542d3e2b19ea625687782a7901e0ce7299a36a",
+          "sha1": "1e1b5e6a00bcaedf7c4b300e18670e601a786130",
+          "md5": "a951f6a5d1408a110d0bf4caae57a041"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-testing-1.0.0-alpha01-versionMetadata.json",
+          "url": "camera-testing-1.0.0-alpha01-versionMetadata.json",
+          "size": 8743,
+          "sha512": "acfcf903af5e82b820c36df166d34d4732aae5a32d7d00cb37d42fe674cfbbb1ccbd14a59387bb49948ca8002821b904a86fc7cb2e1f1cb68da07d0452cfa275",
+          "sha256": "d6962c7b5389d9bf30b3626210605f57638326cab7e49d769dfcfe87bbc1a404",
+          "sha1": "97b3dca59e428f544ae43ec8fb1cbc62b6b56156",
+          "md5": "b112b43c29fb35a20a3a542deec81d92"
+        }
+      ]
+    }
+  ]
+}
