@@ -45,11 +45,9 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 95c324b1e196c9c30883678f411faafdf32f2a63
+        git fetch aosp 445fd4cb2234969b1622d272e143642886cf13eb
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git fetch aosp 640c136bbe31fd6b6ecb54a70736f1e1cfe088b4 && git cherry-pick FETCH_HEAD # [ndk] Upgrade repository to NDK r27
-        sed -i 's/35.0.0-rc1/35.0.0/' buildSrc/public/src/main/kotlin/androidx/build/AndroidXConfig.kt
         popd
 
     - name: Build
@@ -59,15 +57,8 @@ jobs:
         ./gradlew \
           -Dgradle.user.home=$GITHUB_WORKSPACE/.gradle \
           -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
-          camera:camera-core:publishToMavenLocal \
-          camera:camera-camera2:publishToMavenLocal \
-          camera:camera-lifecycle:publishToMavenLocal \
-          camera:camera-video:publishToMavenLocal \
-          camera:camera-view:publishToMavenLocal \
-          camera:camera-viewfinder-core:publishToMavenLocal \
-          camera:camera-viewfinder:publishToMavenLocal \
-          camera:camera-mlkit-vision:publishToMavenLocal \
-          camera:camera-extensions:publishToMavenLocal
+          --project-dir=camera \
+          publishToMavenLocal
 
     - name: Commit changes
       run: |
