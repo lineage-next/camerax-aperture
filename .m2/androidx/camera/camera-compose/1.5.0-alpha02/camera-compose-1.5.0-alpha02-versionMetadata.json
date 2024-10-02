@@ -1,0 +1,1 @@
+[{"class":"androidx.camera.compose.CameraXViewfinderKt","addedIn":"1.5.0-alpha02","methods":[{"method":"CameraXViewfinder(androidx.camera.core.SurfaceRequest,androidx.compose.ui.Modifier,androidx.camera.viewfinder.surface.ImplementationMode,androidx.camera.viewfinder.compose.MutableCoordinateTransformer)","addedIn":"1.5.0-alpha02"}],"fields":[]}]

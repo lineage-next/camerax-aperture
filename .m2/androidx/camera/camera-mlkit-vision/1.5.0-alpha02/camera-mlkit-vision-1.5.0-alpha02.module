@@ -1,0 +1,159 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-mlkit-vision",
+    "version": "1.5.0-alpha02",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha02-sources.jar",
+          "url": "camera-mlkit-vision-1.5.0-alpha02-sources.jar",
+          "size": 9852,
+          "sha512": "dc6eff0c7b2432a996f0750918c0b1c3cd6d09a9bac51cf4b0a7e89fb53767f6af0d10da5ce1f4884e0b8aa3f33e00bc1e6f57b2754eadd1db3ae4a517b91ce6",
+          "sha256": "eea137db7fe6b1e6121d50ff78ff3b1620cc6f67da9248570ecfc9b42f6893b1",
+          "sha1": "61b0a315c15ea5aa12b05a771bad48cd3c3206f8",
+          "md5": "7a2afbf181047a6e6d6ef4a0bbc6cb0c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha02"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha02"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "vision-interfaces",
+          "version": {
+            "requires": "16.0.0",
+            "prefers": "16.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha02.aar",
+          "url": "camera-mlkit-vision-1.5.0-alpha02.aar",
+          "size": 11719,
+          "sha512": "8f1bb038ddbf586ab0883be3249233ab82770021248abf0055e993e9306296eaa0c1d74dcf51196babdfe1374aa888cd8e2987328ce3d9ecaae19debdff5205b",
+          "sha256": "34b7ec4b74ca24eca6158ac532a4eee8365f1564f30f152d2efd2156038b608c",
+          "sha1": "09d652afc39f0a9e2701bfe53289dc891ab40a03",
+          "md5": "3671e23eec088eae8b25506b73e47552"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha02"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha02"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "vision-interfaces",
+          "version": {
+            "requires": "16.0.0",
+            "prefers": "16.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha02.aar",
+          "url": "camera-mlkit-vision-1.5.0-alpha02.aar",
+          "size": 11719,
+          "sha512": "8f1bb038ddbf586ab0883be3249233ab82770021248abf0055e993e9306296eaa0c1d74dcf51196babdfe1374aa888cd8e2987328ce3d9ecaae19debdff5205b",
+          "sha256": "34b7ec4b74ca24eca6158ac532a4eee8365f1564f30f152d2efd2156038b608c",
+          "sha1": "09d652afc39f0a9e2701bfe53289dc891ab40a03",
+          "md5": "3671e23eec088eae8b25506b73e47552"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha02-versionMetadata.json",
+          "url": "camera-mlkit-vision-1.5.0-alpha02-versionMetadata.json",
+          "size": 1182,
+          "sha512": "58e5af44d70886b77d5503d645caa6a0453e2e196f2480d82684c5af82535536db50c09a0e50d399640bf7d688deb6411cd8bd68e8adfb451922c8c46af8083b",
+          "sha256": "65b5709f3e6ed237bb46a2d457db40597931dafb2e80fa3ac1fbe0ebbff08f31",
+          "sha1": "b089cdd921f3d736975d60a5226506755537282d",
+          "md5": "1e8bd038e0fbdec30edba84a46c3abbe"
+        }
+      ]
+    }
+  ]
+}

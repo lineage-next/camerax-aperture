@@ -49,14 +49,21 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.5.0-alpha01]</version>
+      <version>[1.5.0-alpha02]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-lifecycle</artifactId>
+      <version>[1.5.0-alpha02]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.5.0-alpha01]</version>
+      <version>[1.5.0-alpha02]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -130,6 +137,12 @@
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
       <version>1.8.22</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>atomicfu</artifactId>
+      <version>0.17.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
