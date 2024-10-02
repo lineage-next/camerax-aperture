@@ -45,7 +45,7 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 445fd4cb2234969b1622d272e143642886cf13eb
+        git fetch aosp c5333e2c7d785dd314479d930f3927d8ea9b7bcf
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         popd
