@@ -45,9 +45,10 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp c5333e2c7d785dd314479d930f3927d8ea9b7bcf
+        git fetch aosp fd1d1e576a596e4748da989ef803d52d4e2e772b
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
+        git fetch aosp cb4cea2dd85b8501c9f5e78549f9548fff466117 && git cherry-pick FETCH_HEAD # Upgrade gcp build cache and develocity plugins
         popd
 
     - name: Build
