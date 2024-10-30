@@ -37,7 +37,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.5.0-alpha02]</version>
+      <version>[1.5.0-alpha03]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>

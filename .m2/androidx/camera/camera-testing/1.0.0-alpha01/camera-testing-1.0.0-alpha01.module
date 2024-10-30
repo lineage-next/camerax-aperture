@@ -26,11 +26,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-testing-1.0.0-alpha01-sources.jar",
-          "size": 173806,
-          "sha512": "d5b68ba4dc600743dee3fba6a4bb79c91ce367bffc1841f436640a70d1bcc8f8903f9776df05cc742df3cfff625e8671e9c7d2b5a6490b8a2db2e1160ef134af",
-          "sha256": "1f0f29bd513afdc7a8a3f5424187ca3379f6fc1e3d7edd22a7cedb2711682325",
-          "sha1": "82c61a616a6fe0032c5c16652809b2b4733e433d",
-          "md5": "8eb175edd9b7b64f2ae48a375ee02191"
+          "size": 174590,
+          "sha512": "dbade8d3f3d0dbc3e02890db09342c0666932aa9b3857eebc4b8d848bc9ff563ae9159aee4d3da61ab25d6fcd3f34a1636f9ee8337dcf1b2fbe03fb26f889c85",
+          "sha256": "720643d666ce3f960857b56aecb4124c8114dc24d83e7775022c176567f9c9fc",
+          "sha1": "eabba44cbaecbf73d2444942fb2b7ecaf9aa7bbd",
+          "md5": "93a4f3deae31c9a36fdd135ccaae1273"
         }
       ]
     },
@@ -54,21 +54,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         }
       ],
@@ -76,11 +76,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 399934,
-          "sha512": "5ff1c80ec9423137882f0fd43aa9a685509a98afd31f953ce856287a5b4dfdcd3f9b7d6a370c68f26bcf397d5cceca01eb22a47ab1ca61c3ea4842fb77f8654d",
-          "sha256": "327907436ef39a13ceca7855964ff04335898eea4b543e85af2bcf0df091ffae",
-          "sha1": "d0add5147feb37e6b1ac1a879cf806393000d40f",
-          "md5": "962e5759fa905b8196f8668b48deb0b7"
+          "size": 399324,
+          "sha512": "1f2449bc7c954c00f1659c042dfeb6b1e35fe2b4dae44b8f3f59c9de082724cb3d7f21c5b937047a2d065144aba598e198fe5c1842559747fe9c7906d1d54ef3",
+          "sha256": "6b6c42cea8b50e8cdd5e33b64d84072ac2ce2497e466af2c9662987c5848387c",
+          "sha1": "dcb19f3e2b46312db3df56a37f98e6624de0789b",
+          "md5": "8cb9a3b1d9b3aedc7894e6828dd3d997"
         }
       ]
     },
@@ -109,23 +109,30 @@
         },
         {
           "group": "androidx.camera",
+          "module": "camera-camera2-pipe-integration",
+          "version": {
+            "requires": "1.0.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-alpha02"
+            "requires": "1.5.0-alpha03"
           }
         },
         {
@@ -231,11 +238,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 399934,
-          "sha512": "5ff1c80ec9423137882f0fd43aa9a685509a98afd31f953ce856287a5b4dfdcd3f9b7d6a370c68f26bcf397d5cceca01eb22a47ab1ca61c3ea4842fb77f8654d",
-          "sha256": "327907436ef39a13ceca7855964ff04335898eea4b543e85af2bcf0df091ffae",
-          "sha1": "d0add5147feb37e6b1ac1a879cf806393000d40f",
-          "md5": "962e5759fa905b8196f8668b48deb0b7"
+          "size": 399324,
+          "sha512": "1f2449bc7c954c00f1659c042dfeb6b1e35fe2b4dae44b8f3f59c9de082724cb3d7f21c5b937047a2d065144aba598e198fe5c1842559747fe9c7906d1d54ef3",
+          "sha256": "6b6c42cea8b50e8cdd5e33b64d84072ac2ce2497e466af2c9662987c5848387c",
+          "sha1": "dcb19f3e2b46312db3df56a37f98e6624de0789b",
+          "md5": "8cb9a3b1d9b3aedc7894e6828dd3d997"
         }
       ]
     },

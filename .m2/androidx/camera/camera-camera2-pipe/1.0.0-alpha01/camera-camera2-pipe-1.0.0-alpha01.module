@@ -26,11 +26,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-1.0.0-alpha01-sources.jar",
-          "size": 266698,
-          "sha512": "5a5582cc8bd48fa4d6a780840a6364afcada08bfcd0811e69fdb956c049e3137b9778ad3eea21f0e6fc592c51b4634469ed35d0de886923a23246a533148ea93",
-          "sha256": "c57e9223e637d00539484923c0325e6c4c1459134f1f3064c8d331e04abe8b2e",
-          "sha1": "6538b6609753bd6a427ca9cdea84177224d627c8",
-          "md5": "24ebbd7c9e031440a53af52595255fae"
+          "size": 270223,
+          "sha512": "b07dec86327438ba5fc3918ebae2260261de159c6e018eb4e062efd31c300f06a46b6726606acf661c67ca59f6dae79983e75f932f1c2657ac20bc1a22a84930",
+          "sha256": "7d428ea71548208a2fc1791e910afd9e683e44d58b6627719f2aaec9d95be7a3",
+          "sha1": "3b5fe7aa54f42dff78d3318f11f1ac3a1eaaf4d8",
+          "md5": "66816f38ec59534908a80585e6f7a8b9"
         }
       ]
     },
@@ -69,11 +69,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1204174,
-          "sha512": "dc781ac4c7077d180936040057531d9052960b785ddd2d26280f8d2ec0fea2a4d2ba8592364c88947fac5d157f2644a15ca74cd1d1be0393bf44218228d28aa0",
-          "sha256": "20c92ad8263db3ca13184f92ab5d167e311fe0dc76bc29acb5af48c4b6e307d4",
-          "sha1": "12e6719861be615808cfd0a0dc3f153d9d7c17dd",
-          "md5": "06f5f54961dbf958b3d3a108bebc6f24"
+          "size": 1224080,
+          "sha512": "b021e14bed5d3712568754c198beb5aada165a501f1e9e5522651962b018f025c75c76e2a0a3140f5deca952b7b81d4698f94fac7325c7722cd64dce704465be",
+          "sha256": "363c4f6b996b64e81e70247a4fae4fec653e1a7b50db266c70ab38488d8cf52e",
+          "sha1": "2504fb94d272dfafeaa562219b140fc326546f60",
+          "md5": "8b00cfce2054b8615acb88b3739ac0ce"
         }
       ]
     },
@@ -126,11 +126,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1204174,
-          "sha512": "dc781ac4c7077d180936040057531d9052960b785ddd2d26280f8d2ec0fea2a4d2ba8592364c88947fac5d157f2644a15ca74cd1d1be0393bf44218228d28aa0",
-          "sha256": "20c92ad8263db3ca13184f92ab5d167e311fe0dc76bc29acb5af48c4b6e307d4",
-          "sha1": "12e6719861be615808cfd0a0dc3f153d9d7c17dd",
-          "md5": "06f5f54961dbf958b3d3a108bebc6f24"
+          "size": 1224080,
+          "sha512": "b021e14bed5d3712568754c198beb5aada165a501f1e9e5522651962b018f025c75c76e2a0a3140f5deca952b7b81d4698f94fac7325c7722cd64dce704465be",
+          "sha256": "363c4f6b996b64e81e70247a4fae4fec653e1a7b50db266c70ab38488d8cf52e",
+          "sha1": "2504fb94d272dfafeaa562219b140fc326546f60",
+          "md5": "8b00cfce2054b8615acb88b3739ac0ce"
         }
       ]
     },

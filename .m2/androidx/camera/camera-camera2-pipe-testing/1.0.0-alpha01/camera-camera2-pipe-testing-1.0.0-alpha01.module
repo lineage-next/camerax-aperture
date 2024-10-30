@@ -26,11 +26,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
-          "size": 39544,
-          "sha512": "cbc0d7662ea06169dc168b96bc248ad2b192471460b1aeb12025366fb790085a97495f06a812894365b7a8a7c77e50cc2ab12716f6e077dd09d89a2047433627",
-          "sha256": "6cda1a6234f817b80836f33cd25a59a13381fb1f55fcbb09373eea69ee25c35f",
-          "sha1": "536b5013b0de7d8aa4964aa0b2bb08e48ef6a39b",
-          "md5": "0d0c782f96a0370ddec8dd318f014d74"
+          "size": 39548,
+          "sha512": "4588b220a2c1950bf2b6e51f3679ae1396b6db70f9b399ad3ec9c4c163a10f8fd083ffe63395d58f5e7cd8d16bcc4f5962046a6802bfeb226b321eb10758178a",
+          "sha256": "903b5074a205bfc823df758f3637a1d90b5ef1ba851acee89bfb2a71c5a3214b",
+          "sha1": "fa70c1025a439f446b6b10f4c05c6ed690225e0b",
+          "md5": "b8a70dbda8008542dfb7a4fd3e6d042b"
         }
       ]
     },
@@ -55,11 +55,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 145738,
-          "sha512": "f541c0dffdb507081daa4ac56e9f468892433369ace901bcc571003c06eba812bcbd9c49c89560359be59ec5396434517a574a72a0cff39211aff636dd1bfb0d",
-          "sha256": "74cac3e761ba30ac228ddfa1ca0d9b45b68e52cb7b25c034f92320a0654b1273",
-          "sha1": "b9c472f63d372a32600b50a9425661b739b303d1",
-          "md5": "6766080d6db47b4464227a1a0f8bcadf"
+          "size": 145823,
+          "sha512": "5053c470c177385ec0f51e3927f33555eb2b1030767facb14fb97456b6330e7a13b96e84aaf1f5b607362231cfd46d32f812ae3d472fe85b62cb8f379c4a4fb9",
+          "sha256": "f43dd377da74ae322346e77c4f3746b3ae9db3c2ce3793c41dbcb438fb3f543d",
+          "sha1": "ac5a94fe9cd3d4718b85985f0ff7283e68309d1b",
+          "md5": "27da59ee5bb7dc8b8c271efd534bc6cc"
         }
       ]
     },
@@ -119,11 +119,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 145738,
-          "sha512": "f541c0dffdb507081daa4ac56e9f468892433369ace901bcc571003c06eba812bcbd9c49c89560359be59ec5396434517a574a72a0cff39211aff636dd1bfb0d",
-          "sha256": "74cac3e761ba30ac228ddfa1ca0d9b45b68e52cb7b25c034f92320a0654b1273",
-          "sha1": "b9c472f63d372a32600b50a9425661b739b303d1",
-          "md5": "6766080d6db47b4464227a1a0f8bcadf"
+          "size": 145823,
+          "sha512": "5053c470c177385ec0f51e3927f33555eb2b1030767facb14fb97456b6330e7a13b96e84aaf1f5b607362231cfd46d32f812ae3d472fe85b62cb8f379c4a4fb9",
+          "sha256": "f43dd377da74ae322346e77c4f3746b3ae9db3c2ce3793c41dbcb438fb3f543d",
+          "sha1": "ac5a94fe9cd3d4718b85985f0ff7283e68309d1b",
+          "md5": "27da59ee5bb7dc8b8c271efd534bc6cc"
         }
       ]
     },

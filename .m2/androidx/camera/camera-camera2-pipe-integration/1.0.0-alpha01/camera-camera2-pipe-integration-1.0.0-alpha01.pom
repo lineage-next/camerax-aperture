@@ -41,47 +41,9 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-camera2-pipe</artifactId>
-      <version>[1.0.0-alpha01]</version>
-      <scope>runtime</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-core</artifactId>
-      <version>[1.5.0-alpha02]</version>
-      <scope>compile</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.concurrent</groupId>
-      <artifactId>concurrent-futures-ktx</artifactId>
-      <version>1.3.0-alpha01</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.core</groupId>
       <artifactId>core</artifactId>
       <version>1.3.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.lifecycle</groupId>
-      <artifactId>lifecycle-livedata-ktx</artifactId>
-      <version>2.3.1</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.dagger</groupId>
-      <artifactId>dagger</artifactId>
-      <version>2.49</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
-      <version>1.8.22</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -91,9 +53,47 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>com.google.dagger</groupId>
+      <artifactId>dagger</artifactId>
+      <version>2.49</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-camera2-pipe</artifactId>
+      <version>[1.0.0-alpha01]</version>
+      <scope>runtime</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>1.8.22</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-android</artifactId>
       <version>1.7.3</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.concurrent</groupId>
+      <artifactId>concurrent-futures-ktx</artifactId>
+      <version>1.3.0-alpha01</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-core</artifactId>
+      <version>[1.5.0-alpha03]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-livedata-ktx</artifactId>
+      <version>2.3.1</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
