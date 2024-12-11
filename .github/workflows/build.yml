@@ -45,10 +45,12 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp fd1d1e576a596e4748da989ef803d52d4e2e772b
+        git fetch aosp 619c6de87fe3f2c27da0045968f503c1bbd40ef6
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git fetch aosp cb4cea2dd85b8501c9f5e78549f9548fff466117 && git cherry-pick FETCH_HEAD # Upgrade gcp build cache and develocity plugins
+        git fetch aosp b29033cb614cb05990ef0a00bf5dfeaa166feda5 && git cherry-pick FETCH_HEAD # Upgrade to Kotlin 2.1.0 stable
+        git fetch aosp 3250a0cbf4a66dbaa661381f4b34bc4abfa5eefd && git cherry-pick FETCH_HEAD # Upgrade dependency analysis to 2.4.2
+        git fetch aosp 65e4ac052445d44d641f87eb54e6eab9391d4509 && git cherry-pick FETCH_HEAD # Remove Poxedex-Compose Baseline Profile
         popd
 
     - name: Build
