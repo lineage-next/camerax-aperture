@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-feature-combination-query-play-services",
+    "version": "1.5.0-alpha04",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha04-sources.jar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha04-sources.jar",
+          "size": 8781,
+          "sha512": "6e8649c0a8caf8c0d730810dd7415ae9a2e457f98db4cb663b44a5789d6790c50817f6de3e6e8e5ea55e2efa9c72fce4968b703729945a7c0e79bdb766d599c2",
+          "sha256": "bcc507af9eaa7cf5aadf8b6d53ce864785f23fd40221db6392fe606e826081e4",
+          "sha1": "c5d95a661fe0504dd232950c52a4bb822f9faea0",
+          "md5": "e2718b5736720d9120efceec434992ea"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha04.aar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha04.aar",
+          "size": 8060,
+          "sha512": "a2c5654c90b9e0a6884d0df580c57bcbd1e403b9af15d092fd0063d88fd49f841e1e310710983948346c3ef2d0618951a7e1beccf754744f6a8a20e191b70f71",
+          "sha256": "45aca77d343b2c656b3e8b6ae72e49d49d84e2e5e7a9a8b61ffe2d18210908ed",
+          "sha1": "8bd93fb7555b057520fb07f7aa9e6e49e22c2ba2",
+          "md5": "6519742c43cce0932025eb29da4ec288"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha04"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha04.aar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha04.aar",
+          "size": 8060,
+          "sha512": "a2c5654c90b9e0a6884d0df580c57bcbd1e403b9af15d092fd0063d88fd49f841e1e310710983948346c3ef2d0618951a7e1beccf754744f6a8a20e191b70f71",
+          "sha256": "45aca77d343b2c656b3e8b6ae72e49d49d84e2e5e7a9a8b61ffe2d18210908ed",
+          "sha1": "8bd93fb7555b057520fb07f7aa9e6e49e22c2ba2",
+          "md5": "6519742c43cce0932025eb29da4ec288"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha04-versionMetadata.json",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha04-versionMetadata.json",
+          "size": 2,
+          "sha512": "b25b294cb4deb69ea00a4c3cf3113904801b6015e5956bd019a8570b1fe1d6040e944ef3cdee16d0a46503ca6e659a25f21cf9ceddc13f352a3c98138c15d6af",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sha1": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "md5": "d751713988987e9331980363e24189ce"
+        }
+      ]
+    }
+  ]
+}

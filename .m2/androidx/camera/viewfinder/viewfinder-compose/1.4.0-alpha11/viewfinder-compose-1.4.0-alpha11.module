@@ -1,0 +1,164 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.viewfinder",
+    "module": "viewfinder-compose",
+    "version": "1.4.0-alpha11",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "viewfinder-compose-1.4.0-alpha11-sources.jar",
+          "url": "viewfinder-compose-1.4.0-alpha11-sources.jar",
+          "size": 17171,
+          "sha512": "e0234125ad950cf872dc84ee02d827ce5de82cd55a5b4a1cf7cb71ee574ec6058a6e743a68a1fb85275c89bad0eec516bbe7ae5f0bbab2ea2c93f26806fc8f61",
+          "sha256": "d1a03e5455ae90a5b24d4993e2cce441c8114835e30840186df21cde6befe332",
+          "sha1": "33b8c6a004bbd5fac58c4259b8601498114241e9",
+          "md5": "96ed2b9c23e2afe8c3b76e3f46673105"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha11"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-compose-1.4.0-alpha11.aar",
+          "url": "viewfinder-compose-1.4.0-alpha11.aar",
+          "size": 44381,
+          "sha512": "cd42bcf65d31b93e3a36705559d338997602c67cabde6fd4d0fec09ed593758b81d0310688d117bfe035727cafc43eec24f78445de788be808039bc25d5be32e",
+          "sha256": "178ee572d91dd929f7bc91ed288720746f48f6ec528e47c4c0552eb012e44d75",
+          "sha1": "fd1ad0320714911919e878184ccf9d88051fd6d4",
+          "md5": "895779fb19dc4157a308732946f3ea04"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha11"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation-layout",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib"
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.17.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-compose-1.4.0-alpha11.aar",
+          "url": "viewfinder-compose-1.4.0-alpha11.aar",
+          "size": 44381,
+          "sha512": "cd42bcf65d31b93e3a36705559d338997602c67cabde6fd4d0fec09ed593758b81d0310688d117bfe035727cafc43eec24f78445de788be808039bc25d5be32e",
+          "sha256": "178ee572d91dd929f7bc91ed288720746f48f6ec528e47c4c0552eb012e44d75",
+          "sha1": "fd1ad0320714911919e878184ccf9d88051fd6d4",
+          "md5": "895779fb19dc4157a308732946f3ea04"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "viewfinder-compose-1.4.0-alpha11-versionMetadata.json",
+          "url": "viewfinder-compose-1.4.0-alpha11-versionMetadata.json",
+          "size": 1213,
+          "sha512": "18ee87f71659b5c16b8edac73065795681e52da5cced810c3b73fad21605bc7ab46ba62c57b6cce5e05d6fa064f92bb425ccc868baa357cb196403acac527e37",
+          "sha256": "3258dd0ad49e9fb2790d8b8ec30fa9a54830c781eca05cee5042cba4dee69e99",
+          "sha1": "50e540255eeb4e9b38bee4e76006918122677e47",
+          "md5": "a0704b1da5932242233fa3eab05f05a2"
+        }
+      ]
+    }
+  ]
+}

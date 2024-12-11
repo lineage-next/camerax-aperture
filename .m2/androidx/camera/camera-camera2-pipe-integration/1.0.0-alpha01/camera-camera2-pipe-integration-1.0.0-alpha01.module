@@ -10,7 +10,8 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.10.2"
+      "version": "8.11.1",
+      "buildId:": "0"
     }
   },
   "variants": [
@@ -26,11 +27,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
-          "size": 305643,
-          "sha512": "29c67b6747fbf0c64ea2acd3cd379d7e260078cd6ac925f28bd0f533fe74990d3ddaf139beb0ddc45f486f658df30b4ceac6d80f01b919376c3d783f12bf7b3c",
-          "sha256": "1d843e353b29c299324b2f6fb1c96c58cd6864185d307c9d7a3f601c17f09e83",
-          "sha1": "24afb4ea773a332e9cb5b3bfc0983351878f1d3e",
-          "md5": "ffc3c01472085e0649c34d42842f2faa"
+          "size": 313022,
+          "sha512": "0727d010cec985809be9eb46a7c4abec1d430691f4a90a668650dbeeb5e7ce1f28590a3d143600e1badf0dab7c041ea7798d938a3b6bda9d61b41db166e63536",
+          "sha256": "2877ecf2cb7c22c61b7eeae7a2b1494d910cd860bafc06628d50fc094d870ead",
+          "sha1": "9ff226136412a0981299cfe35d0cfa7bfa8afdda",
+          "md5": "cecbd2ced8d3fc6dc2f4b366fa0cb5bc"
         }
       ]
     },
@@ -54,7 +55,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha03"
+            "requires": "1.5.0-alpha04"
           }
         }
       ],
@@ -62,11 +63,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1060677,
-          "sha512": "3f675fc5b2df8d7af8db9cbd16b31b820bbf19ddfad504fe2da8b3d1fa0be0d284189b76ddb81a34d8fd2572947b5371c7134dfd9403133ccd0b03541bd1c7a8",
-          "sha256": "91c93f8b267095ffe01c6ba77798436b9663ea0d461b969f00abdc8b19069abf",
-          "sha1": "fefcb706b1e8b0d6d29a3a22892d0cf2ff9648aa",
-          "md5": "eb7a97d0e28c727122b19172434cb599"
+          "size": 1077577,
+          "sha512": "4f01f40417ff3b19b33ef138d6d3d6065d673542778682de9536b046b8e2c72de1f90aa505828162defbbe324035635478b66f8f939d17326e5abad671cdf0d9",
+          "sha256": "34d109f3e9419e4d40613ff9475cfd18943a7d1e98ff9a8ab02cd25360150b6c",
+          "sha1": "ef480e7e32cae4bf7d26084946081d8b31dffaf5",
+          "md5": "05f29420085f0b4429a1c60d78044fc0"
         }
       ]
     },
@@ -97,7 +98,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha03"
+            "requires": "1.5.0-alpha04"
           }
         },
         {
@@ -130,10 +131,7 @@
         },
         {
           "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "1.8.22"
-          }
+          "module": "kotlin-stdlib"
         },
         {
           "group": "org.jetbrains.kotlinx",
@@ -150,15 +148,24 @@
           }
         }
       ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
       "files": [
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1060677,
-          "sha512": "3f675fc5b2df8d7af8db9cbd16b31b820bbf19ddfad504fe2da8b3d1fa0be0d284189b76ddb81a34d8fd2572947b5371c7134dfd9403133ccd0b03541bd1c7a8",
-          "sha256": "91c93f8b267095ffe01c6ba77798436b9663ea0d461b969f00abdc8b19069abf",
-          "sha1": "fefcb706b1e8b0d6d29a3a22892d0cf2ff9648aa",
-          "md5": "eb7a97d0e28c727122b19172434cb599"
+          "size": 1077577,
+          "sha512": "4f01f40417ff3b19b33ef138d6d3d6065d673542778682de9536b046b8e2c72de1f90aa505828162defbbe324035635478b66f8f939d17326e5abad671cdf0d9",
+          "sha256": "34d109f3e9419e4d40613ff9475cfd18943a7d1e98ff9a8ab02cd25360150b6c",
+          "sha1": "ef480e7e32cae4bf7d26084946081d8b31dffaf5",
+          "md5": "05f29420085f0b4429a1c60d78044fc0"
         }
       ]
     },

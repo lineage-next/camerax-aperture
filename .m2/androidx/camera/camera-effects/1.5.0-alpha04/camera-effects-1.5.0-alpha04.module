@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-effects",
+    "version": "1.5.0-alpha04",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha04-sources.jar",
+          "url": "camera-effects-1.5.0-alpha04-sources.jar",
+          "size": 35751,
+          "sha512": "4e2ac5cfe5de82310130538c7f141a3b7b22160aec01572aaa057139504c993b1061cbe981cee6be0631e9bd511ad0d19486c997bb76275268ecc335558adea0",
+          "sha256": "36136df4dcbaf5edb390f589ceefb77fdd0cc0d62e4a86a9dad01fb84b3c0d71",
+          "sha1": "9ef9595e2bf8e437b13232c9eac39c6d803962c0",
+          "md5": "e3b6062c3b88c37e9e929c6c44e8ed5e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha04"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha04.aar",
+          "url": "camera-effects-1.5.0-alpha04.aar",
+          "size": 40821,
+          "sha512": "efc903e63f4895cb88cef5be428d7ce4cc17842987d7e5f9d6260d8aad2b1abeba063915c4c4f68e8aae159c59e1a1d784aab1e6e4625205180b66a576390afb",
+          "sha256": "817a41af245688abf8b31e257c33b063570fc1817b97773edd7280dbe583b357",
+          "sha1": "f4d8eae3562e6b2f9a0d4c439c40a2122754a046",
+          "md5": "2f23e78c720afde412e83092e45056c6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha04"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha04.aar",
+          "url": "camera-effects-1.5.0-alpha04.aar",
+          "size": 40821,
+          "sha512": "efc903e63f4895cb88cef5be428d7ce4cc17842987d7e5f9d6260d8aad2b1abeba063915c4c4f68e8aae159c59e1a1d784aab1e6e4625205180b66a576390afb",
+          "sha256": "817a41af245688abf8b31e257c33b063570fc1817b97773edd7280dbe583b357",
+          "sha1": "f4d8eae3562e6b2f9a0d4c439c40a2122754a046",
+          "md5": "2f23e78c720afde412e83092e45056c6"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha04-versionMetadata.json",
+          "url": "camera-effects-1.5.0-alpha04-versionMetadata.json",
+          "size": 1256,
+          "sha512": "962c08e7afe7d5fd9d746e430eb5a1a9a194dd11b6e5f917618c3252c1acbe39f7291351ebb54e22c99f9daa7b62581076b12cb32bf0e3f414b25a879ba2e53a",
+          "sha256": "c970fd4bb23461ff44792d7cf25509106e183e4723fbe5cf352134f9ec78d97f",
+          "sha1": "090b071c8ce187df2601125b7101688bd9e1460b",
+          "md5": "7ccf9e663977504b1304de17edacd691"
+        }
+      ]
+    }
+  ]
+}

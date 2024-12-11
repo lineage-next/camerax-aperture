@@ -10,7 +10,8 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.10.2"
+      "version": "8.11.1",
+      "buildId:": "0"
     }
   },
   "variants": [
@@ -26,11 +27,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-1.0.0-alpha01-sources.jar",
-          "size": 270223,
-          "sha512": "b07dec86327438ba5fc3918ebae2260261de159c6e018eb4e062efd31c300f06a46b6726606acf661c67ca59f6dae79983e75f932f1c2657ac20bc1a22a84930",
-          "sha256": "7d428ea71548208a2fc1791e910afd9e683e44d58b6627719f2aaec9d95be7a3",
-          "sha1": "3b5fe7aa54f42dff78d3318f11f1ac3a1eaaf4d8",
-          "md5": "66816f38ec59534908a80585e6f7a8b9"
+          "size": 273960,
+          "sha512": "759d2f57984f5ff6fb5be655156c30bb97ed5c51e787c55011dacc2321f6585dee2ea9b847aaf198a7732627cc0cfd1dde9cd6cffc4d59be6f635e57035e0685",
+          "sha256": "2ef2735efc9721bc4ce9fe5178168b6534b282ab595df1811a7aa32a3348c6d3",
+          "sha1": "237bf9054dc29d401fab07a23159e8347e5fbb97",
+          "md5": "6841679788f71856ae756eb8e77af323"
         }
       ]
     },
@@ -52,10 +53,7 @@
         },
         {
           "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "1.8.22"
-          }
+          "module": "kotlin-stdlib"
         },
         {
           "group": "org.jetbrains.kotlinx",
@@ -65,15 +63,24 @@
           }
         }
       ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
       "files": [
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1224080,
-          "sha512": "b021e14bed5d3712568754c198beb5aada165a501f1e9e5522651962b018f025c75c76e2a0a3140f5deca952b7b81d4698f94fac7325c7722cd64dce704465be",
-          "sha256": "363c4f6b996b64e81e70247a4fae4fec653e1a7b50db266c70ab38488d8cf52e",
-          "sha1": "2504fb94d272dfafeaa562219b140fc326546f60",
-          "md5": "8b00cfce2054b8615acb88b3739ac0ce"
+          "size": 1251897,
+          "sha512": "885536fc944e9eaf6cfaf77950f5e72f3c3d1ccd7ae57ce72337b70f129480918ea1dc5fe5c32775facc1a8b4fda9518883e0be512c2e15f367320c594d618bc",
+          "sha256": "0d31583652f6dd07b544e477470634873335194895216d25e66bf1fcb528192a",
+          "sha1": "f24c3a9e8306ea5bd6b8bbcb1523986cdaf8cffc",
+          "md5": "bb3953dba49b661a5dfa34315db438e9"
         }
       ]
     },
@@ -102,10 +109,7 @@
         },
         {
           "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "1.8.22"
-          }
+          "module": "kotlin-stdlib"
         },
         {
           "group": "org.jetbrains.kotlinx",
@@ -122,15 +126,24 @@
           }
         }
       ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
       "files": [
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1224080,
-          "sha512": "b021e14bed5d3712568754c198beb5aada165a501f1e9e5522651962b018f025c75c76e2a0a3140f5deca952b7b81d4698f94fac7325c7722cd64dce704465be",
-          "sha256": "363c4f6b996b64e81e70247a4fae4fec653e1a7b50db266c70ab38488d8cf52e",
-          "sha1": "2504fb94d272dfafeaa562219b140fc326546f60",
-          "md5": "8b00cfce2054b8615acb88b3739ac0ce"
+          "size": 1251897,
+          "sha512": "885536fc944e9eaf6cfaf77950f5e72f3c3d1ccd7ae57ce72337b70f129480918ea1dc5fe5c32775facc1a8b4fda9518883e0be512c2e15f367320c594d618bc",
+          "sha256": "0d31583652f6dd07b544e477470634873335194895216d25e66bf1fcb528192a",
+          "sha1": "f24c3a9e8306ea5bd6b8bbcb1523986cdaf8cffc",
+          "md5": "bb3953dba49b661a5dfa34315db438e9"
         }
       ]
     },
