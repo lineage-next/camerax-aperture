@@ -1,4 +1,4 @@
-From 7a392a7c01dbf2a8d134e3d322e9688bfc5ea164 Mon Sep 17 00:00:00 2001
+From 6b0e05ea792bec593530ec86613ba3162fe5eea3 Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Mon, 17 Oct 2022 19:03:07 +0200
 Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
@@ -10,12 +10,12 @@ Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
  1 file changed, 13 insertions(+), 1 deletion(-)
 
 diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-index aeb2b49fee3..1cc77ad6f10 100644
+index efac515d8e8..2e222b2ace8 100644
 --- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
 +++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-@@ -28,15 +28,23 @@ import androidx.camera.camera2.internal.compat.CameraAccessExceptionCompat;
- import androidx.camera.camera2.internal.compat.CameraManagerCompat;
- import androidx.camera.core.InitializationException;
+@@ -29,15 +29,23 @@ import androidx.camera.core.InitializationException;
+ 
+ import org.jspecify.annotations.NonNull;
  
 +import java.util.ArrayList;
 +import java.util.List;
@@ -38,7 +38,7 @@ index aeb2b49fee3..1cc77ad6f10 100644
      /**
       * Checks whether the camera has
       * {@link CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE} or not.
-@@ -58,6 +66,10 @@ public final class CameraIdUtil {
+@@ -59,6 +67,10 @@ public final class CameraIdUtil {
              return true;
          }
  
@@ -50,5 +50,5 @@ index aeb2b49fee3..1cc77ad6f10 100644
  
          try {
 -- 
-2.45.2
+2.48.0
 
