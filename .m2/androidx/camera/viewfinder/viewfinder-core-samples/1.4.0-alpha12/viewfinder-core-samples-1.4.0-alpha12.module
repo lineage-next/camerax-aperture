@@ -1,0 +1,200 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.viewfinder",
+    "module": "viewfinder-core-samples",
+    "version": "1.4.0-alpha12",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-view",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-core-samples-1.4.0-alpha12-sources.jar",
+          "url": "viewfinder-core-samples-1.4.0-alpha12-sources.jar",
+          "size": 6388,
+          "sha512": "0836a0974d4c1ad8fefd0315101087ad387fd2ca6b08b67fdb8fdf06858f1b008de2fbd7e01e8f33176b7a03730b007bc13ce0a4a866b6a94674ff23cdd48a11",
+          "sha256": "d12e6ef88482c1f71cd2a845b384f53d8fea71a8a36fb181ed3c2c5bd4aa5808",
+          "sha1": "e558c460db7460e4fe708ced6261855c8501afc3",
+          "md5": "aff6a3407285d36d41a7b24562296f07"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-view",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-core-samples-1.4.0-alpha12.aar",
+          "url": "viewfinder-core-samples-1.4.0-alpha12.aar",
+          "size": 8049,
+          "sha512": "a2255f3241a5d5b2656201b5b21b2ed420b59ddac0d12feb7e4e0965faaba8455fc892d1e12be7bc855404d7474bff914dbf4bb2bcc0aa51c50da6ce39393ee1",
+          "sha256": "385f83508765da4083044e2700ff0346b1f3b7b1a9bf274f4cfcda1d3b99cc0f",
+          "sha1": "6b852f89f9cbd2713973254e7d2b8f0b8e2b753c",
+          "md5": "c951d377354e3552d8c7473860f77038"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib"
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-view",
+          "version": {
+            "requires": "1.4.0-alpha12"
+          },
+          "reason": "viewfinder-core-samples is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.22"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-core-samples-1.4.0-alpha12.aar",
+          "url": "viewfinder-core-samples-1.4.0-alpha12.aar",
+          "size": 8049,
+          "sha512": "a2255f3241a5d5b2656201b5b21b2ed420b59ddac0d12feb7e4e0965faaba8455fc892d1e12be7bc855404d7474bff914dbf4bb2bcc0aa51c50da6ce39393ee1",
+          "sha256": "385f83508765da4083044e2700ff0346b1f3b7b1a9bf274f4cfcda1d3b99cc0f",
+          "sha1": "6b852f89f9cbd2713973254e7d2b8f0b8e2b753c",
+          "md5": "c951d377354e3552d8c7473860f77038"
+        }
+      ]
+    }
+  ]
+}

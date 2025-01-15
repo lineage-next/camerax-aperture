@@ -1,0 +1,472 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-effects",
+    "version": "1.5.0-alpha05",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha05-sources.jar",
+          "url": "camera-effects-1.5.0-alpha05-sources.jar",
+          "size": 35820,
+          "sha512": "f490678464dd9474c4f46275e984edd910cddc48d88403dcf2e25fd9bb425eeb08893fc833d1054dd5c6cb9ebf220f1798638facc9b136cfd59ccc183a0a985b",
+          "sha256": "058b2ad29fcec38c95c7fbb057794928d465764f6c9669a8473e0f23aa7dfa04",
+          "sha1": "e8f813de4e861b3f8d710a7947e47332aeee3b12",
+          "md5": "587376d30f4983d7ed6b81ef0992f41b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha05.aar",
+          "url": "camera-effects-1.5.0-alpha05.aar",
+          "size": 41030,
+          "sha512": "b859ebb778fbaf6b47ddcc3661fa6aab5dc833a8b86f7cd33c0fcccfc12f16c001dcf3cda4615178ab0a86ded7afdbba718818460c5020e25cafeff8958e648a",
+          "sha256": "2e5cd0ed639c51e48dc8d2b4138cc7bcc596c2b9faf1a7e83c841628a655d058",
+          "sha1": "4f50c1d5c7ace276ea3839a4c4da5c3e89e18363",
+          "md5": "526fcb03c3258aa9f1b0a58b1cd5dfb4"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha05.aar",
+          "url": "camera-effects-1.5.0-alpha05.aar",
+          "size": 41030,
+          "sha512": "b859ebb778fbaf6b47ddcc3661fa6aab5dc833a8b86f7cd33c0fcccfc12f16c001dcf3cda4615178ab0a86ded7afdbba718818460c5020e25cafeff8958e648a",
+          "sha256": "2e5cd0ed639c51e48dc8d2b4138cc7bcc596c2b9faf1a7e83c841628a655d058",
+          "sha1": "4f50c1d5c7ace276ea3839a4c4da5c3e89e18363",
+          "md5": "526fcb03c3258aa9f1b0a58b1cd5dfb4"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-effects is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-effects-1.5.0-alpha05-versionMetadata.json",
+          "url": "camera-effects-1.5.0-alpha05-versionMetadata.json",
+          "size": 1256,
+          "sha512": "962c08e7afe7d5fd9d746e430eb5a1a9a194dd11b6e5f917618c3252c1acbe39f7291351ebb54e22c99f9daa7b62581076b12cb32bf0e3f414b25a879ba2e53a",
+          "sha256": "c970fd4bb23461ff44792d7cf25509106e183e4723fbe5cf352134f9ec78d97f",
+          "sha1": "090b071c8ce187df2601125b7101688bd9e1460b",
+          "md5": "7ccf9e663977504b1304de17edacd691"
+        }
+      ]
+    }
+  ]
+}

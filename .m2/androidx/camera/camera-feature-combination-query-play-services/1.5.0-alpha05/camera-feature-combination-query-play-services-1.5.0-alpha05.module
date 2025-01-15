@@ -1,0 +1,465 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-feature-combination-query-play-services",
+    "version": "1.5.0-alpha05",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha05-sources.jar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha05-sources.jar",
+          "size": 8798,
+          "sha512": "75d5ca3e7d6df7174d58fa1c86dcbcdcdd3cc1ed93c7dafee204b9760dceaefd3e188679f8364a77ccf02d5e9af764a55a6b25635931f68bfba86170bc1e25df",
+          "sha256": "c787aafe301bc22d348e96b111e94756febaebe1f70074699380ca5586a625d7",
+          "sha1": "47cdfdc1eefba672c050e11ab4b8cbd61f32ff63",
+          "md5": "33e052f691d2c7e53fdf13d0b6bc7a3b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha05.aar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha05.aar",
+          "size": 8043,
+          "sha512": "da7f3a24122fd5bc1b70c3a98d17a1df8b4a6c64a7f172bb7d08d075371f7e946c54600b62974503eb6ffa87611d5d3a96fe06d15484dcd01e55db14add5a4e1",
+          "sha256": "edf69c5157f5aad66b0387cd2fc5fc307518e2c938cd9299d75be65b706e4512",
+          "sha1": "ef396e59ed5b8d0fd3b5407b194b4f042180a7e1",
+          "md5": "75b73163b8b650f71c8df6136110b1a8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha05.aar",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha05.aar",
+          "size": 8043,
+          "sha512": "da7f3a24122fd5bc1b70c3a98d17a1df8b4a6c64a7f172bb7d08d075371f7e946c54600b62974503eb6ffa87611d5d3a96fe06d15484dcd01e55db14add5a4e1",
+          "sha256": "edf69c5157f5aad66b0387cd2fc5fc307518e2c938cd9299d75be65b706e4512",
+          "sha1": "ef396e59ed5b8d0fd3b5407b194b4f042180a7e1",
+          "md5": "75b73163b8b650f71c8df6136110b1a8"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha05"
+          },
+          "reason": "camera-feature-combination-query-play-services is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-feature-combination-query-play-services-1.5.0-alpha05-versionMetadata.json",
+          "url": "camera-feature-combination-query-play-services-1.5.0-alpha05-versionMetadata.json",
+          "size": 2,
+          "sha512": "b25b294cb4deb69ea00a4c3cf3113904801b6015e5956bd019a8570b1fe1d6040e944ef3cdee16d0a46503ca6e659a25f21cf9ceddc13f352a3c98138c15d6af",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sha1": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "md5": "d751713988987e9331980363e24189ce"
+        }
+      ]
+    }
+  ]
+}
