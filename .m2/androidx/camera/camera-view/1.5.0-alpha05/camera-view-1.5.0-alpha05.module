@@ -109,11 +109,11 @@
         {
           "name": "camera-view-1.5.0-alpha05-sources.jar",
           "url": "camera-view-1.5.0-alpha05-sources.jar",
-          "size": 91778,
-          "sha512": "6366a17dc589f5601dd74326e590ccb4bf854681daf92ded9dac1891516b201d77e69b56d6c5d0dbf86572fbecfab1ad031c9692c2f3a46952d8e9b79430ab03",
-          "sha256": "4e3f4d7233654ef4d3d25ae148efdf8fbf279f80840ced9582c48a766c0167ca",
-          "sha1": "0a2a231046915dc4a3bb3da23417089c3c61b1b3",
-          "md5": "206b02aa03324f121bd98e4a453f3490"
+          "size": 91823,
+          "sha512": "df78f52331beefa8147be0c4a2346c3d36d7185625ca2e31c70db66674c114709e170e4a829678e2397cf446b42749151495eeed2c41e1b13de6f02f79eba142",
+          "sha256": "9518e2dc6ed3a3d4e00b574550b2ede6a59368c6b5dea1f9664a10a1d2cbaa38",
+          "sha1": "6d3d767d71118cd963c1e467bc6c5accec6f4c90",
+          "md5": "9f1e688b3a42649f4b834c66368c4fb4"
         }
       ]
     },
@@ -248,11 +248,11 @@
         {
           "name": "camera-view-1.5.0-alpha05.aar",
           "url": "camera-view-1.5.0-alpha05.aar",
-          "size": 118611,
-          "sha512": "2bdc8d5b0e61491f88ac8c5fa68a898e69a511645b904c2db1ee2f4ee5c56d0e44279f9b5b6723a1d75e0113742656d2bee9f099f7b8a3ac888f1ddd2afde650",
-          "sha256": "09f1ac64fcb6dce21d5e168d9806571ef51ed8c3fd79ee90f71bdbb3453624eb",
-          "sha1": "e17b02cceefc5a4a75b16ac6743a74e94b8fff3f",
-          "md5": "d5bebf8fd6564fcf35a65986e6fc49ed"
+          "size": 118705,
+          "sha512": "b0d852abba69b47b5f5337f8ff16fc638b5106e9c7f306fa287d5c5b2fe5209a718fce12b48388431332c22684f3dc8375430d3bb7ef9432153a7cbf219f4357",
+          "sha256": "b5ae543fc648d89c6cf40b7ff6ebe863e1eca1c8e7497d290ab81f439c714a05",
+          "sha1": "d2d4682c58ae025ba6d4965989ed3a5bfc9d50f5",
+          "md5": "226c789254b80f9b1305fc335811167a"
         }
       ]
     },
@@ -436,11 +436,11 @@
         {
           "name": "camera-view-1.5.0-alpha05.aar",
           "url": "camera-view-1.5.0-alpha05.aar",
-          "size": 118611,
-          "sha512": "2bdc8d5b0e61491f88ac8c5fa68a898e69a511645b904c2db1ee2f4ee5c56d0e44279f9b5b6723a1d75e0113742656d2bee9f099f7b8a3ac888f1ddd2afde650",
-          "sha256": "09f1ac64fcb6dce21d5e168d9806571ef51ed8c3fd79ee90f71bdbb3453624eb",
-          "sha1": "e17b02cceefc5a4a75b16ac6743a74e94b8fff3f",
-          "md5": "d5bebf8fd6564fcf35a65986e6fc49ed"
+          "size": 118705,
+          "sha512": "b0d852abba69b47b5f5337f8ff16fc638b5106e9c7f306fa287d5c5b2fe5209a718fce12b48388431332c22684f3dc8375430d3bb7ef9432153a7cbf219f4357",
+          "sha256": "b5ae543fc648d89c6cf40b7ff6ebe863e1eca1c8e7497d290ab81f439c714a05",
+          "sha1": "d2d4682c58ae025ba6d4965989ed3a5bfc9d50f5",
+          "md5": "226c789254b80f9b1305fc335811167a"
         }
       ]
     },
