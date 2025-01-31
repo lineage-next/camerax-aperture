@@ -48,6 +48,7 @@ jobs:
         git fetch aosp 74cbb818c9b3bfa4d09302a96cfde2c21c98d693
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
+        git am $GITHUB_WORKSPACE/patches/0001-Set-orientation-on-CameraController-preview-attach.patch
         git fetch aosp 9a5d9082bd6021c35978c3fbc26dc634129e786f && git cherry-pick FETCH_HEAD # Revert "Upgrade to AGP 8.9.0-alpha06"
         git fetch aosp f3947a2b34341c01a1b4d0bef676bb31e825b1ce && git cherry-pick FETCH_HEAD # Upgrade to Kotlin 2.1.10
         popd
