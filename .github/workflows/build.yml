@@ -45,10 +45,10 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 74cbb818c9b3bfa4d09302a96cfde2c21c98d693
+        git fetch aosp 824a6d81bccbc4bf5286a94e6476d35825adf198
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git fetch aosp 9a5d9082bd6021c35978c3fbc26dc634129e786f && git cherry-pick FETCH_HEAD # Revert "Upgrade to AGP 8.9.0-alpha06"
+        git fetch aosp cb2e40a709311a374916b53e224a39eefccffbe7 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 8.13
         popd
 
     - name: Build
