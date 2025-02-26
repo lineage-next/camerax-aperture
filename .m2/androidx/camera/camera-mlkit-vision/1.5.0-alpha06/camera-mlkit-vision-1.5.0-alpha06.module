@@ -1,0 +1,502 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-mlkit-vision",
+    "version": "1.5.0-alpha06",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha06-sources.jar",
+          "url": "camera-mlkit-vision-1.5.0-alpha06-sources.jar",
+          "size": 9840,
+          "sha512": "64fdd46480468e2a839ca4aa228682875b1cc11bc58a06504433ca91cefa8cf8a214a09bcce17973bb0fab26652629c79111f9d279ff152debe645ce0b5b8e7b",
+          "sha256": "b77364e4677a42d704933269b4ba32be9255a9e6ffbc9d4c68f9f38772e0722c",
+          "sha1": "7d7f5593649575658c0d635421035dddf5a7cf10",
+          "md5": "080e3a25fd4872b875fabb08cf55656d"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "vision-interfaces",
+          "version": {
+            "requires": "16.0.0",
+            "prefers": "16.0.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha06.aar",
+          "url": "camera-mlkit-vision-1.5.0-alpha06.aar",
+          "size": 11905,
+          "sha512": "c41aa252f25b16a1e48a6548558089024a46ca5556c42085a360a6a314d9f9313b67f83c8cebc9424480263f0bb531763aac28d3f8f62f49d9c945b0c7067be0",
+          "sha256": "b3565fef1a2227878f6f4cd3f38f9f4fc92c643a484fff0caf664d7ada4de0d2",
+          "sha1": "8bb882da5f1dd967a03207ad9fef70f4e3ac08e9",
+          "md5": "28655bab692d46d8473d9414f1d3d68b"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          }
+        },
+        {
+          "group": "com.google.mlkit",
+          "module": "vision-interfaces",
+          "version": {
+            "requires": "16.0.0",
+            "prefers": "16.0.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha06.aar",
+          "url": "camera-mlkit-vision-1.5.0-alpha06.aar",
+          "size": 11905,
+          "sha512": "c41aa252f25b16a1e48a6548558089024a46ca5556c42085a360a6a314d9f9313b67f83c8cebc9424480263f0bb531763aac28d3f8f62f49d9c945b0c7067be0",
+          "sha256": "b3565fef1a2227878f6f4cd3f38f9f4fc92c643a484fff0caf664d7ada4de0d2",
+          "sha1": "8bb882da5f1dd967a03207ad9fef70f4e3ac08e9",
+          "md5": "28655bab692d46d8473d9414f1d3d68b"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-feature-combination-query-play-services",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0-alpha06"
+          },
+          "reason": "camera-mlkit-vision is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-mlkit-vision-1.5.0-alpha06-versionMetadata.json",
+          "url": "camera-mlkit-vision-1.5.0-alpha06-versionMetadata.json",
+          "size": 1182,
+          "sha512": "3ebe441423bf2ae7a61809189e985bc7bb1c8cb4b97c04b7dc0133eb4c26964b2891ff69edc1853f46272608e5c298ab20a203d47f14b6b247b448988d90a24c",
+          "sha256": "3507cfb394f6d1feaafb63939bf90362b5227ffcad48ba60f6c0f4f9b5935b5f",
+          "sha1": "b03098f6c59813f03fc2006b0109f15907e2e8fb",
+          "md5": "c24a78e09176aecb15f0b5479122b16a"
+        }
+      ]
+    }
+  ]
+}

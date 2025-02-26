@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.11.1",
+      "version": "8.13",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
-          "size": 316317,
-          "sha512": "1e36b2a135ac613a7194e255acfe0df39bc006500c0d2a1e57040bcdf024a1c5a7049fee4b652d8bc029f0e1c780126a1f87ccf919d34b447034a67f507e52d1",
-          "sha256": "4f53556646d72409879edb87aee8eea7707cad92cc1c5f70f7a157c4c7998fb8",
-          "sha1": "e30d2cc1dd06eb5ac182f81eda69891fe22e62c2",
-          "md5": "9f5bb7c183571f0f5fd89ded97e0cb45"
+          "size": 317325,
+          "sha512": "6821c72303685ca0393a2f11e87efa9b7125c920819ba9befdff35bfb029726a37a38cf8e6d57a0caf34b2f1506a18850c879a3c408f41230a187d20cac033ac",
+          "sha256": "2627e3b13d8505d6dd3f3f044632cae515d5f3dd61b0366647ad963602903733",
+          "sha1": "f28e8b62efb5df0c1eae609786e8e8f899f6e1e7",
+          "md5": "6c3184a7833080244b02c08dd5266472"
         }
       ]
     },
@@ -73,7 +73,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha05"
+            "requires": "1.5.0-alpha06"
           }
         }
       ],
@@ -99,11 +99,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1106043,
-          "sha512": "a4463f239abaf1cd3c2d45a4feb7b5e8b65d3a1f1618d5d66016ea891ea2984e5d93eee59b11e23cc21afcf78b1f600df67b6e8f55dd243536a2bc3bbe7bdf83",
-          "sha256": "f5343ac73656eb785f25fb8481fad6e266f4ef9baeeec69f95ec7707d1b31f2c",
-          "sha1": "e1ec01bb914b08379f703317c4b911ca48bf2e8f",
-          "md5": "9ac916d1c6f2652ca54ff17991595ca9"
+          "size": 1109799,
+          "sha512": "0568981917eab3f874f9f9ddd2095503cda0f92f2fca28c8991c256cf08b429713571d6b88cef20ca563a2b4d25e3ab9b779134dcb83580babc6270d912a9e82",
+          "sha256": "e8a14b4695d0f6b12d061c2b8b597350669575c16c3f3bdebaa1719f81b1217d",
+          "sha1": "90d96e61babf7a7c36c50fd79d8b82cca94d0736",
+          "md5": "fb4a741c2076c384effd06591b0df424"
         }
       ]
     },
@@ -134,7 +134,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-alpha05"
+            "requires": "1.5.0-alpha06"
           }
         },
         {
@@ -213,11 +213,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1106043,
-          "sha512": "a4463f239abaf1cd3c2d45a4feb7b5e8b65d3a1f1618d5d66016ea891ea2984e5d93eee59b11e23cc21afcf78b1f600df67b6e8f55dd243536a2bc3bbe7bdf83",
-          "sha256": "f5343ac73656eb785f25fb8481fad6e266f4ef9baeeec69f95ec7707d1b31f2c",
-          "sha1": "e1ec01bb914b08379f703317c4b911ca48bf2e8f",
-          "md5": "9ac916d1c6f2652ca54ff17991595ca9"
+          "size": 1109799,
+          "sha512": "0568981917eab3f874f9f9ddd2095503cda0f92f2fca28c8991c256cf08b429713571d6b88cef20ca563a2b4d25e3ab9b779134dcb83580babc6270d912a9e82",
+          "sha256": "e8a14b4695d0f6b12d061c2b8b597350669575c16c3f3bdebaa1719f81b1217d",
+          "sha1": "90d96e61babf7a7c36c50fd79d8b82cca94d0736",
+          "md5": "fb4a741c2076c384effd06591b0df424"
         }
       ]
     },
@@ -251,10 +251,10 @@
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01-versionMetadata.json",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01-versionMetadata.json",
           "size": 4017,
-          "sha512": "efd9809e75691f3ad946b1adc1369b1cfeb3d2f976e7a813bc26df8216745a18a4341792c27280bf08c51fa0443f651ffd8a5c36829e579462ca6a0e96391e48",
-          "sha256": "cf64f3ef620f0dd2254bc60c6fac846012d25fd518b3a8253029712ace321a3c",
-          "sha1": "8fa26dc17e7d5dafff21916b28a69e2597fa654f",
-          "md5": "7b1a3f19da1f03bb292b1980f447e23b"
+          "sha512": "c71b57115cb92b552e0ca5576e7cabeaa2ffca908e4b72fdcb3683d7f51d2061c38389031133930179233b2e69cd159554179a7c5d4087b79f542d0d2fa5de62",
+          "sha256": "d00fdd9adb8eb88252bc34fad3f16bf5de59cae84ba397f11baf5fc8925e241e",
+          "sha1": "9a7447ea7d998842228b9a5871dab2e563f405d0",
+          "md5": "b994dc54bdbda11fccd4fee51b2e75a8"
         }
       ]
     }

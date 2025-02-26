@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.11.1",
+      "version": "8.13",
       "buildId:": "0"
     }
   },
@@ -56,11 +56,11 @@
         {
           "name": "media3-effect-1.0.0-alpha02.aar",
           "url": "media3-effect-1.0.0-alpha02.aar",
-          "size": 18431,
-          "sha512": "bd5067ac8ca36eac6864a882404855381e0b595c3e00b97a24eb39af4fee3ff27fd513e4eb267e4e87a0a26c14954297c1c525a6f638d3ebdbc1a3c66b8a6390",
-          "sha256": "947f8c64c5ff8ecea43f2042ff9101796c53647749519bf919eedc45d3f5fde3",
-          "sha1": "3a233006110e658470f35e7e042dd4c2fb612c90",
-          "md5": "031f68585a769be9a5b0dea405a1cd60"
+          "size": 18602,
+          "sha512": "74d03c01d3d471e40149e008f93379d7ad5b4ddaf63015a65c15c24ce963516af9a8f6d328c4f3db73cbad63608cbfd363c70a0e4b6c5ef65d4b11bc7b32b28f",
+          "sha256": "e372c81fcd83ada44581e1e383304e3fdb53c9744795bb014592f7cf53c0769d",
+          "sha1": "d92d3423b2c6bf72d75790397599540c9db38c63",
+          "md5": "4d32adcf45ed4acb82d6786ea3fd6d72"
         }
       ]
     },
@@ -99,11 +99,11 @@
         {
           "name": "media3-effect-1.0.0-alpha02.aar",
           "url": "media3-effect-1.0.0-alpha02.aar",
-          "size": 18431,
-          "sha512": "bd5067ac8ca36eac6864a882404855381e0b595c3e00b97a24eb39af4fee3ff27fd513e4eb267e4e87a0a26c14954297c1c525a6f638d3ebdbc1a3c66b8a6390",
-          "sha256": "947f8c64c5ff8ecea43f2042ff9101796c53647749519bf919eedc45d3f5fde3",
-          "sha1": "3a233006110e658470f35e7e042dd4c2fb612c90",
-          "md5": "031f68585a769be9a5b0dea405a1cd60"
+          "size": 18602,
+          "sha512": "74d03c01d3d471e40149e008f93379d7ad5b4ddaf63015a65c15c24ce963516af9a8f6d328c4f3db73cbad63608cbfd363c70a0e4b6c5ef65d4b11bc7b32b28f",
+          "sha256": "e372c81fcd83ada44581e1e383304e3fdb53c9744795bb014592f7cf53c0769d",
+          "sha1": "d92d3423b2c6bf72d75790397599540c9db38c63",
+          "md5": "4d32adcf45ed4acb82d6786ea3fd6d72"
         }
       ]
     },
@@ -119,10 +119,10 @@
           "name": "media3-effect-1.0.0-alpha02-versionMetadata.json",
           "url": "media3-effect-1.0.0-alpha02-versionMetadata.json",
           "size": 420,
-          "sha512": "95de132e1bf5fc57ebc2406d504ab67bdd6902b6e6eea561354e4ae745e683e87d6fcfd264c2a83bf1e15853c0ddd621299b5ca9221dbf248e3d0ec5239b9e90",
-          "sha256": "1aea2c78091cea3b6edd1d3d145314e05d3b2abf40af0a60ec4ea1691246d48c",
-          "sha1": "f4563585b4f7603659bb7a4316c4152f113aa644",
-          "md5": "53c5f46ab720eaf3df9d4e805f06a814"
+          "sha512": "f69ecf1c7cddafaf660bebd36d32dcf318a41ab98ac2bb8eaf904655b654feb011445f50c65e9d8a4d6cdb8aa7c479d38cc7c0847413895d43b49f8fd785da69",
+          "sha256": "1d47c4a84c580d2f753786fe05c5cde98e5b71488752af85f3f653ddb62f2f58",
+          "sha1": "28d464691362e841e339caa01123dba4d31c04d4",
+          "md5": "6d9e06eb794a77d9e945e1b416b8a56f"
         }
       ]
     }
