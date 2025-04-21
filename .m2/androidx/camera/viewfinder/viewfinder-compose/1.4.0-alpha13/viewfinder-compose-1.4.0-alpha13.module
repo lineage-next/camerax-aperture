@@ -92,11 +92,11 @@
         {
           "name": "viewfinder-compose-1.4.0-alpha13.aar",
           "url": "viewfinder-compose-1.4.0-alpha13.aar",
-          "size": 44552,
-          "sha512": "25bfc3998b8114d7399c498615558c35325c46e46d0f478396c88d24ba7ca2e0c140dce0666a520c12cd720e457f14a127e93c366d8e5c9d88ec180b7a6e50b7",
-          "sha256": "3ddfab1ec8027881bc44c415c2a664bd7487d2b682ce8e283013256d9ebfc78e",
-          "sha1": "31c64d14f919adfd3c191d648eb9047f0a3b2ca8",
-          "md5": "4f591e97e3014ac54125ddb0c56a6626"
+          "size": 44596,
+          "sha512": "880abd240b93cb0dee857040b65ddd72322a9225cec61dd2dbf7153b7c52aee2cef94bf9cafcb21f4030e54faad6bb498467c75d43f221d073e36036b6f811a3",
+          "sha256": "f326ed5f2ec32acc85da4850c03ebc110e0fc60198be0baca90f0387618c2e11",
+          "sha1": "44ec778e742ecbd2b61f373525f14f52507ebfd7",
+          "md5": "25d3a7b31c7b54effa298ae67e24cdd9"
         }
       ]
     },
@@ -185,11 +185,11 @@
         {
           "name": "viewfinder-compose-1.4.0-alpha13.aar",
           "url": "viewfinder-compose-1.4.0-alpha13.aar",
-          "size": 44552,
-          "sha512": "25bfc3998b8114d7399c498615558c35325c46e46d0f478396c88d24ba7ca2e0c140dce0666a520c12cd720e457f14a127e93c366d8e5c9d88ec180b7a6e50b7",
-          "sha256": "3ddfab1ec8027881bc44c415c2a664bd7487d2b682ce8e283013256d9ebfc78e",
-          "sha1": "31c64d14f919adfd3c191d648eb9047f0a3b2ca8",
-          "md5": "4f591e97e3014ac54125ddb0c56a6626"
+          "size": 44596,
+          "sha512": "880abd240b93cb0dee857040b65ddd72322a9225cec61dd2dbf7153b7c52aee2cef94bf9cafcb21f4030e54faad6bb498467c75d43f221d073e36036b6f811a3",
+          "sha256": "f326ed5f2ec32acc85da4850c03ebc110e0fc60198be0baca90f0387618c2e11",
+          "sha1": "44ec778e742ecbd2b61f373525f14f52507ebfd7",
+          "md5": "25d3a7b31c7b54effa298ae67e24cdd9"
         }
       ]
     },

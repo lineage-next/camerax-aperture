@@ -236,11 +236,11 @@
         {
           "name": "camera-compose-samples-1.5.0-alpha06.aar",
           "url": "camera-compose-samples-1.5.0-alpha06.aar",
-          "size": 13899,
-          "sha512": "b5555fc0d2992db6fa1fe11c8db2da316031a07c714df5a66f9f89dfa57b8851c643085f88061c1597cd3b304b3a27a249fcd39822e08a0879ec2658eb822219",
-          "sha256": "cfc8d42e323cc36b4b20dca2feb4eb667e40ad10a7017122e9f9ee58213e6d77",
-          "sha1": "060e944f2e4902bde5dc589c50af9fb921345cd8",
-          "md5": "afac2d605f2347e1f133ce3e0c3e5c62"
+          "size": 13904,
+          "sha512": "4b35507608cdee46c30c571911126c9b876673fe113d27e412f8637494303b4ae7df85ba584588d5b0bd6d6ad15ea3b44c5100f57a2f00afd39610976503b59f",
+          "sha256": "458483db6dc32bae3abe0c90f1f3d86628c5e1f5ec4928c1c68fe12b79fa9aa4",
+          "sha1": "822169ef6d2f6f2d6a617806ef202ea31c77a962",
+          "md5": "27bc123d20b49c3f26d41083f83dcd0c"
         }
       ]
     },
@@ -408,11 +408,11 @@
         {
           "name": "camera-compose-samples-1.5.0-alpha06.aar",
           "url": "camera-compose-samples-1.5.0-alpha06.aar",
-          "size": 13899,
-          "sha512": "b5555fc0d2992db6fa1fe11c8db2da316031a07c714df5a66f9f89dfa57b8851c643085f88061c1597cd3b304b3a27a249fcd39822e08a0879ec2658eb822219",
-          "sha256": "cfc8d42e323cc36b4b20dca2feb4eb667e40ad10a7017122e9f9ee58213e6d77",
-          "sha1": "060e944f2e4902bde5dc589c50af9fb921345cd8",
-          "md5": "afac2d605f2347e1f133ce3e0c3e5c62"
+          "size": 13904,
+          "sha512": "4b35507608cdee46c30c571911126c9b876673fe113d27e412f8637494303b4ae7df85ba584588d5b0bd6d6ad15ea3b44c5100f57a2f00afd39610976503b59f",
+          "sha256": "458483db6dc32bae3abe0c90f1f3d86628c5e1f5ec4928c1c68fe12b79fa9aa4",
+          "sha1": "822169ef6d2f6f2d6a617806ef202ea31c77a962",
+          "md5": "27bc123d20b49c3f26d41083f83dcd0c"
         }
       ]
     }

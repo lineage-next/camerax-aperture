@@ -110,11 +110,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1339946,
-          "sha512": "a621b3fa91f30342bfe1e5b7bb6741c657d3a6d8a40fea34574919f6c02daa7f6b1f6cb89bc38f34286dfa5f9390203cb6cc91e6711a045eafa209e22d63342a",
-          "sha256": "80f7426d81aad588c0616675b0f519d66085e0ebe2fe0b66125db8cd52c28138",
-          "sha1": "e60e7801c8b2d14f1efca9b3f65cfbbcbb054d06",
-          "md5": "168cd3de159106b9a693ee901dc6b002"
+          "size": 1339549,
+          "sha512": "98f8a64d3ec5c97dcf8e542e9e8851712d2909814c1b2234787ca951a9355652d37f819fb77aa1dcbd1ae499b0974bc4d600df25d97db360034f74dffc1be3a8",
+          "sha256": "fbc0c73b0b3921eed278d6dc16fb61575f2dfaf38bafcd96b5274c31e9fbc8e8",
+          "sha1": "6685b0c9c3777410299f2e18f0ff256a98792e76",
+          "md5": "10673dcf8889f87ed48265410dbdb32e"
         }
       ]
     },
@@ -189,11 +189,11 @@
         {
           "name": "camera-camera2-pipe-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-1.0.0-alpha01.aar",
-          "size": 1339946,
-          "sha512": "a621b3fa91f30342bfe1e5b7bb6741c657d3a6d8a40fea34574919f6c02daa7f6b1f6cb89bc38f34286dfa5f9390203cb6cc91e6711a045eafa209e22d63342a",
-          "sha256": "80f7426d81aad588c0616675b0f519d66085e0ebe2fe0b66125db8cd52c28138",
-          "sha1": "e60e7801c8b2d14f1efca9b3f65cfbbcbb054d06",
-          "md5": "168cd3de159106b9a693ee901dc6b002"
+          "size": 1339549,
+          "sha512": "98f8a64d3ec5c97dcf8e542e9e8851712d2909814c1b2234787ca951a9355652d37f819fb77aa1dcbd1ae499b0974bc4d600df25d97db360034f74dffc1be3a8",
+          "sha256": "fbc0c73b0b3921eed278d6dc16fb61575f2dfaf38bafcd96b5274c31e9fbc8e8",
+          "sha1": "6685b0c9c3777410299f2e18f0ff256a98792e76",
+          "md5": "10673dcf8889f87ed48265410dbdb32e"
         }
       ]
     },
