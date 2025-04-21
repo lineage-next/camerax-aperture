@@ -49,6 +49,8 @@ jobs:
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git fetch aosp cb2e40a709311a374916b53e224a39eefccffbe7 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 8.13
+        git fetch aosp 2a6e7f19c91beb24317d9e32aa6e6ca69d4e41db && git cherry-pick FETCH_HEAD # Upgrade to KSP 2.1.10-1.0.31
+        git fetch aosp 510ca2fa14e1ea92fd299d082d420c97e60c2734 && git cherry-pick FETCH_HEAD # Upgrade to Kotlin 2.1.20
         popd
 
     - name: Build
