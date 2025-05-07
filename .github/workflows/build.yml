@@ -45,13 +45,9 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 824a6d81bccbc4bf5286a94e6476d35825adf198
+        git fetch aosp a99266d9ab8e4a0b6b8d4c11d8fc79524f59c314
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
-        git fetch aosp cb2e40a709311a374916b53e224a39eefccffbe7 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 8.13
-        git fetch aosp 2a6e7f19c91beb24317d9e32aa6e6ca69d4e41db && git cherry-pick FETCH_HEAD # Upgrade to KSP 2.1.10-1.0.31
-        git fetch aosp 510ca2fa14e1ea92fd299d082d420c97e60c2734 && git cherry-pick FETCH_HEAD # Upgrade to Kotlin 2.1.20
-        git fetch aosp d5fb861fde8345d4f55c00912ff5099d5de8dcaf && git cherry-pick FETCH_HEAD # Fix AssertionError issue on Android 15 Pixel devices
         popd
 
     - name: Build
