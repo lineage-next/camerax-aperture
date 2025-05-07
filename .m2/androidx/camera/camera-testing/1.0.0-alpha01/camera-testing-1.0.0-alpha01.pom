@@ -48,74 +48,22 @@
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-stdlib</artifactId>
-        <version>1.8.22</version>
+        <version>2.0.21</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>androidx.test.uiautomator</groupId>
-      <artifactId>uiautomator</artifactId>
-      <version>2.2.0</version>
+      <groupId>androidx.test</groupId>
+      <artifactId>monitor</artifactId>
+      <version>1.8.0-alpha03</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jspecify</groupId>
-      <artifactId>jspecify</artifactId>
-      <version>1.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-lifecycle</artifactId>
-      <version>[1.5.0-alpha06]</version>
-      <scope>compile</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-video</artifactId>
-      <version>[1.5.0-alpha06]</version>
-      <scope>compile</scope>
-      <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.test</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>rules</artifactId>
       <version>1.5.0</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-camera2-pipe-integration</artifactId>
-      <version>[1.0.0-alpha01]</version>
-      <scope>runtime</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.appcompat</groupId>
-      <artifactId>appcompat</artifactId>
-      <version>1.1.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.core</groupId>
-      <artifactId>core</artifactId>
-      <version>1.1.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-core</artifactId>
-      <version>[1.5.0-alpha06]</version>
-      <scope>compile</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.annotation</groupId>
-      <artifactId>annotation</artifactId>
-      <version>1.8.1</version>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>androidx.test</groupId>
@@ -124,9 +72,48 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.test</groupId>
-      <artifactId>rules</artifactId>
-      <version>1.5.0</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-runtime</artifactId>
+      <version>2.1.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-core</artifactId>
+      <version>[1.5.0-beta01]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-lifecycle</artifactId>
+      <version>[1.5.0-beta01]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-video</artifactId>
+      <version>[1.5.0-beta01]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.jspecify</groupId>
+      <artifactId>jspecify</artifactId>
+      <version>1.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.appcompat</groupId>
+      <artifactId>appcompat</artifactId>
+      <version>1.1.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -142,8 +129,33 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+      <version>1.7.3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-livedata-core</artifactId>
+      <version>2.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.test</groupId>
+      <artifactId>core</artifactId>
+      <version>1.5.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.annotation</groupId>
+      <artifactId>annotation</artifactId>
+      <version>1.8.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.test.espresso</groupId>
+      <artifactId>espresso-idling-resource</artifactId>
+      <version>3.5.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -153,15 +165,9 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>listenablefuture</artifactId>
-      <version>1.0</version>
+      <groupId>androidx.annotation</groupId>
+      <artifactId>annotation-experimental</artifactId>
+      <version>1.4.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -177,9 +183,51 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.test.espresso</groupId>
-      <artifactId>espresso-idling-resource</artifactId>
-      <version>3.5.0</version>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.test.uiautomator</groupId>
+      <artifactId>uiautomator</artifactId>
+      <version>2.2.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.arch.core</groupId>
+      <artifactId>core-common</artifactId>
+      <version>2.1.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>listenablefuture</artifactId>
+      <version>1.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.lifecycle</groupId>
+      <artifactId>lifecycle-common</artifactId>
+      <version>2.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-android</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-camera2-pipe-integration</artifactId>
+      <version>[1.0.0-alpha01]</version>
+      <scope>runtime</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core</artifactId>
+      <version>1.1.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

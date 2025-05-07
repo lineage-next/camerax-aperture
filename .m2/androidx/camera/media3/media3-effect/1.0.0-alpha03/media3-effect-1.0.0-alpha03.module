@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.media3",
+    "module": "media3-effect",
+    "version": "1.0.0-alpha03",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha03-sources.jar",
+          "url": "media3-effect-1.0.0-alpha03-sources.jar",
+          "size": 12005,
+          "sha512": "e8f4c0eaac8c9e92f25e917dec97bae059626b733d95ef82bab1d836ec9491e07aee452bbb782ca8e657a1da7f80b87f6180bf912376cda44084552bde67cbd4",
+          "sha256": "4136dd891f35b48b5820d60400cd740cdb13581989b18515dcccadba958dc43e",
+          "sha1": "24f9561efe0bc961e8494fe731415946689c3b13",
+          "md5": "fa6df79318e712d008ce69cc77f5d1a9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha03.aar",
+          "url": "media3-effect-1.0.0-alpha03.aar",
+          "size": 19417,
+          "sha512": "3cfaa331dafaebdc5f06b3ee58e5705e788194bea9e16c9fa6eec5ddfddf27cf80eb4002b182a08ce61e3f3427ad989ae766003e324bb20db66fbd5eb915f187",
+          "sha256": "7fe275d646bd46b969189d6f522b8f57bc6f7ad762d58c7f70c3b77cd35ae365",
+          "sha1": "d068f30823fb48ba902f0a222c704b0c2660d979",
+          "md5": "5973b32a973984d241e75fd443d558df"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha03.aar",
+          "url": "media3-effect-1.0.0-alpha03.aar",
+          "size": 19417,
+          "sha512": "3cfaa331dafaebdc5f06b3ee58e5705e788194bea9e16c9fa6eec5ddfddf27cf80eb4002b182a08ce61e3f3427ad989ae766003e324bb20db66fbd5eb915f187",
+          "sha256": "7fe275d646bd46b969189d6f522b8f57bc6f7ad762d58c7f70c3b77cd35ae365",
+          "sha1": "d068f30823fb48ba902f0a222c704b0c2660d979",
+          "md5": "5973b32a973984d241e75fd443d558df"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha03-versionMetadata.json",
+          "url": "media3-effect-1.0.0-alpha03-versionMetadata.json",
+          "size": 420,
+          "sha512": "c1f3cc9ceadeb3a68cc60e266b70ff3f0cd0c1cf75797acf30f1739793c0929365283275cb2afffa0f06fd963b1784cb15978e2e2cde0e48774946364b6c98de",
+          "sha256": "771a1ceefcc14c424fd8e92210f000a255e2a03e0942bd0dbb556eda88668b87",
+          "sha1": "455a7d5b2e2d80dd858774d3751c36f8fbedd7e8",
+          "md5": "df4cf096c378a1777999a44537a0e84a"
+        }
+      ]
+    }
+  ]
+}
