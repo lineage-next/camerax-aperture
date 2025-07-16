@@ -50,17 +50,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-coroutines-test</artifactId>
-      <version>1.7.3</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2-pipe</artifactId>
       <version>[1.0.0-alpha01]</version>
@@ -69,8 +58,26 @@
     </dependency>
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-test</artifactId>
+      <version>1.8.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.camera.featurecombinationquery</groupId>
+      <artifactId>featurecombinationquery</artifactId>
+      <version>1.5.0-beta02</version>
+      <scope>runtime</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>atomicfu</artifactId>
-      <version>0.17.0</version>
+      <version>0.27.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

@@ -27,11 +27,11 @@
         {
           "name": "media3-effect-1.0.0-alpha03-sources.jar",
           "url": "media3-effect-1.0.0-alpha03-sources.jar",
-          "size": 12005,
-          "sha512": "e8f4c0eaac8c9e92f25e917dec97bae059626b733d95ef82bab1d836ec9491e07aee452bbb782ca8e657a1da7f80b87f6180bf912376cda44084552bde67cbd4",
-          "sha256": "4136dd891f35b48b5820d60400cd740cdb13581989b18515dcccadba958dc43e",
-          "sha1": "24f9561efe0bc961e8494fe731415946689c3b13",
-          "md5": "fa6df79318e712d008ce69cc77f5d1a9"
+          "size": 11938,
+          "sha512": "86ebc1d09e586fe5e74d4fd1bfc2e9f0ce20e76c20dfff79fcb6f3b1fe6db20174d60a073817f822302c8338616db7901079e002e58bb4ab299c8c6e2c39af2a",
+          "sha256": "ef2f0ab977698aef56f4eaef8ca81f4e578b3fb86ae9af0d35a07d92a8c02682",
+          "sha1": "ff6d8ad9bf57ec710f37e66378b91ad7d34bc4f6",
+          "md5": "71720c22989e2c552e1f9aae86519787"
         }
       ]
     },
@@ -50,17 +50,24 @@
           "version": {
             "requires": "1.4.0"
           }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.12.0"
+          }
         }
       ],
       "files": [
         {
           "name": "media3-effect-1.0.0-alpha03.aar",
           "url": "media3-effect-1.0.0-alpha03.aar",
-          "size": 19417,
-          "sha512": "3cfaa331dafaebdc5f06b3ee58e5705e788194bea9e16c9fa6eec5ddfddf27cf80eb4002b182a08ce61e3f3427ad989ae766003e324bb20db66fbd5eb915f187",
-          "sha256": "7fe275d646bd46b969189d6f522b8f57bc6f7ad762d58c7f70c3b77cd35ae365",
-          "sha1": "d068f30823fb48ba902f0a222c704b0c2660d979",
-          "md5": "5973b32a973984d241e75fd443d558df"
+          "size": 19196,
+          "sha512": "810ed3017efb255a2a54bfb44e3ed34e9a7ec4899502f1a8d95c59ab01ebad440eba222617d073dc085ed1eab22a6f40936e4029807eefa026c0f822bcf19b0a",
+          "sha256": "e029fd60c88bbfce670d91230359ed9881d2536c8bd6aa7e65441d974bc37939",
+          "sha1": "68efec8028f4051156610030a3a88a63ca23e81f",
+          "md5": "6c60df26607908b16000123e875e04c9"
         }
       ]
     },
@@ -74,10 +81,24 @@
       },
       "dependencies": [
         {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
             "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.12.0"
           }
         },
         {
@@ -99,11 +120,11 @@
         {
           "name": "media3-effect-1.0.0-alpha03.aar",
           "url": "media3-effect-1.0.0-alpha03.aar",
-          "size": 19417,
-          "sha512": "3cfaa331dafaebdc5f06b3ee58e5705e788194bea9e16c9fa6eec5ddfddf27cf80eb4002b182a08ce61e3f3427ad989ae766003e324bb20db66fbd5eb915f187",
-          "sha256": "7fe275d646bd46b969189d6f522b8f57bc6f7ad762d58c7f70c3b77cd35ae365",
-          "sha1": "d068f30823fb48ba902f0a222c704b0c2660d979",
-          "md5": "5973b32a973984d241e75fd443d558df"
+          "size": 19196,
+          "sha512": "810ed3017efb255a2a54bfb44e3ed34e9a7ec4899502f1a8d95c59ab01ebad440eba222617d073dc085ed1eab22a6f40936e4029807eefa026c0f822bcf19b0a",
+          "sha256": "e029fd60c88bbfce670d91230359ed9881d2536c8bd6aa7e65441d974bc37939",
+          "sha1": "68efec8028f4051156610030a3a88a63ca23e81f",
+          "md5": "6c60df26607908b16000123e875e04c9"
         }
       ]
     },

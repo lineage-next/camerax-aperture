@@ -1,0 +1,177 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.featurecombinationquery",
+    "module": "featurecombinationquery",
+    "version": "1.5.0-beta02",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery-play-services",
+          "version": {
+            "requires": "1.5.0-beta02"
+          },
+          "reason": "featurecombinationquery is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-1.5.0-beta02-sources.jar",
+          "url": "featurecombinationquery-1.5.0-beta02-sources.jar",
+          "size": 20234,
+          "sha512": "52cee52f2f29fda30222f512fb4f5c326704213efa65d8a084adfcd771d1de1e11ddd60eee2f6fd096a93a3bf5071b15d1c2fde9c57deeb2d07c791b487927bc",
+          "sha256": "5aa1c82a6a691a2cb6747f81558ecd5ac580f3aba01f78ca4e01d83756e7c0fa",
+          "sha1": "1cfd85d96a8a32dce97ac4f5dc10be59803fd467",
+          "md5": "692dc748f6bc73578395c0193e15a7d5"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery-play-services",
+          "version": {
+            "requires": "1.5.0-beta02"
+          },
+          "reason": "featurecombinationquery is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-1.5.0-beta02.aar",
+          "url": "featurecombinationquery-1.5.0-beta02.aar",
+          "size": 18531,
+          "sha512": "f9049d57c4f601307026ed208d3f8117766789885d3bbd4714e84ef440d8abe3a32ca7e0dae3e78de04024090b0a8b430fa2efb78f3f3faee6258bca9aa45ab3",
+          "sha256": "030255e2f30f9a9b6ea00f69230f8c269b3d01dd2ae794fb3f484850884d3bf7",
+          "sha1": "eefd880ae9c89321fe8ea6f7a67e2a96ae50f8ef",
+          "md5": "23c79f2ad5b4072128d1a5d1ba37bfee"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery-play-services",
+          "version": {
+            "requires": "1.5.0-beta02"
+          },
+          "reason": "featurecombinationquery is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-1.5.0-beta02.aar",
+          "url": "featurecombinationquery-1.5.0-beta02.aar",
+          "size": 18531,
+          "sha512": "f9049d57c4f601307026ed208d3f8117766789885d3bbd4714e84ef440d8abe3a32ca7e0dae3e78de04024090b0a8b430fa2efb78f3f3faee6258bca9aa45ab3",
+          "sha256": "030255e2f30f9a9b6ea00f69230f8c269b3d01dd2ae794fb3f484850884d3bf7",
+          "sha1": "eefd880ae9c89321fe8ea6f7a67e2a96ae50f8ef",
+          "md5": "23c79f2ad5b4072128d1a5d1ba37bfee"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery-play-services",
+          "version": {
+            "requires": "1.5.0-beta02"
+          },
+          "reason": "featurecombinationquery is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-1.5.0-beta02-versionMetadata.json",
+          "url": "featurecombinationquery-1.5.0-beta02-versionMetadata.json",
+          "size": 2863,
+          "sha512": "2f26fe81f762067e37b215715cc91324904c220f6fc6162611bd5cd701d50a8e55c9585fb9cf97a5cb8002b73a0c8848cfc961646034087b8071e10634cbe93c",
+          "sha256": "72c4a54bfde3b8e09e6833211ea9cb92968889394ad253c5db9b491fd3d8adcb",
+          "sha1": "434a9b9a1190341b42ec68d0446d700d0fc27368",
+          "md5": "6c65a5a302955f53472b6031fdf3e35c"
+        }
+      ]
+    }
+  ]
+}

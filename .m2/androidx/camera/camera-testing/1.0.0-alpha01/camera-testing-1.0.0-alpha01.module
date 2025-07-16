@@ -45,11 +45,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-testing-1.0.0-alpha01-sources.jar",
-          "size": 185780,
-          "sha512": "84189e2bd4dad308bc23f25aa0b8a21248e47846ccf8a489c721c3e3086bce3f9b536d69edd3567b97567e915a5b38ab4eb4550ec994f921f0067d7df5b057d8",
-          "sha256": "100e0f89d6c82daee546fb328c1dac5b0c355b47c84eb00ca484093cd072dac8",
-          "sha1": "7e85c4246df24919d3913f411e901aa08f1e2cd2",
-          "md5": "8e58ab539fd814f6378256d647fb9818"
+          "size": 195927,
+          "sha512": "3ed02d10da2efd80aee924f9274213eba5d5e59875228e29e114bd29c840c6fb5420dca94052bf614faf832ec35208fd959823d3bccc66ce16b897c64699f278",
+          "sha256": "c010e4d8e16e4963afbf7094085cca4f3c2727bc3cba5d3140171419753196c9",
+          "sha1": "c996718bb9c1f72a8a029cdc1d4cf2ab241401a6",
+          "md5": "383bc63f1678309bed8c97218c06af65"
         }
       ]
     },
@@ -73,21 +73,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
@@ -115,7 +115,7 @@
           "group": "org.jetbrains.kotlinx",
           "module": "kotlinx-coroutines-core",
           "version": {
-            "requires": "1.7.3"
+            "requires": "1.8.1"
           }
         },
         {
@@ -148,11 +148,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 415503,
-          "sha512": "838f989fc48131bd5dbf714b6c9cef6ead3548fb95d73e8a439ef7c1f92a853c8ac9b767da906a2bc46e5cc7332be0536a8b8f96b8693bfa3183975a2cbaf743",
-          "sha256": "3fe472a110334b8c5d2fa6d7ed37910ff879d449452499011486d81d26c695ac",
-          "sha1": "c30b5800484f4d4e5be575778fe831018ffbe79c",
-          "md5": "d3d3db4607f59a82968e85d1a678bbdd"
+          "size": 463985,
+          "sha512": "11799aadc9ae3d6ac3448f573a1c93e6c8b3786ba8eace98875f2a653f6da9c0247ff9dda290aeb07bf4623bde0a0ca699a52ce5858fe5066fb1f228d5fda5c8",
+          "sha256": "1ce1b10caa553373f1393fe10ebb6c7f4f6e6fbc6cc49f1e9740256a02636c4a",
+          "sha1": "90fbeefac8a10258f2c6d4f44f2f69a75e0d4eb4",
+          "md5": "cfb7d2c1657951afc4b4ed34cbcb7a5c"
         }
       ]
     },
@@ -195,6 +195,13 @@
         },
         {
           "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0-beta02"
+          }
+        },
+        {
+          "group": "androidx.camera",
           "module": "camera-camera2-pipe-integration",
           "version": {
             "requires": "1.0.0-alpha01"
@@ -204,21 +211,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-beta01"
+            "requires": "1.5.0-beta02"
           }
         },
         {
@@ -267,7 +274,7 @@
           "group": "androidx.test",
           "module": "monitor",
           "version": {
-            "requires": "1.8.0-alpha03"
+            "requires": "1.8.0-beta01"
           }
         },
         {
@@ -341,21 +348,21 @@
           "group": "org.jetbrains.kotlinx",
           "module": "atomicfu",
           "version": {
-            "requires": "0.17.0"
+            "requires": "0.27.0"
           }
         },
         {
           "group": "org.jetbrains.kotlinx",
           "module": "kotlinx-coroutines-android",
           "version": {
-            "requires": "1.7.3"
+            "requires": "1.8.1"
           }
         },
         {
           "group": "org.jetbrains.kotlinx",
           "module": "kotlinx-coroutines-core",
           "version": {
-            "requires": "1.7.3"
+            "requires": "1.8.1"
           }
         },
         {
@@ -395,11 +402,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 415503,
-          "sha512": "838f989fc48131bd5dbf714b6c9cef6ead3548fb95d73e8a439ef7c1f92a853c8ac9b767da906a2bc46e5cc7332be0536a8b8f96b8693bfa3183975a2cbaf743",
-          "sha256": "3fe472a110334b8c5d2fa6d7ed37910ff879d449452499011486d81d26c695ac",
-          "sha1": "c30b5800484f4d4e5be575778fe831018ffbe79c",
-          "md5": "d3d3db4607f59a82968e85d1a678bbdd"
+          "size": 463985,
+          "sha512": "11799aadc9ae3d6ac3448f573a1c93e6c8b3786ba8eace98875f2a653f6da9c0247ff9dda290aeb07bf4623bde0a0ca699a52ce5858fe5066fb1f228d5fda5c8",
+          "sha256": "1ce1b10caa553373f1393fe10ebb6c7f4f6e6fbc6cc49f1e9740256a02636c4a",
+          "sha1": "90fbeefac8a10258f2c6d4f44f2f69a75e0d4eb4",
+          "md5": "cfb7d2c1657951afc4b4ed34cbcb7a5c"
         }
       ]
     },

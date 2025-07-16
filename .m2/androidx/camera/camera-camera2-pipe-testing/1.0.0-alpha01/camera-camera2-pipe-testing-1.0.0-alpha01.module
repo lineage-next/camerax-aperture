@@ -27,11 +27,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
-          "size": 39723,
-          "sha512": "e81269e6514856a7391e39afea0266c07e8b9b5c1e81c5ed9d13ef1d246a7f0ac1c1f5cf23c85f63cc10e32dc938a5327fbe000ce20580a4a3a832d07c5daa75",
-          "sha256": "9b9f2c808c6f7acd3590e12ced405bf2ce7abad0e3d1b8da01d079fa4021a7aa",
-          "sha1": "8f0f01281fd16fc6bfdee4ab2c50769299b34156",
-          "md5": "d961f0cf18cfaf44ee380dd0a75ca996"
+          "size": 41003,
+          "sha512": "275c267c1cdcc6082e55f9bfad253a74dc1837a0a013e50db5b03cefe236c8ce6720b1680c5df38805383cf14b3f5b1c2e50b2e24234e05dabb50128ce15599f",
+          "sha256": "c818ce8fd7bfae83c812d51eab94f6624e4bd83ae6f8835821fee47aa48d27ba",
+          "sha1": "603cbdd03629d3300562473df5629a3788516188",
+          "md5": "bb03d81fc2628f7bea47faa890e190c2"
         }
       ]
     },
@@ -56,11 +56,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 145490,
-          "sha512": "29b18c90a72d7223945fcc454e646739a0ba0b9a6456ddb7283a98c5e66cc3f7f25768c40f189f95ba6f34b918b2837d29e8f037d2ec9805877a4a29b641cd3a",
-          "sha256": "47ef92f80bfd7844306fe9ca8572b878f31ffbbcae15409078023cb95e8a6972",
-          "sha1": "dd4a78c183f26797b50f4b673cb16f2ade7db508",
-          "md5": "d442db119b1863dbc5903874a2799805"
+          "size": 149951,
+          "sha512": "74d3b7514ca21e5790e52b0a8dc6a21825e6045867406a469219f5d45ba2751b390cc588a2e29349983798ecd726d86b0402a5cf839270301f290036974b0169",
+          "sha256": "d90f1259631c31d19c6e97473d2fb81b7094515c742af188ee37325dcf734551",
+          "sha1": "f22fa3d930bbd7f29d53d30e6559998d1bcda421",
+          "md5": "c996c6d43a118103228eeada140889e9"
         }
       ]
     },
@@ -88,6 +88,13 @@
           }
         },
         {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-beta02"
+          }
+        },
+        {
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib"
         },
@@ -95,14 +102,14 @@
           "group": "org.jetbrains.kotlinx",
           "module": "atomicfu",
           "version": {
-            "requires": "0.17.0"
+            "requires": "0.27.0"
           }
         },
         {
           "group": "org.jetbrains.kotlinx",
           "module": "kotlinx-coroutines-test",
           "version": {
-            "requires": "1.7.3"
+            "requires": "1.8.1"
           }
         }
       ],
@@ -119,11 +126,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 145490,
-          "sha512": "29b18c90a72d7223945fcc454e646739a0ba0b9a6456ddb7283a98c5e66cc3f7f25768c40f189f95ba6f34b918b2837d29e8f037d2ec9805877a4a29b641cd3a",
-          "sha256": "47ef92f80bfd7844306fe9ca8572b878f31ffbbcae15409078023cb95e8a6972",
-          "sha1": "dd4a78c183f26797b50f4b673cb16f2ade7db508",
-          "md5": "d442db119b1863dbc5903874a2799805"
+          "size": 149951,
+          "sha512": "74d3b7514ca21e5790e52b0a8dc6a21825e6045867406a469219f5d45ba2751b390cc588a2e29349983798ecd726d86b0402a5cf839270301f290036974b0169",
+          "sha256": "d90f1259631c31d19c6e97473d2fb81b7094515c742af188ee37325dcf734551",
+          "sha1": "f22fa3d930bbd7f29d53d30e6559998d1bcda421",
+          "md5": "c996c6d43a118103228eeada140889e9"
         }
       ]
     },
