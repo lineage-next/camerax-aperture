@@ -45,9 +45,11 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp f22a8ba695b5a3d975f57d279262d9d39444d990
+        git fetch aosp 3496263efa2133a8c8cd25f4ae6509b9d28a788f
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
+        git fetch aosp c6155c0227c25d3cbdbeafb3e42418b5d843c5df && git cherry-pick FETCH_HEAD # Upgrade to KGP 2.2.0
+        git fetch aosp 44978cd69f478dffdeb5356510f3d8757b47ff12 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.0.0: take 2
         popd
 
     - name: Build
