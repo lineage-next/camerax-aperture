@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.14",
+      "version": "9.0.0",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-testing-1.0.0-alpha01-sources.jar",
-          "size": 195927,
-          "sha512": "3ed02d10da2efd80aee924f9274213eba5d5e59875228e29e114bd29c840c6fb5420dca94052bf614faf832ec35208fd959823d3bccc66ce16b897c64699f278",
-          "sha256": "c010e4d8e16e4963afbf7094085cca4f3c2727bc3cba5d3140171419753196c9",
-          "sha1": "c996718bb9c1f72a8a029cdc1d4cf2ab241401a6",
-          "md5": "383bc63f1678309bed8c97218c06af65"
+          "size": 196511,
+          "sha512": "e004359d987b66b8a155d2b53c519987528c01d7d59bc9649e451bf80402b6cd3dbea7b5645f2f07a49f7b3a65ca1748a95aa37ca88989d5e6b89d5630df9b19",
+          "sha256": "5ab278bb6671d46cc7903a66b0744703a18eceb0945d9411dbf15c5ce4e0666a",
+          "sha1": "ee32ccc9b390d065d0218939f9aad025d94389bd",
+          "md5": "2206d2c6f4ed372d829e04ab6a39c4c4"
         }
       ]
     },
@@ -73,21 +73,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
@@ -148,11 +148,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 463985,
-          "sha512": "11799aadc9ae3d6ac3448f573a1c93e6c8b3786ba8eace98875f2a653f6da9c0247ff9dda290aeb07bf4623bde0a0ca699a52ce5858fe5066fb1f228d5fda5c8",
-          "sha256": "1ce1b10caa553373f1393fe10ebb6c7f4f6e6fbc6cc49f1e9740256a02636c4a",
-          "sha1": "90fbeefac8a10258f2c6d4f44f2f69a75e0d4eb4",
-          "md5": "cfb7d2c1657951afc4b4ed34cbcb7a5c"
+          "size": 465063,
+          "sha512": "389f617eccf5f1352e44487867dcff1eec9acb2840554183e8f2507ed4ef92a833787dda60e730023398a7a90fa0895750c990129e65b2980df1cd219d47c6e6",
+          "sha256": "3c2cf5a66c7fd814c9b6427585a2a6eded9402d80fc78478b4f96bc2e7a5230a",
+          "sha1": "57b755774d0fc94df4bf9674fee86de6c1666989",
+          "md5": "e611de4b415cc8d13a6bae00b4ed0cbc"
         }
       ]
     },
@@ -197,7 +197,7 @@
           "group": "androidx.camera",
           "module": "camera-camera2",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
@@ -211,21 +211,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0-beta02"
+            "requires": "1.5.0-rc01"
           }
         },
         {
@@ -274,7 +274,7 @@
           "group": "androidx.test",
           "module": "monitor",
           "version": {
-            "requires": "1.8.0-beta01"
+            "requires": "1.8.0"
           }
         },
         {
@@ -402,11 +402,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 463985,
-          "sha512": "11799aadc9ae3d6ac3448f573a1c93e6c8b3786ba8eace98875f2a653f6da9c0247ff9dda290aeb07bf4623bde0a0ca699a52ce5858fe5066fb1f228d5fda5c8",
-          "sha256": "1ce1b10caa553373f1393fe10ebb6c7f4f6e6fbc6cc49f1e9740256a02636c4a",
-          "sha1": "90fbeefac8a10258f2c6d4f44f2f69a75e0d4eb4",
-          "md5": "cfb7d2c1657951afc4b4ed34cbcb7a5c"
+          "size": 465063,
+          "sha512": "389f617eccf5f1352e44487867dcff1eec9acb2840554183e8f2507ed4ef92a833787dda60e730023398a7a90fa0895750c990129e65b2980df1cd219d47c6e6",
+          "sha256": "3c2cf5a66c7fd814c9b6427585a2a6eded9402d80fc78478b4f96bc2e7a5230a",
+          "sha1": "57b755774d0fc94df4bf9674fee86de6c1666989",
+          "md5": "e611de4b415cc8d13a6bae00b4ed0cbc"
         }
       ]
     },

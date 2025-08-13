@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.media3",
+    "module": "media3-effect",
+    "version": "1.0.0-alpha04",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha04-sources.jar",
+          "url": "media3-effect-1.0.0-alpha04-sources.jar",
+          "size": 11938,
+          "sha512": "86ebc1d09e586fe5e74d4fd1bfc2e9f0ce20e76c20dfff79fcb6f3b1fe6db20174d60a073817f822302c8338616db7901079e002e58bb4ab299c8c6e2c39af2a",
+          "sha256": "ef2f0ab977698aef56f4eaef8ca81f4e578b3fb86ae9af0d35a07d92a8c02682",
+          "sha1": "ff6d8ad9bf57ec710f37e66378b91ad7d34bc4f6",
+          "md5": "71720c22989e2c552e1f9aae86519787"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha04.aar",
+          "url": "media3-effect-1.0.0-alpha04.aar",
+          "size": 19196,
+          "sha512": "667e203f278f0d6f904d37b3347286f56c191ee2a93613ae4586bee1b786290948ef27c38c83da5bc7d20f3ff01e3d6edb8945d0b2a04bf7bb1a36e86bb69bbb",
+          "sha256": "1a5d023fdd181371dd142dd137893651deffe8d925b0bb786eecd6f1a8d3ec3c",
+          "sha1": "98d08e6fec5767c3168ba2be63f30bdf8396b611",
+          "md5": "79adf261537a445558b8e8db218d87c6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-common",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.media3",
+          "module": "media3-effect",
+          "version": {
+            "requires": "1.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha04.aar",
+          "url": "media3-effect-1.0.0-alpha04.aar",
+          "size": 19196,
+          "sha512": "667e203f278f0d6f904d37b3347286f56c191ee2a93613ae4586bee1b786290948ef27c38c83da5bc7d20f3ff01e3d6edb8945d0b2a04bf7bb1a36e86bb69bbb",
+          "sha256": "1a5d023fdd181371dd142dd137893651deffe8d925b0bb786eecd6f1a8d3ec3c",
+          "sha1": "98d08e6fec5767c3168ba2be63f30bdf8396b611",
+          "md5": "79adf261537a445558b8e8db218d87c6"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "files": [
+        {
+          "name": "media3-effect-1.0.0-alpha04-versionMetadata.json",
+          "url": "media3-effect-1.0.0-alpha04-versionMetadata.json",
+          "size": 420,
+          "sha512": "b44c5a9458c3eaec380151bcb92636f6662124e12dad835e7c1a99cfcd677e29a4965a7655d7e43aee5d41339b76f1ede083bad2cc84181f6441238f11cc40bb",
+          "sha256": "e9ea5da06961f72ae936e95e54285d8284ceb064e2adc66793b1e39968b55a1e",
+          "sha1": "96899d2b35a288be4d9f1c95f808a0c9170ae42b",
+          "md5": "df21606f10fb59f207f41eb21d4be069"
+        }
+      ]
+    }
+  ]
+}

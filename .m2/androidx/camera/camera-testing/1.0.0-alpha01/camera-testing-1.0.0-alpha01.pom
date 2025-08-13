@@ -56,7 +56,7 @@
     <dependency>
       <groupId>androidx.test</groupId>
       <artifactId>monitor</artifactId>
-      <version>1.8.0-beta01</version>
+      <version>1.8.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2</artifactId>
-      <version>[1.5.0-beta02]</version>
+      <version>[1.5.0-rc01]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
@@ -87,14 +87,14 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-lifecycle</artifactId>
-      <version>[1.5.0-beta02]</version>
+      <version>[1.5.0-rc01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.5.0-beta02]</version>
+      <version>[1.5.0-rc01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -138,7 +138,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.5.0-beta02]</version>
+      <version>[1.5.0-rc01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>

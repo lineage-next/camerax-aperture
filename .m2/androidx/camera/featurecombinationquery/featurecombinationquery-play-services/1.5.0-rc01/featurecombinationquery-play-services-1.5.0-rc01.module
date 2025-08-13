@@ -1,0 +1,184 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.featurecombinationquery",
+    "module": "featurecombinationquery-play-services",
+    "version": "1.5.0-rc01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-rc01"
+          },
+          "reason": "featurecombinationquery-play-services is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-play-services-1.5.0-rc01-sources.jar",
+          "url": "featurecombinationquery-play-services-1.5.0-rc01-sources.jar",
+          "size": 10545,
+          "sha512": "c8a98b170202ce1cdc0ba019610c82ef61187dcf3b8afbfed4d7db5856d503fe901b4c19e46e502f74415ffaf5399da6ccb83bc5693374e412484b544b78d347",
+          "sha256": "715003e2f29e19c381ccf45d422604f0e76e090fd69e32aa94d00964ef2b59c4",
+          "sha1": "efd8736076e858efeb0343e32780821a619a8239",
+          "md5": "1eafd7179b2ff1275ab87ae124bf3d7e"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-rc01"
+          },
+          "reason": "featurecombinationquery-play-services is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-play-services-1.5.0-rc01.aar",
+          "url": "featurecombinationquery-play-services-1.5.0-rc01.aar",
+          "size": 10912,
+          "sha512": "163c35316788adc016c39234b00b7a514f3a161c88677dfbde8820e68f95f2dfdb7fc935f83df755c3336d604275f210dee17b70588822f89fe8163ab8b9c6c2",
+          "sha256": "ed8f262ce095250bb3099fbb0fb79bb1ee2b116debe99e590349fcfe81421820",
+          "sha1": "ab54b1a90c4d8653be8854e30aa5989a59cce078",
+          "md5": "e7fe9c852ed7d9677b049c8377dc80af"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-rc01"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-cam-feature-combo-query",
+          "version": {
+            "requires": "16.0.0-beta01"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-rc01"
+          },
+          "reason": "featurecombinationquery-play-services is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-play-services-1.5.0-rc01.aar",
+          "url": "featurecombinationquery-play-services-1.5.0-rc01.aar",
+          "size": 10912,
+          "sha512": "163c35316788adc016c39234b00b7a514f3a161c88677dfbde8820e68f95f2dfdb7fc935f83df755c3336d604275f210dee17b70588822f89fe8163ab8b9c6c2",
+          "sha256": "ed8f262ce095250bb3099fbb0fb79bb1ee2b116debe99e590349fcfe81421820",
+          "sha1": "ab54b1a90c4d8653be8854e30aa5989a59cce078",
+          "md5": "e7fe9c852ed7d9677b049c8377dc80af"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.featurecombinationquery",
+          "module": "featurecombinationquery",
+          "version": {
+            "requires": "1.5.0-rc01"
+          },
+          "reason": "featurecombinationquery-play-services is in atomic group androidx.camera.featurecombinationquery"
+        }
+      ],
+      "files": [
+        {
+          "name": "featurecombinationquery-play-services-1.5.0-rc01-versionMetadata.json",
+          "url": "featurecombinationquery-play-services-1.5.0-rc01-versionMetadata.json",
+          "size": 2,
+          "sha512": "b25b294cb4deb69ea00a4c3cf3113904801b6015e5956bd019a8570b1fe1d6040e944ef3cdee16d0a46503ca6e659a25f21cf9ceddc13f352a3c98138c15d6af",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "sha1": "97d170e1550eee4afc0af065b78cda302a97674c",
+          "md5": "d751713988987e9331980363e24189ce"
+        }
+      ]
+    }
+  ]
+}

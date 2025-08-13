@@ -68,7 +68,7 @@
     <dependency>
       <groupId>androidx.camera.featurecombinationquery</groupId>
       <artifactId>featurecombinationquery</artifactId>
-      <version>1.5.0-beta02</version>
+      <version>1.5.0-rc01</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
