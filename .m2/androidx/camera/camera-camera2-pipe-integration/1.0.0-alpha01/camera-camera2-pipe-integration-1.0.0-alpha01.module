@@ -73,7 +73,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-rc01"
+            "requires": "1.5.0"
           }
         },
         {
@@ -169,7 +169,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0-rc01"
+            "requires": "1.5.0"
           }
         },
         {

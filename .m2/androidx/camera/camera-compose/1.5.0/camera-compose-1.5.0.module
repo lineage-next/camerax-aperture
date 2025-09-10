@@ -1,0 +1,459 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-compose",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-compose-1.5.0-sources.jar",
+          "url": "camera-compose-1.5.0-sources.jar",
+          "size": 9107,
+          "sha512": "930ac060999de620e000d37e6ad10f2835798bc2e0673af90b6fddb313bcf2ef86e64c75e177664b80df8e9bf150b69ee0a35513fb34b35e128e483a1888703a",
+          "sha256": "815d1a61c57ceb8db4aaa5841876e36b34cd9cbaf34a20b2fa974be3dbeef3d5",
+          "sha1": "74e812059d0db34dd2bc38aef9efa4f9c2d68e9b",
+          "md5": "8391806df80b2f2a5056b043b78224ee"
+        },
+        {
+          "name": "camera-compose-1.5.0-samples-sources.jar",
+          "url": "camera-compose-1.5.0-samples-sources.jar",
+          "size": 6320,
+          "sha512": "9c0952504e3621acb110840aeeee34736cccea0e1541dd1c0b0482332eba8c1783976f9b01976ea9a75432f6d663db27446f0f20066ef6e3bff29695188efef6",
+          "sha256": "735714a851d7b00412a01b01479a221ef1a1da04873499f69b1029ca3f7c622e",
+          "sha1": "dfef3ae4b2c240dbac68d1fee8b3cb151ca92295",
+          "md5": "d4a7c966b7fd2dc4049b1cfc25b915b0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.7.8"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-compose-1.5.0.aar",
+          "url": "camera-compose-1.5.0.aar",
+          "size": 40500,
+          "sha512": "da139341b26c1efe73e08f78902bd5dd195b3b0b76d36b734cb067dc21bfc55f54eca9e167db9ff311f5a1c5d72a81dd5772121072e7a0eef3b542942cd52561",
+          "sha256": "4800a528a2f66b15dd7e3650f507fc58fd2bfd172abe44c2ebfba2657022f41d",
+          "sha1": "e0c86c1fb8902dccd19d16c07d2e42bde71a8940",
+          "md5": "bee61cb2274140eea2fea96aaaaf1697"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation-layout",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.7.8"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.12.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-compose-1.5.0.aar",
+          "url": "camera-compose-1.5.0.aar",
+          "size": 40500,
+          "sha512": "da139341b26c1efe73e08f78902bd5dd195b3b0b76d36b734cb067dc21bfc55f54eca9e167db9ff311f5a1c5d72a81dd5772121072e7a0eef3b542942cd52561",
+          "sha256": "4800a528a2f66b15dd7e3650f507fc58fd2bfd172abe44c2ebfba2657022f41d",
+          "sha1": "e0c86c1fb8902dccd19d16c07d2e42bde71a8940",
+          "md5": "bee61cb2274140eea2fea96aaaaf1697"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.5.0"
+          },
+          "reason": "camera-compose is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-compose-1.5.0-versionMetadata.json",
+          "url": "camera-compose-1.5.0-versionMetadata.json",
+          "size": 741,
+          "sha512": "9d334a4fe80b6e08d9cf1e01415fc599fc180aafdbd91591d54a8a373f585dae41a38b8befa152d96fe76060df0805967bd571a8099a66d0f7e10d6700df9da3",
+          "sha256": "12dc08001ce1bd7e7a62d8d1ee221017cb8cecdc00c9e7e2ebe56ee58a902243",
+          "sha1": "4e9e9b6b6eb0114647d4ea6e8f5bc83ee74371ec",
+          "md5": "e53136def7fd4d3f16a935bd4073c789"
+        }
+      ]
+    }
+  ]
+}

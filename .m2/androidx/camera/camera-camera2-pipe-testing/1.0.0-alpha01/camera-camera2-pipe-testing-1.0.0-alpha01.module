@@ -91,7 +91,7 @@
           "group": "androidx.camera.featurecombinationquery",
           "module": "featurecombinationquery",
           "version": {
-            "requires": "1.5.0-rc01"
+            "requires": "1.5.0"
           }
         },
         {

@@ -68,7 +68,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2</artifactId>
-      <version>[1.5.0-rc01]</version>
+      <version>[1.5.0]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
@@ -87,14 +87,14 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-lifecycle</artifactId>
-      <version>[1.5.0-rc01]</version>
+      <version>[1.5.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.5.0-rc01]</version>
+      <version>[1.5.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -138,7 +138,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.5.0-rc01]</version>
+      <version>[1.5.0]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
