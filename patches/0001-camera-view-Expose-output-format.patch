@@ -1,0 +1,186 @@
+From 8f87c3a104053425003ca2eb6ae2845cb4206d85 Mon Sep 17 00:00:00 2001
+From: Luca Stefani <luca.stefani.ge1@gmail.com>
+Date: Wed, 10 Sep 2025 14:33:03 +0200
+Subject: [PATCH] camera-view: Expose output format
+
+Change-Id: I65fd1fc3f9bf3644fc39c04025cd8a6f433127e1
+---
+ .../camera/view/CameraController.java         | 95 +++++++++++++++++--
+ 1 file changed, 86 insertions(+), 9 deletions(-)
+
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+index 46176141f72..6ae7686fa5d 100644
+--- a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
++++ b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+@@ -362,7 +362,7 @@ public abstract class CameraController {
+             @NonNull ListenableFuture<ProcessCameraProviderWrapper> cameraProviderFuture) {
+         mAppContext = ContextUtil.getApplicationContext(context);
+         mPreview = createPreview();
+-        mImageCapture = createImageCapture(null);
++        mImageCapture = createImageCapture(null, null);
+         mImageAnalysis = createImageAnalysis(null, null, null);
+         mVideoCapture = createVideoCapture();
+ 
+@@ -908,6 +908,51 @@ public abstract class CameraController {
+         mImageCapture.takePicture(outputFileOptions, executor, imageSavedCallback);
+     }
+ 
++    /**
++     * Captures two still images simultaneously and saves to a file along with application specified metadata.
++     *
++     * <p>Currently only {@link #OUTPUT_FORMAT_RAW_JPEG} is supporting simultaneous image capture.
++     * It needs two {@link OutputFileOptions}, the first one is used for
++     * {@link ImageFormat#RAW_SENSOR} image and the second one is for {@link ImageFormat#JPEG}. The
++     * order of the callbacks for which image format is triggered first is not guaranteed. Check
++     * with {@link OutputFileResults#getImageFormat()} in
++     * {@link OnImageSavedCallback#onImageSaved(OutputFileResults)} for the image format.
++     *
++     * <p>By default, the saved image is mirrored to match the output of the preview if front
++     * camera is used. To override this behavior, the app needs to explicitly set the flag to
++     * {@code false} using {@link ImageCapture.Metadata#setReversedHorizontal} and
++     * {@link ImageCapture.OutputFileOptions.Builder#setMetadata}.
++     *
++     * <p>The saved image is cropped to match the aspect ratio of the {@link PreviewView}. To
++     * take a picture with the maximum available resolution, make sure that the
++     * {@link PreviewView}'s aspect ratio matches the max JPEG resolution supported by the camera.
++     *
++     * @param rawOutputFileOptions   Options to store the newly captured raw image.
++     * @param jpegOutputFileOptions  Options to store the newly captured jpeg image.
++     * @param executor The executor in which the callback methods will be run.
++     * @param imageSavedCallback Callback to be called for the newly captured image.
++     * @throws IllegalStateException If {@link ImageCapture#FLASH_MODE_SCREEN} is set to the
++     * {@link CameraController}, but a non-null {@link Window} instance has not been set with
++     * {@link PreviewView#setScreenFlashWindow}.
++     * @see ImageCapture#takePicture(
++     * ImageCapture.OutputFileOptions, Executor, ImageCapture.OnImageSavedCallback)
++     */
++    @MainThread
++    public void takePicture(
++            ImageCapture.@NonNull OutputFileOptions rawOutputFileOptions,
++            ImageCapture.@NonNull OutputFileOptions jpegOutputFileOptions,
++            @NonNull Executor executor,
++            ImageCapture.@NonNull OnImageSavedCallback imageSavedCallback) {
++        checkMainThread();
++        Preconditions.checkState(isCameraInitialized(), CAMERA_NOT_INITIALIZED);
++        Preconditions.checkState(isImageCaptureEnabled(), IMAGE_CAPTURE_DISABLED);
++
++        throwExceptionForInvalidScreenFlashCapture();
++
++        updateMirroringFlagInOutputFileOptions(jpegOutputFileOptions);
++        mImageCapture.takePicture(rawOutputFileOptions, jpegOutputFileOptions, executor, imageSavedCallback);
++    }
++
+     /**
+      * Updates {@link ImageCapture.OutputFileOptions} based on config.
+      *
+@@ -980,7 +1025,7 @@ public abstract class CameraController {
+         if (mImageCapture.getCaptureMode() == captureMode) {
+             return;
+         }
+-        unbindImageCaptureAndRecreate(captureMode);
++        unbindImageCaptureAndRecreate(captureMode, getImageOutputFormat());
+         startCameraAndTrackStates();
+     }
+ 
+@@ -995,6 +1040,35 @@ public abstract class CameraController {
+         return mImageCapture.getCaptureMode();
+     }
+ 
++    /**
++     * Sets the image output format.
++     *
++     * <p>Changing the value will reconfigure the camera which will cause additional latency. To
++     * avoid this, set the value before controller is bound to lifecycle.
++     *
++     * @param captureMode The requested image capture mode.
++     */
++    @MainThread
++    public void setImageOutputFormat(int outputFormat) {
++        checkMainThread();
++        if (mImageCapture.getOutputFormat() == outputFormat) {
++            return;
++        }
++        unbindImageCaptureAndRecreate(getImageCaptureMode(), outputFormat);
++        startCameraAndTrackStates();
++    }
++
++    /**
++     * Returns the image capture mode.
++     *
++     * @see ImageCapture#getOutputFormat()
++     */
++    @MainThread
++    public int getImageOutputFormat() {
++        checkMainThread();
++        return mImageCapture.getOutputFormat();
++    }
++
+     /**
+      * Sets the intended image size for {@link ImageCapture}.
+      *
+@@ -1019,7 +1093,7 @@ public abstract class CameraController {
+             return;
+         }
+         mImageCaptureTargetSize = targetSize;
+-        unbindImageCaptureAndRecreate(getImageCaptureMode());
++        unbindImageCaptureAndRecreate(getImageCaptureMode(), getImageOutputFormat());
+         startCameraAndTrackStates();
+     }
+ 
+@@ -1058,7 +1132,7 @@ public abstract class CameraController {
+             return;
+         }
+         mImageCaptureResolutionSelector = resolutionSelector;
+-        unbindImageCaptureAndRecreate(getImageCaptureMode());
++        unbindImageCaptureAndRecreate(getImageCaptureMode(), getImageOutputFormat());
+         startCameraAndTrackStates();
+     }
+ 
+@@ -1095,7 +1169,7 @@ public abstract class CameraController {
+             return;
+         }
+         mImageCaptureIoExecutor = executor;
+-        unbindImageCaptureAndRecreate(getImageCaptureMode());
++        unbindImageCaptureAndRecreate(getImageCaptureMode(), getImageOutputFormat());
+         startCameraAndTrackStates();
+     }
+ 
+@@ -1112,20 +1186,23 @@ public abstract class CameraController {
+      * Unbinds {@link ImageCapture} and recreates with the latest parameters.
+      */
+     @MainThread
+-    private void unbindImageCaptureAndRecreate(Integer imageCaptureMode) {
++    private void unbindImageCaptureAndRecreate(Integer imageCaptureMode, Integer imageOutputFormat) {
+         if (isCameraInitialized()) {
+             mCameraProvider.unbind(mImageCapture);
+         }
+         int flashMode = mImageCapture.getFlashMode();
+-        mImageCapture = createImageCapture(imageCaptureMode);
++        mImageCapture = createImageCapture(imageCaptureMode, imageOutputFormat);
+         setImageCaptureFlashMode(flashMode);
+     }
+ 
+-    private ImageCapture createImageCapture(Integer imageCaptureMode) {
++    private ImageCapture createImageCapture(Integer imageCaptureMode, Integer imageOutputFormat) {
+         ImageCapture.Builder builder = new ImageCapture.Builder();
+         if (imageCaptureMode != null) {
+             builder.setCaptureMode(imageCaptureMode);
+         }
++        if (imageOutputFormat != null) {
++            builder.setOutputFormat(imageOutputFormat);
++        }
+         configureResolution(builder, mImageCaptureResolutionSelector, mImageCaptureTargetSize);
+         if (mImageCaptureIoExecutor != null) {
+             builder.setIoExecutor(mImageCaptureIoExecutor);
+@@ -2039,7 +2116,7 @@ public abstract class CameraController {
+     @MainThread
+     private void unbindAllAndRecreate() {
+         unbindPreviewAndRecreate();
+-        unbindImageCaptureAndRecreate(getImageCaptureMode());
++        unbindImageCaptureAndRecreate(getImageCaptureMode(), getImageOutputFormat());
+         unbindImageAnalysisAndRecreate(mImageAnalysis.getBackpressureStrategy(),
+                 mImageAnalysis.getImageQueueDepth(), mImageAnalysis.getOutputImageFormat());
+         unbindVideoAndRecreate();
+-- 
+2.51.0
+
