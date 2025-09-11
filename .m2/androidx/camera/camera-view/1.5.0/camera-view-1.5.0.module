@@ -93,11 +93,11 @@
         {
           "name": "camera-view-1.5.0-sources.jar",
           "url": "camera-view-1.5.0-sources.jar",
-          "size": 94772,
-          "sha512": "bd618ee478f151bcd8fe4b86183044afdc6739cf16ba1dd9111739cca56b337dde03917f841778224624c63940ca0ff2ce8878063dd8a456a46f51feb539f194",
-          "sha256": "3ca2e5448b7b281982b0d99ec27e6fd6cafb3b9eba71d68a5f215e4607644297",
-          "sha1": "cb1f64212d1efc1046f5874fcf6222aaed6ec6ee",
-          "md5": "55fcb201117863c91b52d9dccb7d8875"
+          "size": 95167,
+          "sha512": "4763a2c815914d3dc60435c31832ea61c784201abfe677a8270519383787dd01aec83c8cdf3fb991db727f59accbea3cf17d8a2d8e9f03b44f7a47e253df1809",
+          "sha256": "fd7e0b93fd2b137472202aa6ce60f1554fcf6b9fbc5a84bb85ca3cd87dd791b2",
+          "sha1": "381ca81d05fd9534793933083493c3d06833706a",
+          "md5": "5f467ab487351171f7eafc19eac48cdc"
         }
       ]
     },
@@ -223,11 +223,11 @@
         {
           "name": "camera-view-1.5.0.aar",
           "url": "camera-view-1.5.0.aar",
-          "size": 122249,
-          "sha512": "b654f6d52417fb7949665c31c8d0e132acc02c204f88df6a84345a501b743600a28daef4bc4237368c44a9d6e7dca5acf1a0eba7092e13f8ecd20fd51ad4a969",
-          "sha256": "5c446ed38d571c213f7aeba7ef96552362a56408dc52265adae881f676246833",
-          "sha1": "3f90612def830393372f03f9f0f48a237d69b045",
-          "md5": "a761bb1b36416fcd91113c76943341be"
+          "size": 122545,
+          "sha512": "f7261dad17bd0e609a916d56ec2107de7b884d166e0ff8d6c95e65f9c138ec6540faf4dea4d9a2651bdd7765d09be2406097cf3a9c857b01d49d002bde4efbb8",
+          "sha256": "5f92b9cbd3aff3171bbcf22caca6bb79537ec9f82acb6978a88acfcb2e6c5373",
+          "sha1": "532772f31f047270e4e79d06079e15ce3221238f",
+          "md5": "c4fe71c988873d931135d0fe293509c5"
         }
       ]
     },
@@ -423,11 +423,11 @@
         {
           "name": "camera-view-1.5.0.aar",
           "url": "camera-view-1.5.0.aar",
-          "size": 122249,
-          "sha512": "b654f6d52417fb7949665c31c8d0e132acc02c204f88df6a84345a501b743600a28daef4bc4237368c44a9d6e7dca5acf1a0eba7092e13f8ecd20fd51ad4a969",
-          "sha256": "5c446ed38d571c213f7aeba7ef96552362a56408dc52265adae881f676246833",
-          "sha1": "3f90612def830393372f03f9f0f48a237d69b045",
-          "md5": "a761bb1b36416fcd91113c76943341be"
+          "size": 122545,
+          "sha512": "f7261dad17bd0e609a916d56ec2107de7b884d166e0ff8d6c95e65f9c138ec6540faf4dea4d9a2651bdd7765d09be2406097cf3a9c857b01d49d002bde4efbb8",
+          "sha256": "5f92b9cbd3aff3171bbcf22caca6bb79537ec9f82acb6978a88acfcb2e6c5373",
+          "sha1": "532772f31f047270e4e79d06079e15ce3221238f",
+          "md5": "c4fe71c988873d931135d0fe293509c5"
         }
       ]
     },
@@ -508,11 +508,11 @@
         {
           "name": "camera-view-1.5.0-versionMetadata.json",
           "url": "camera-view-1.5.0-versionMetadata.json",
-          "size": 14842,
-          "sha512": "a6d2196a8c4ab58130f18b94e6470ec362a1c089b6eaabb81410c8a95d8c7bf763b3de41bf2c496efa05d4d16819ec97a30afed705102dd6c523bde284698a79",
-          "sha256": "8d436b63c229049a15210873f66aa8f3d272628c045ab1347f66c338211ab39d",
-          "sha1": "9060f1cc27e919f222be82eb1ee1cbadb3e1e371",
-          "md5": "82b5838e60bbea4e105e826129a406fc"
+          "size": 15186,
+          "sha512": "5ed0dcd4a8c2bd3ebc62e65d724a2db25fde548ea3b3881bca09957a449cf95112e57aa75e00b01a13195cd890bd1747e4a03dbb00eead9393e269d6c93d26ca",
+          "sha256": "20046c6d381ee714e2b683ccd23338589bfb2daa6fed83fe3d0b1634b32acfc1",
+          "sha1": "747530acf7d501985f0b049c3a454b47f541fe09",
+          "md5": "d1af87c5fa7fc6c0eb88f24e52224a96"
         }
       ]
     }
