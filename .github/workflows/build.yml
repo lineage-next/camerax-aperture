@@ -49,6 +49,8 @@ jobs:
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-output-format.patch
+        git am $GITHUB_WORKSPACE/patches/0001-camera-video-Expose-some-private-information.patch
+        git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git fetch aosp c6155c0227c25d3cbdbeafb3e42418b5d843c5df && git cherry-pick FETCH_HEAD # Upgrade to KGP 2.2.0
         git fetch aosp 44978cd69f478dffdeb5356510f3d8757b47ff12 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.0.0: take 2
         git fetch aosp 7220657968527f98a506d98b36cc8f99b51a2810 && git cherry-pick FETCH_HEAD # Update handling of metalava issues with warning error when new severity

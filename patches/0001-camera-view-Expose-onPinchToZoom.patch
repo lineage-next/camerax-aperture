@@ -1,0 +1,28 @@
+From 4682659c08bd42f9c6fdb5c084af61a086608e2a Mon Sep 17 00:00:00 2001
+From: Luca Stefani <luca.stefani.ge1@gmail.com>
+Date: Sat, 13 Sep 2025 19:02:39 +0200
+Subject: [PATCH] camera-view: Expose onPinchToZoom
+
+We can't do have our custom zoom event handling
+
+Change-Id: I0bb517af474a5ee6b93b093761f89cc8c6aa08c7
+---
+ .../src/main/java/androidx/camera/view/CameraController.java    | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+index 6ae7686fa5d..7bdd918f865 100644
+--- a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
++++ b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
+@@ -2249,7 +2249,7 @@ public abstract class CameraController {
+      * Called by {@link PreviewView} for a pinch-to-zoom event.
+      */
+     @SuppressWarnings("FutureReturnValueIgnored")
+-    void onPinchToZoom(float pinchToZoomScale) {
++    public void onPinchToZoom(float pinchToZoomScale) {
+         if (!isCameraAttached()) {
+             Logger.w(TAG, CAMERA_NOT_ATTACHED);
+             return;
+-- 
+2.51.0
+

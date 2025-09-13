@@ -1,0 +1,46 @@
+From ee59acaf697b80517204a653a06011d877f16ac1 Mon Sep 17 00:00:00 2001
+From: Luca Stefani <luca.stefani.ge1@gmail.com>
+Date: Sat, 13 Sep 2025 18:56:37 +0200
+Subject: [PATCH] camera-video: Expose some private information
+
+Change-Id: I10db8da55d17c8ac4202dd8bc45bde23a2c36c4e
+---
+ .../src/main/java/androidx/camera/video/Recording.java    | 8 ++++++++
+ .../androidx/camera/video/internal/audio/AudioSource.java | 4 ++++
+ 2 files changed, 12 insertions(+)
+
+diff --git a/camera/camera-video/src/main/java/androidx/camera/video/Recording.java b/camera/camera-video/src/main/java/androidx/camera/video/Recording.java
+index 97705c026e1..fa05b59b945 100644
+--- a/camera/camera-video/src/main/java/androidx/camera/video/Recording.java
++++ b/camera/camera-video/src/main/java/androidx/camera/video/Recording.java
+@@ -253,4 +253,12 @@ public final class Recording implements AutoCloseable {
+         }
+         mRecorder.stop(this, error, errorCause);
+     }
++
++    public boolean isAudioSourceConfigured() {
++        return mRecorder.mAudioSource != null;
++    }
++
++    public boolean isMuted() {
++        return isAudioSourceConfigured() && mRecorder.mAudioSource.isMuted();
++    }
+ }
+diff --git a/camera/camera-video/src/main/java/androidx/camera/video/internal/audio/AudioSource.java b/camera/camera-video/src/main/java/androidx/camera/video/internal/audio/AudioSource.java
+index a9a6be22bc1..e3f5564c836 100644
+--- a/camera/camera-video/src/main/java/androidx/camera/video/internal/audio/AudioSource.java
++++ b/camera/camera-video/src/main/java/androidx/camera/video/internal/audio/AudioSource.java
+@@ -391,6 +391,10 @@ public final class AudioSource {
+         });
+     }
+ 
++    public boolean isMuted() {
++        return mMuted;
++    }
++
+     @ExecutedBy("mExecutor")
+     private void resetBufferProvider(
+             @Nullable BufferProvider<? extends InputBuffer> bufferProvider) {
+-- 
+2.51.0
+
