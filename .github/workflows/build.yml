@@ -52,6 +52,16 @@ jobs:
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git fetch aosp e2e3174d8aecd269a511a25fed6b06cd2a7255f6 && git cherry-pick FETCH_HEAD # camera-view: Expose output format
         git fetch aosp 30c547fc99d2437a537cee09e0ab5ab0c4b6063b && git cherry-pick FETCH_HEAD # CameraController: Fix unset target rotation after use cases reinitialization
+        git fetch aosp cf066d470a1630123d0c15fc9c115cec255a44a2 && git cherry-pick FETCH_HEAD # Cache displays in DisplayInfoManager
+        git fetch aosp c93c178f7fac8409a1e0d5b0360fe12d782b97c2 && git cherry-pick FETCH_HEAD # Cache VideoCapabilities instances in Recorder
+        git fetch aosp 1456ed3241f818b2c33af5b9691c98c27f3cecaf && git cherry-pick FETCH_HEAD # Remove cached info for unavailable cameras
+        git fetch aosp 04a4402d093f8bc524b0febdf80c2f906d1a54dc && git cherry-pick FETCH_HEAD # Add Interrogator interface to CameraFactory
+        git fetch aosp 4cfbfad7c5307751f951117f7475488907ec1b94 && git cherry-pick FETCH_HEAD # Replace static CameraValidator with new CameraValidator interface
+        git fetch aosp 9682e895716bf9722a9bfc0ff7c1eb62994c350d && git cherry-pick FETCH_HEAD # Validate camera removals to prevent degraded states
+        git fetch aosp b650f265e45f46b66624862bf723659299d7a8cd && git cherry-pick FETCH_HEAD # Maintain the device ID when creating CameraPipe
+        git fetch aosp e7bc37d8c052731f8633e5895fc6ba1741213226 && git cherry-pick FETCH_HEAD # Force CameraController to unbind all when changing UseCases combination
+        git fetch aosp bcecc5e482e336dd79c57eff69320d83d5cbed18 && git cherry-pick FETCH_HEAD # Catch NPEs during CameraDevice.close() and add vendor to quirk
+        git fetch aosp b03269d83712c1b13f0d28973d3ae51c600371e0 && git cherry-pick FETCH_HEAD # Catch ArrayIndexOutOfBoundsException when querying camera ID list
         git fetch aosp c6155c0227c25d3cbdbeafb3e42418b5d843c5df && git cherry-pick FETCH_HEAD # Upgrade to KGP 2.2.0
         git fetch aosp 44978cd69f478dffdeb5356510f3d8757b47ff12 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.0.0: take 2
         git fetch aosp 7220657968527f98a506d98b36cc8f99b51a2810 && git cherry-pick FETCH_HEAD # Update handling of metalava issues with warning error when new severity
