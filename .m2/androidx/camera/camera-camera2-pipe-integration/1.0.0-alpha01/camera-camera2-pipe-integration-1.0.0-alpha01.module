@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.0.0",
+      "version": "9.1.0",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
-          "size": 335527,
-          "sha512": "36dd7a78290c529eccbee3213ad6a43997b20af761335a2c24539ed4e52634e538bded2fc98b2ae97bdd040b73ea2e2124a913dfef93591d612b214db3482f48",
-          "sha256": "7be7a62e8974b0e20c5b93d092fb7351afe7ae8bed856ab4f9ef3b5797ca9177",
-          "sha1": "b75ec5566194c796f26d6f63b8517842af9d7159",
-          "md5": "e4b64a2713b1d7b62a2b979834f01e17"
+          "size": 335656,
+          "sha512": "a6e327eea7c124dbf74273e964806e43a438ca67153020b6420f269002cbbdab28342189faaf5a689cc2125ff649ea344b96b1a660c36f7b9a68dc38df68f2f4",
+          "sha256": "328328facb9ba0f528377f2abe0e88a89ed6137e2f8c0c7ebce56c19db11630c",
+          "sha1": "fbd758adc2d92b60b0daf7c72edb5eb444406734",
+          "md5": "4fc84bd547558d5627ad32a375c55c02"
         }
       ]
     },
@@ -73,7 +73,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
@@ -120,11 +120,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1110074,
-          "sha512": "2df63698830ff34987db08339f7c350ce0fd4028d96387279fecc87a9283aeda581804f467314f85045929ecf56ecfd8fb2540d2bef380999c1466e1e2bb98ba",
-          "sha256": "e6ed87e66c99dcd6f1b47ddc025365d2457394c3bd7926c3a6106fb160aa3d27",
-          "sha1": "d3fea952ababfa96c5f0eaac583face45b3a9127",
-          "md5": "5e98fd4841780adf3c740264262ee8db"
+          "size": 1110375,
+          "sha512": "ee0f097833e52b953c79a4400d0875920378ae6b52eea0ab196e109ac5b1a5a7b0ebe6580d71dd3cabc4eef549b4befd6294c3e9b49782d529c96b6a739d4dbb",
+          "sha256": "6626e3e1d0ad80f97c1d3ca298bba517675ae7bcebbe45a1547d0af434c0c1d0",
+          "sha1": "19d49eae93e54b82af3ec225a76a0df7b432d677",
+          "md5": "6cd1883fd05569dc6166dc32971ce34f"
         }
       ]
     },
@@ -169,7 +169,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
@@ -269,11 +269,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1110074,
-          "sha512": "2df63698830ff34987db08339f7c350ce0fd4028d96387279fecc87a9283aeda581804f467314f85045929ecf56ecfd8fb2540d2bef380999c1466e1e2bb98ba",
-          "sha256": "e6ed87e66c99dcd6f1b47ddc025365d2457394c3bd7926c3a6106fb160aa3d27",
-          "sha1": "d3fea952ababfa96c5f0eaac583face45b3a9127",
-          "md5": "5e98fd4841780adf3c740264262ee8db"
+          "size": 1110375,
+          "sha512": "ee0f097833e52b953c79a4400d0875920378ae6b52eea0ab196e109ac5b1a5a7b0ebe6580d71dd3cabc4eef549b4befd6294c3e9b49782d529c96b6a739d4dbb",
+          "sha256": "6626e3e1d0ad80f97c1d3ca298bba517675ae7bcebbe45a1547d0af434c0c1d0",
+          "sha1": "19d49eae93e54b82af3ec225a76a0df7b432d677",
+          "md5": "6cd1883fd05569dc6166dc32971ce34f"
         }
       ]
     },

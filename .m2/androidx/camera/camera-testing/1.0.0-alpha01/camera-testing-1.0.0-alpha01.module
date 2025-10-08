@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.0.0",
+      "version": "9.1.0",
       "buildId:": "0"
     }
   },
@@ -73,21 +73,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
@@ -197,7 +197,7 @@
           "group": "androidx.camera",
           "module": "camera-camera2",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
@@ -211,21 +211,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.5.0"
+            "requires": "1.5.1"
           }
         },
         {
