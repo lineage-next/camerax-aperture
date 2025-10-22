@@ -1,4 +1,4 @@
-From 6b0e05ea792bec593530ec86613ba3162fe5eea3 Mon Sep 17 00:00:00 2001
+From 40658a6bbe894ac5a1ef321bb8584f11322d64ba Mon Sep 17 00:00:00 2001
 From: LuK1337 <priv.luk@gmail.com>
 Date: Mon, 17 Oct 2022 19:03:07 +0200
 Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
@@ -6,49 +6,44 @@ Subject: [PATCH] Add hacky way for us to make certain camera IDs backward
 
 Change-Id: If92f6869b3106202c609f8e22ab004af278a309d
 ---
- .../camera/camera2/internal/CameraIdUtil.java      | 14 +++++++++++++-
- 1 file changed, 13 insertions(+), 1 deletion(-)
+ .../camera2/internal/CameraCompatibilityFilter.kt      | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
 
-diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-index efac515d8e8..2e222b2ace8 100644
---- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-+++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraIdUtil.java
-@@ -29,15 +29,23 @@ import androidx.camera.core.InitializationException;
- 
- import org.jspecify.annotations.NonNull;
- 
-+import java.util.ArrayList;
-+import java.util.List;
-+
- /**
-  * Utility class to enumerate and filter camera ids.
+diff --git a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraCompatibilityFilter.kt b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraCompatibilityFilter.kt
+index a2a0ff91837..7ec3a025db6 100644
+--- a/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraCompatibilityFilter.kt
++++ b/camera/camera-camera2/src/main/java/androidx/camera/camera2/internal/CameraCompatibilityFilter.kt
+@@ -30,6 +30,8 @@ import androidx.camera.core.InitializationException
   */
--@RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
- public final class CameraIdUtil {
+ public object CameraCompatibilityFilter {
  
-+    private static List<String> sBackwardCompatibleCameraIds = new ArrayList<String>();
++    private var backwardCompatibleCameraIds = listOf<String>()
 +
-     private CameraIdUtil() {
+     @JvmStatic
+     public fun getBackwardCompatibleCameraIds(
+         cameraDevices: CameraDevices,
+@@ -56,6 +58,11 @@ public object CameraCompatibilityFilter {
+         return backwardCompatibleCameraIds
      }
  
-+    public static void setBackwardCompatibleCameraIds(List<String> cameraIds) {
-+        sBackwardCompatibleCameraIds = cameraIds;
++    @JvmStatic
++    public fun setBackwardCompatibleCameraIds(cameraIds: List<String>) {
++        backwardCompatibleCameraIds = cameraIds
 +    }
 +
-     /**
-      * Checks whether the camera has
-      * {@link CameraMetadata#REQUEST_AVAILABLE_CAPABILITIES_BACKWARD_COMPATIBLE} or not.
-@@ -59,6 +67,10 @@ public final class CameraIdUtil {
-             return true;
+     @JvmStatic
+     public fun isBackwardCompatible(cameraId: String, cameraDevices: CameraDevices): Boolean {
+         // Always returns true to not break robolectric tests because the cameras setup in
+@@ -67,6 +74,9 @@ public object CameraCompatibilityFilter {
+             }
+             return true
          }
- 
-+        if (sBackwardCompatibleCameraIds.contains(cameraId)) {
-+            return true;
++        if (backwardCompatibleCameraIds.contains(cameraId)) {
++            return true
 +        }
-+
-         int[] availableCapabilities;
- 
          try {
+             val cameraMetadata = checkNotNull(cameraDevices.awaitCameraMetadata(CameraId(cameraId)))
+             val availableCapabilities =
 -- 
-2.48.0
+2.51.0
 
