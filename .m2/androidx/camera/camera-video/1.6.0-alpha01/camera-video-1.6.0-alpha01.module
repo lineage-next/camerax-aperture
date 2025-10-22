@@ -1,0 +1,512 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-video",
+    "version": "1.6.0-alpha01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.1.0",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.6.0-alpha01-sources.jar",
+          "url": "camera-video-1.6.0-alpha01-sources.jar",
+          "size": 315667,
+          "sha512": "d0a5762ae931d0a37d652f670e3dade87a6965e9544d3699de3554da15070a3aee4eb754449ad34ab58d0242fb4e32e883365d3a614d84c976d45794f3e93aa0",
+          "sha256": "45a065e9c0b6b4fed6a823b33feb3a00732c194c65405c64400fbb9142d60d1a",
+          "sha1": "4f04cc32d21ee6f83851cf7cd870dd16f03c952a",
+          "md5": "1791835c1f0621c45803033108b23109"
+        },
+        {
+          "name": "camera-video-1.6.0-alpha01-samples-sources.jar",
+          "url": "camera-video-1.6.0-alpha01-samples-sources.jar",
+          "size": 6508,
+          "sha512": "1a5c82751c07edd999afb5f366ab71040c630d9d5e3c08fcae3630e45b911b6f462486afa9e699fde9b9b0022dab2192ecad3bfdb07e0154454cbd04591b4212",
+          "sha256": "3e69412f0e6b394d60b2e602d2b5eeec440baaf32651a662e98ec75a51377b5d",
+          "sha1": "324d2672177f17b16105097624dce2f4764bcb8f",
+          "md5": "64171facd7d519b83f89d5fad54dd548"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.6.0-alpha01.aar",
+          "url": "camera-video-1.6.0-alpha01.aar",
+          "size": 466871,
+          "sha512": "9f697cb12c8dce3de88954272ca874ca27fc6602a8dbd8d530cd576b11d68ea88449ed22915ab9b813f9bb4698505aed51ab53faa0eedd7b5b7cb12fc865e344",
+          "sha256": "eef48de7df9ea932ca82e15acbff7ac11f00ea379c379e4595ce232ed5a47784",
+          "sha1": "16cdbd33a1b83c63586d1823b68c42dad66d5ab9",
+          "md5": "2ede7d4b646ebd577fb085c012348b1f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation-experimental",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "androidx.arch.core",
+          "module": "core-common",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures-ktx",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.6.0-alpha01.aar",
+          "url": "camera-video-1.6.0-alpha01.aar",
+          "size": 466871,
+          "sha512": "9f697cb12c8dce3de88954272ca874ca27fc6602a8dbd8d530cd576b11d68ea88449ed22915ab9b813f9bb4698505aed51ab53faa0eedd7b5b7cb12fc865e344",
+          "sha256": "eef48de7df9ea932ca82e15acbff7ac11f00ea379c379e4595ce232ed5a47784",
+          "sha1": "16cdbd33a1b83c63586d1823b68c42dad66d5ab9",
+          "md5": "2ede7d4b646ebd577fb085c012348b1f"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-alpha01"
+          },
+          "reason": "camera-video is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-video-1.6.0-alpha01-versionMetadata.json",
+          "url": "camera-video-1.6.0-alpha01-versionMetadata.json",
+          "size": 12456,
+          "sha512": "b1e681ef05b1314078e4fe155122bdfe25b5ade2f06ea80ae2ea13a798271bea338431d37a4c3969565356fd1328e3b97e72ca44e08556dc344a4a6bc2d8694c",
+          "sha256": "a29153ec8dcce8c783b64763dc71d481d511eddd1cc8b6609e5a88d6144c57f7",
+          "sha1": "7cbdea3f24a02372fbe3a65710621c60037530b0",
+          "md5": "f78b70e748337dd5ec35c515bb16674e"
+        }
+      ]
+    }
+  ]
+}

@@ -37,12 +37,12 @@
     <dependencies>
       <dependency>
         <groupId>androidx.camera</groupId>
-        <artifactId>camera-camera2-pipe</artifactId>
+        <artifactId>camera-camera2-pipe-integration</artifactId>
         <version>1.0.0-alpha01</version>
       </dependency>
       <dependency>
         <groupId>androidx.camera</groupId>
-        <artifactId>camera-camera2-pipe-integration</artifactId>
+        <artifactId>camera-camera2-pipe-testing</artifactId>
         <version>1.0.0-alpha01</version>
       </dependency>
       <dependency>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2</artifactId>
-      <version>[1.5.1]</version>
+      <version>[1.6.0-alpha01]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
@@ -87,14 +87,14 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-lifecycle</artifactId>
-      <version>[1.5.1]</version>
+      <version>[1.6.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.5.1]</version>
+      <version>[1.6.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -132,13 +132,13 @@
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-core</artifactId>
-      <version>1.8.1</version>
+      <version>1.9.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.5.1]</version>
+      <version>[1.6.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -187,7 +187,7 @@
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-android</artifactId>
-      <version>1.8.1</version>
+      <version>1.9.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -235,7 +235,7 @@
     <dependency>
       <groupId>androidx.core</groupId>
       <artifactId>core</artifactId>
-      <version>1.1.0</version>
+      <version>1.16.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
