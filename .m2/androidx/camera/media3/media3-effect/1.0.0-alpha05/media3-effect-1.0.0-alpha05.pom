@@ -41,9 +41,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.annotation</groupId>
-      <artifactId>annotation</artifactId>
-      <version>1.7.0</version>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>2.0.21</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.media3</groupId>
+      <artifactId>media3-effect</artifactId>
+      <version>1.6.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -54,14 +60,14 @@
       <type>aar</type>
     </dependency>
     <dependency>
-      <groupId>androidx.media3</groupId>
-      <artifactId>media3-common</artifactId>
-      <version>1.6.0</version>
+      <groupId>androidx.annotation</groupId>
+      <artifactId>annotation</artifactId>
+      <version>1.7.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>androidx.media3</groupId>
-      <artifactId>media3-effect</artifactId>
+      <artifactId>media3-common</artifactId>
       <version>1.6.0</version>
       <scope>runtime</scope>
     </dependency>

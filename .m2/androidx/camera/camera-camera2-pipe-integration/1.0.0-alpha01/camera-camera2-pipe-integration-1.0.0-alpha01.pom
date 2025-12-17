@@ -45,11 +45,6 @@
         <artifactId>camera-testing</artifactId>
         <version>1.0.0-alpha01</version>
       </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib</artifactId>
-        <version>2.0.21</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -78,15 +73,22 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.dagger</groupId>
-      <artifactId>dagger</artifactId>
-      <version>2.57.1</version>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>atomicfu</artifactId>
+      <version>0.28.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>atomicfu</artifactId>
-      <version>0.27.0</version>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-camera2-pipe</artifactId>
+      <version>[1.6.0-alpha02]</version>
+      <scope>runtime</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.core</groupId>
+      <artifactId>core</artifactId>
+      <version>1.3.2</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -96,16 +98,10 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
+      <groupId>com.google.dagger</groupId>
+      <artifactId>dagger</artifactId>
+      <version>2.57.1</version>
       <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-camera2-pipe</artifactId>
-      <version>[1.6.0-alpha01]</version>
-      <scope>runtime</scope>
-      <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.annotation</groupId>
@@ -120,15 +116,15 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.core</groupId>
-      <artifactId>core</artifactId>
-      <version>1.3.2</version>
-      <scope>runtime</scope>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>2.0.21</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.6.0-alpha01]</version>
+      <version>[1.6.0-alpha02]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>

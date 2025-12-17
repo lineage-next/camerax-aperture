@@ -45,11 +45,6 @@
         <artifactId>camera-testing</artifactId>
         <version>1.0.0-alpha01</version>
       </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib</artifactId>
-        <version>2.0.21</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -60,34 +55,35 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.camera</groupId>
-      <artifactId>camera-camera2-pipe</artifactId>
-      <version>[1.6.0-alpha01]</version>
-      <scope>runtime</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-test</artifactId>
       <version>1.9.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.camera.featurecombinationquery</groupId>
-      <artifactId>featurecombinationquery</artifactId>
-      <version>1.6.0-alpha01</version>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-camera2-pipe</artifactId>
+      <version>[1.6.0-alpha02]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
     <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>atomicfu</artifactId>
-      <version>0.27.0</version>
+      <groupId>androidx.camera.featurecombinationquery</groupId>
+      <artifactId>featurecombinationquery</artifactId>
+      <version>1.6.0-alpha02</version>
       <scope>runtime</scope>
+      <type>aar</type>
     </dependency>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
+      <version>2.0.21</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>atomicfu</artifactId>
+      <version>0.28.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

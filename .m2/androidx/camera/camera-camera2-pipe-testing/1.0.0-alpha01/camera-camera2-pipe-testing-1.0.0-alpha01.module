@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.1.0",
+      "version": "9.2.1",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01-sources.jar",
-          "size": 47015,
-          "sha512": "8fbb24051727a5f4c5c1fa93dbb4243af7b6bf4d66c60d1aeaa613e7fe1ee651c832556820cd14996cc527b3d2a2920352d6afe9ed96dacfb3ee710f1b5806fc",
-          "sha256": "f244b11482e39a0d8a296f8d7dc0afcb05092be8bc7900baca5e32afaca011f6",
-          "sha1": "1eb5aab18d62f40e3de43a67716e1b16e5ea908c",
-          "md5": "308f358572b10c15e6c93a7d1a7d5e38"
+          "size": 47219,
+          "sha512": "887a0a05365a93e39c17d4d4b4e2973b2d717bb5ed90dd330363cf8e0e07dff740d8682a6becd4da5d6a8213d5680c17a1d8647068ca3377262f1ec2572bdd38",
+          "sha256": "c3ede1740e2e9866ee7f70f03cb683a965595867f26fd9107a8ba05a7b864124",
+          "sha1": "be20fceaa72d1cddcf7d117e29084a9740b1a609",
+          "md5": "2d4b059aa7243373486bbecd0964444b"
         }
       ]
     },
@@ -67,6 +67,13 @@
           "module": "annotation",
           "version": {
             "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
           }
         }
       ],
@@ -92,11 +99,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 176482,
-          "sha512": "961ae6abeaf557603d759ad1d422d1a4d7f194ff3f2f4e7f122d7ae8c5d6bdd3c3922948700bc216887572bdc1e930e42d3ca45b6b5f2b7963c50617ad3e6ffb",
-          "sha256": "ff51e3927e96539eab0ed1fb2bf86ab8f52e27ba8c942c87163045a1abe10c90",
-          "sha1": "33715da15af1eb9b307b6dd43a744b04bf954609",
-          "md5": "fe941e3a80f52815e31b7ecd79fc2ab6"
+          "size": 177831,
+          "sha512": "c2ef1ea0f08ca34b5b2eb15d30a22e9c80e4edd70d4a143c797d420824c51e611bc70bd6415608cf1ada7cac9a3c92323d8039d610b0d1c21b00c4767f443a7b",
+          "sha256": "c90f483a2037452899a9859168a18d43d8e23425534596dd267098096a3342b1",
+          "sha1": "4033bbe50df950f79278880ff9803c00ae233643",
+          "md5": "f29490ae6796d5b77472d8d3db2e1249"
         }
       ]
     },
@@ -120,25 +127,28 @@
           "group": "androidx.camera",
           "module": "camera-camera2-pipe",
           "version": {
-            "requires": "1.6.0-alpha01"
+            "requires": "1.6.0-alpha02"
           }
         },
         {
           "group": "androidx.camera.featurecombinationquery",
           "module": "featurecombinationquery",
           "version": {
-            "requires": "1.6.0-alpha01"
+            "requires": "1.6.0-alpha02"
           }
         },
         {
           "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib"
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
         },
         {
           "group": "org.jetbrains.kotlinx",
           "module": "atomicfu",
           "version": {
-            "requires": "0.27.0"
+            "requires": "0.28.0"
           }
         },
         {
@@ -165,24 +175,17 @@
             "requires": "1.0.0-alpha01"
           },
           "reason": "camera-camera2-pipe-testing is in atomic group androidx.camera"
-        },
-        {
-          "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "2.0.21"
-          }
         }
       ],
       "files": [
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 176482,
-          "sha512": "961ae6abeaf557603d759ad1d422d1a4d7f194ff3f2f4e7f122d7ae8c5d6bdd3c3922948700bc216887572bdc1e930e42d3ca45b6b5f2b7963c50617ad3e6ffb",
-          "sha256": "ff51e3927e96539eab0ed1fb2bf86ab8f52e27ba8c942c87163045a1abe10c90",
-          "sha1": "33715da15af1eb9b307b6dd43a744b04bf954609",
-          "md5": "fe941e3a80f52815e31b7ecd79fc2ab6"
+          "size": 177831,
+          "sha512": "c2ef1ea0f08ca34b5b2eb15d30a22e9c80e4edd70d4a143c797d420824c51e611bc70bd6415608cf1ada7cac9a3c92323d8039d610b0d1c21b00c4767f443a7b",
+          "sha256": "c90f483a2037452899a9859168a18d43d8e23425534596dd267098096a3342b1",
+          "sha1": "4033bbe50df950f79278880ff9803c00ae233643",
+          "md5": "f29490ae6796d5b77472d8d3db2e1249"
         }
       ]
     },

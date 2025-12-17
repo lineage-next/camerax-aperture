@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.1.0",
+      "version": "9.2.1",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01-sources.jar",
-          "size": 342814,
-          "sha512": "c00f98993a760b93cfa9bcff3c520394e1523b66cab098257e4ef557ff754a1a3b27c09710e0c5c32b7149337926f97a0650ce49b2cdae8d1b74f826854f0744",
-          "sha256": "f4384540d725c567592ba61c10ba56fc40d685f4b2be5eabe0f1771664e54bbe",
-          "sha1": "011a71e1d396f8fe8eef06abb01ee1c6cc916afd",
-          "md5": "06a0ad8464653bd80e55916856c3d919"
+          "size": 350368,
+          "sha512": "b521e7b82bf92e5e93ffc914996399b0122ec3401543c42c2994b87d3384ddcb495f06b0b3b382557bd0dbb0ecb42c2fc1c2310a1336d295b01997d52d5f2449",
+          "sha256": "d26ce930a2218db78cee90ccaffcb220b452441c51a492cb621fb5314270c800",
+          "sha1": "4a91a6c33f63128ce67d20772ae77eeb2ff6c78f",
+          "md5": "0bccbebafc774dd2d221d65d26cd566f"
         }
       ]
     },
@@ -73,7 +73,7 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-alpha01"
+            "requires": "1.6.0-alpha02"
           }
         },
         {
@@ -88,6 +88,13 @@
           "module": "listenablefuture",
           "version": {
             "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
           }
         },
         {
@@ -120,11 +127,11 @@
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1121272,
-          "sha512": "d79989223eac4b54d2d331c32d2fee145d32fa0393f5f99c1855b90e2dbf45b8e0a72ec79e2126f5cf558108737bca725a8ee27650a48f4fb1181e3b280b1c30",
-          "sha256": "8c72b28e7d743baf01e006873e0c808f107d8e437a094d962147ada4b808d94c",
-          "sha1": "be49c2a5dd1bd6450d1b40a42f799c8f5aad86fd",
-          "md5": "527293ce2c8c7033594a99714ad16f28"
+          "size": 1161849,
+          "sha512": "f071b60d477b48acd272200ba333e43e67471c49945823bcf7d1de829b52f203ba5a8f8cfca0c4e0aef86416919ffa503b86af1754b5645385ed13ba25299331",
+          "sha256": "0cc0e4931daa95022fcfad2f05ceefcbbdcd7300fc9427de644c537fe85fe722",
+          "sha1": "776d3211ef1fbd3d04091f35881264c02a0c36d8",
+          "md5": "18bb0dfcb5ff8ee1cea1d482a4a154a1"
         }
       ]
     },
@@ -162,14 +169,14 @@
           "group": "androidx.camera",
           "module": "camera-camera2-pipe",
           "version": {
-            "requires": "1.6.0-alpha01"
+            "requires": "1.6.0-alpha02"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-alpha01"
+            "requires": "1.6.0-alpha02"
           }
         },
         {
@@ -209,13 +216,16 @@
         },
         {
           "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib"
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
         },
         {
           "group": "org.jetbrains.kotlinx",
           "module": "atomicfu",
           "version": {
-            "requires": "0.27.0"
+            "requires": "0.28.0"
           }
         },
         {
@@ -256,24 +266,17 @@
             "requires": "1.0.0-alpha01"
           },
           "reason": "camera-camera2-pipe-integration is in atomic group androidx.camera"
-        },
-        {
-          "group": "org.jetbrains.kotlin",
-          "module": "kotlin-stdlib",
-          "version": {
-            "requires": "2.0.21"
-          }
         }
       ],
       "files": [
         {
           "name": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-integration-1.0.0-alpha01.aar",
-          "size": 1121272,
-          "sha512": "d79989223eac4b54d2d331c32d2fee145d32fa0393f5f99c1855b90e2dbf45b8e0a72ec79e2126f5cf558108737bca725a8ee27650a48f4fb1181e3b280b1c30",
-          "sha256": "8c72b28e7d743baf01e006873e0c808f107d8e437a094d962147ada4b808d94c",
-          "sha1": "be49c2a5dd1bd6450d1b40a42f799c8f5aad86fd",
-          "md5": "527293ce2c8c7033594a99714ad16f28"
+          "size": 1161849,
+          "sha512": "f071b60d477b48acd272200ba333e43e67471c49945823bcf7d1de829b52f203ba5a8f8cfca0c4e0aef86416919ffa503b86af1754b5645385ed13ba25299331",
+          "sha256": "0cc0e4931daa95022fcfad2f05ceefcbbdcd7300fc9427de644c537fe85fe722",
+          "sha1": "776d3211ef1fbd3d04091f35881264c02a0c36d8",
+          "md5": "18bb0dfcb5ff8ee1cea1d482a4a154a1"
         }
       ]
     },

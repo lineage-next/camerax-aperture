@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.1.0",
+      "version": "9.2.1",
       "buildId:": "0"
     }
   },
@@ -57,17 +57,24 @@
           "version": {
             "requires": "1.12.0"
           }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
         }
       ],
       "files": [
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19197,
-          "sha512": "58424a24753120832c74c7e0f1881f4899299040f907e58456b2e049744b3a4f9e0e56da96d83708857d79efe38de2ca270dc6e1bc0bb09927afa6f6ef9e92a1",
-          "sha256": "b7ff59a903a2bf414a292ec22ee3121de2c4cfac3a3f0ddc593f6134f9d13973",
-          "sha1": "6f84ff7831e173c1b04887d02e13b7931ac25243",
-          "md5": "beae3a57de275a1c3fbea64f0573ea01"
+          "size": 19164,
+          "sha512": "ae7807b6cdac31bf968f23b69b9a21ecc7a4b902665f8d3731011bedb72cdb090dc8da3345dad10ddb32a86715b33a0510a9915fcb9c47009b0b9dbfad3d2c55",
+          "sha256": "25b6eb7c7dfde4f924fc33c397523021ddb2ea8b72a8d8234dbb61f4fe184424",
+          "sha1": "319ff919759b661c548b6578e673b53ebd77d66d",
+          "md5": "5f40f4a3f0a6a16cf5a4468b8d36f6ce"
         }
       ]
     },
@@ -114,17 +121,24 @@
           "version": {
             "requires": "1.6.0"
           }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
         }
       ],
       "files": [
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19197,
-          "sha512": "58424a24753120832c74c7e0f1881f4899299040f907e58456b2e049744b3a4f9e0e56da96d83708857d79efe38de2ca270dc6e1bc0bb09927afa6f6ef9e92a1",
-          "sha256": "b7ff59a903a2bf414a292ec22ee3121de2c4cfac3a3f0ddc593f6134f9d13973",
-          "sha1": "6f84ff7831e173c1b04887d02e13b7931ac25243",
-          "md5": "beae3a57de275a1c3fbea64f0573ea01"
+          "size": 19164,
+          "sha512": "ae7807b6cdac31bf968f23b69b9a21ecc7a4b902665f8d3731011bedb72cdb090dc8da3345dad10ddb32a86715b33a0510a9915fcb9c47009b0b9dbfad3d2c55",
+          "sha256": "25b6eb7c7dfde4f924fc33c397523021ddb2ea8b72a8d8234dbb61f4fe184424",
+          "sha1": "319ff919759b661c548b6578e673b53ebd77d66d",
+          "md5": "5f40f4a3f0a6a16cf5a4468b8d36f6ce"
         }
       ]
     },
