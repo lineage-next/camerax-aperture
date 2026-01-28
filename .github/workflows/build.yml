@@ -17,6 +17,15 @@ jobs:
         remove-codeql: 'true'
         remove-docker-images: 'true'
 
+    - name: Enable ZRAM
+      run: |
+        sudo apt -yU install linux-modules-extra-$(uname -r) zram-tools
+        sudo sed -i 's/#ALGO=lz4/ALGO=zstd/' /etc/default/zramswap
+        sudo sed -i 's/#PERCENT=50/PERCENT=50/' /etc/default/zramswap
+        sudo sed -i 's/#PRIORITY=100/PRIORITY=100/' /etc/default/zramswap
+        sudo systemctl restart zramswap
+        free -m
+
     - name: Checkout repo
       uses: actions/checkout@v3
 
