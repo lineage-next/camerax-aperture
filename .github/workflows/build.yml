@@ -45,13 +45,13 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 84753047f87d847904220ad53b1c78d1a98189c4
+        git fetch aosp 5fc4e0225a10d812728a4bece5a2f6e82737df85
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-video-Expose-some-private-information.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-output-format.patch
-        git fetch aosp b1342ae91b0455577c2d4a97e36e7c30ecacb7df && git cherry-pick FETCH_HEAD # Upgrade to develocity plugin 4.3
+        git fetch aosp 01cf577de72061596665dff7d96124c488f43cbb && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.3.0
         popd
 
     - name: Build

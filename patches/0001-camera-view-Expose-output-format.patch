@@ -1,4 +1,4 @@
-From 28cdc6341bbd5d6bc94ee238e4313c110f633bc0 Mon Sep 17 00:00:00 2001
+From 6c3067727960cc31ac2f5c1a8d5aec20e76d5e6e Mon Sep 17 00:00:00 2001
 From: Luca Stefani <luca.stefani.ge1@gmail.com>
 Date: Wed, 10 Sep 2025 14:33:03 +0200
 Subject: [PATCH] camera-view: Expose output format
@@ -7,14 +7,14 @@ Bug: 364825889
 Test: manual
 Change-Id: I65fd1fc3f9bf3644fc39c04025cd8a6f433127e1
 ---
- .../camera/view/CameraController.java         | 104 ++++++++++++++++--
- 1 file changed, 95 insertions(+), 9 deletions(-)
+ .../camera/view/CameraController.java         | 106 ++++++++++++++++--
+ 1 file changed, 96 insertions(+), 10 deletions(-)
 
 diff --git a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
-index 88980ba5300..cb960355dfb 100644
+index 74ce8fef401..3eacfddaf14 100644
 --- a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
 +++ b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
-@@ -364,7 +364,7 @@ public abstract class CameraController {
+@@ -373,7 +373,7 @@ public abstract class CameraController {
              @NonNull ListenableFuture<ProcessCameraProviderWrapper> cameraProviderFuture) {
          mAppContext = ContextUtil.getPersistentApplicationContext(context);
          mPreview = createPreview();
@@ -23,7 +23,16 @@ index 88980ba5300..cb960355dfb 100644
          mImageAnalysis = createImageAnalysis(null, null, null);
          mVideoCapture = createVideoCapture();
  
-@@ -912,6 +912,53 @@ public abstract class CameraController {
+@@ -669,7 +669,7 @@ public abstract class CameraController {
+             enabledUseCases |= IMAGE_CAPTURE;
+             mImageCapture = imageCapture;
+         } else {
+-            mImageCapture = createImageCapture(null);
++            mImageCapture = createImageCapture(null, null);
+         }
+         ImageAnalysis imageAnalysis = UseCaseUtil.findImageAnalysis(useCases);
+         if (imageAnalysis != null) {
+@@ -1118,6 +1118,53 @@ public abstract class CameraController {
          mImageCapture.takePicture(outputFileOptions, executor, imageSavedCallback);
      }
  
@@ -77,7 +86,7 @@ index 88980ba5300..cb960355dfb 100644
      /**
       * Updates {@link ImageCapture.OutputFileOptions} based on config.
       *
-@@ -984,7 +1031,8 @@ public abstract class CameraController {
+@@ -1191,7 +1238,8 @@ public abstract class CameraController {
          if (mImageCapture.getCaptureMode() == captureMode) {
              return;
          }
@@ -87,7 +96,7 @@ index 88980ba5300..cb960355dfb 100644
          startCameraAndTrackStates();
      }
  
-@@ -999,6 +1047,36 @@ public abstract class CameraController {
+@@ -1206,6 +1254,36 @@ public abstract class CameraController {
          return mImageCapture.getCaptureMode();
      }
  
@@ -124,7 +133,7 @@ index 88980ba5300..cb960355dfb 100644
      /**
       * Sets the intended image size for {@link ImageCapture}.
       *
-@@ -1023,7 +1101,8 @@ public abstract class CameraController {
+@@ -1231,7 +1309,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureTargetSize = targetSize;
@@ -134,7 +143,7 @@ index 88980ba5300..cb960355dfb 100644
          startCameraAndTrackStates();
      }
  
-@@ -1062,7 +1141,8 @@ public abstract class CameraController {
+@@ -1271,7 +1350,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureResolutionSelector = resolutionSelector;
@@ -144,7 +153,7 @@ index 88980ba5300..cb960355dfb 100644
          startCameraAndTrackStates();
      }
  
-@@ -1099,7 +1179,8 @@ public abstract class CameraController {
+@@ -1313,7 +1393,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureIoExecutor = executor;
@@ -154,7 +163,7 @@ index 88980ba5300..cb960355dfb 100644
          startCameraAndTrackStates();
      }
  
-@@ -1116,22 +1197,26 @@ public abstract class CameraController {
+@@ -1333,22 +1414,26 @@ public abstract class CameraController {
       * Recreates {@link ImageCapture} with the latest parameters.
       */
      @MainThread
@@ -184,7 +193,7 @@ index 88980ba5300..cb960355dfb 100644
          configureResolution(builder, mImageCaptureResolutionSelector, mImageCaptureTargetSize);
          if (mImageCaptureIoExecutor != null) {
              builder.setIoExecutor(mImageCaptureIoExecutor);
-@@ -2076,7 +2161,8 @@ public abstract class CameraController {
+@@ -2341,7 +2426,8 @@ public abstract class CameraController {
      private void unbindAllAndRecreate() {
          unbindAllUseCases();
          recreatePreview(/* unbindAllUseCases= */ false);
