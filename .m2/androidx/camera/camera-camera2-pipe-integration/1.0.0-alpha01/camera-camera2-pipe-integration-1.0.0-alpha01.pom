@@ -81,7 +81,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2-pipe</artifactId>
-      <version>[1.6.0-alpha02]</version>
+      <version>[1.6.0-beta01]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.6.0-alpha02]</version>
+      <version>[1.6.0-beta01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>

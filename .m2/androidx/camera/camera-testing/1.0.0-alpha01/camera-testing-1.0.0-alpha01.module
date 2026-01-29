@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.2.1",
+      "version": "9.3.0",
       "buildId:": "0"
     }
   },
@@ -45,11 +45,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01-sources.jar",
           "url": "camera-testing-1.0.0-alpha01-sources.jar",
-          "size": 205890,
-          "sha512": "490e27068565bf8a338167fd90e18449e7e782ae576ccc0151f6b8bc393890b9d78eb90d2d40cfbd37b95bc76ba8cdfd675f5847f829b4e14dc9164c58addd6d",
-          "sha256": "2d6b62204afaf13ad1ac91fac9e861ad53b5229eea29709824e690a47765be37",
-          "sha1": "66f3fae29579122a6196586d443c98d3e1648df2",
-          "md5": "fb9c4727d5730ff9071c717ddbdd46ff"
+          "size": 206149,
+          "sha512": "f01fc693b724a2b1c33d1a3e81d79049e09bdfa4aaab9464dc383a091838b3d43f36a8010cedeac07d9c5cd886ab93f58e9cbaac5e0b19bad2b960c5cd7101a6",
+          "sha256": "c5512c086bdbe9655b83a6ecf30f245d29a2794640dc6538d2739bb12ba5788a",
+          "sha1": "3286b97649d929151376488e32ebbb030767927b",
+          "md5": "27dc6360409076155ba106d9815d80b9"
         }
       ]
     },
@@ -73,21 +73,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
@@ -155,11 +155,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 481639,
-          "sha512": "5c530392ebd62096d8578e3f8df0ac3dffef480cd5600cb6884ea8a2f48c4621b335a6504febfffddaf34c9183edb9a6b9fbba4fe2406fcf777e895173fcb08c",
-          "sha256": "3921c0be824a6db2cc192f1b6893cc879cc3652f35a5b492d1be092d91c1f99b",
-          "sha1": "f9b84e29ab30b5818b80c4b1da410ac14c585c03",
-          "md5": "558b78c753f2189d834c00389608fd04"
+          "size": 482726,
+          "sha512": "62e2f2ce4b75650c4d7c34102b4956995b9b950d2546e6e959a2c52abb06d5e8e85c598e443e794a2b87d04f17ca2118ace13541177657d57f1a0b69f5b06d3f",
+          "sha256": "4629c6e35df437a7e81c8501937d2ceed68df00755122f116ba8098c106a2d81",
+          "sha1": "e430960f643e99f3f1bfef8db209f34627f5ad8c",
+          "md5": "65fbb15280cfbbb4dd20580501d6f237"
         }
       ]
     },
@@ -204,28 +204,28 @@
           "group": "androidx.camera",
           "module": "camera-camera2",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
@@ -398,11 +398,11 @@
         {
           "name": "camera-testing-1.0.0-alpha01.aar",
           "url": "camera-testing-1.0.0-alpha01.aar",
-          "size": 481639,
-          "sha512": "5c530392ebd62096d8578e3f8df0ac3dffef480cd5600cb6884ea8a2f48c4621b335a6504febfffddaf34c9183edb9a6b9fbba4fe2406fcf777e895173fcb08c",
-          "sha256": "3921c0be824a6db2cc192f1b6893cc879cc3652f35a5b492d1be092d91c1f99b",
-          "sha1": "f9b84e29ab30b5818b80c4b1da410ac14c585c03",
-          "md5": "558b78c753f2189d834c00389608fd04"
+          "size": 482726,
+          "sha512": "62e2f2ce4b75650c4d7c34102b4956995b9b950d2546e6e959a2c52abb06d5e8e85c598e443e794a2b87d04f17ca2118ace13541177657d57f1a0b69f5b06d3f",
+          "sha256": "4629c6e35df437a7e81c8501937d2ceed68df00755122f116ba8098c106a2d81",
+          "sha1": "e430960f643e99f3f1bfef8db209f34627f5ad8c",
+          "md5": "65fbb15280cfbbb4dd20580501d6f237"
         }
       ]
     },

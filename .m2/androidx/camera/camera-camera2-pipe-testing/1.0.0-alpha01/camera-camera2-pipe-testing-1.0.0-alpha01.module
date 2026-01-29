@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.2.1",
+      "version": "9.3.0",
       "buildId:": "0"
     }
   },
@@ -99,11 +99,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 177831,
-          "sha512": "c2ef1ea0f08ca34b5b2eb15d30a22e9c80e4edd70d4a143c797d420824c51e611bc70bd6415608cf1ada7cac9a3c92323d8039d610b0d1c21b00c4767f443a7b",
-          "sha256": "c90f483a2037452899a9859168a18d43d8e23425534596dd267098096a3342b1",
-          "sha1": "4033bbe50df950f79278880ff9803c00ae233643",
-          "md5": "f29490ae6796d5b77472d8d3db2e1249"
+          "size": 178218,
+          "sha512": "2e3c00b4714021b356ef894ac3748d46a42735b64033974d815aa429a09b64c3236288646ba0b4c4397a0c20de634304a195d13f5d05a66af74e09fbb2bd52a4",
+          "sha256": "9ab2de8764a28268a0658d4b8ad5664aa115f04ee4116dbfc956f9d5ff84465d",
+          "sha1": "bd654ad73f0b74f130bad7541b4dc1af7271546d",
+          "md5": "cd0d741ca2e157463472cb88c52ec27a"
         }
       ]
     },
@@ -127,14 +127,14 @@
           "group": "androidx.camera",
           "module": "camera-camera2-pipe",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
           "group": "androidx.camera.featurecombinationquery",
           "module": "featurecombinationquery",
           "version": {
-            "requires": "1.6.0-alpha02"
+            "requires": "1.6.0-beta01"
           }
         },
         {
@@ -181,11 +181,11 @@
         {
           "name": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
           "url": "camera-camera2-pipe-testing-1.0.0-alpha01.aar",
-          "size": 177831,
-          "sha512": "c2ef1ea0f08ca34b5b2eb15d30a22e9c80e4edd70d4a143c797d420824c51e611bc70bd6415608cf1ada7cac9a3c92323d8039d610b0d1c21b00c4767f443a7b",
-          "sha256": "c90f483a2037452899a9859168a18d43d8e23425534596dd267098096a3342b1",
-          "sha1": "4033bbe50df950f79278880ff9803c00ae233643",
-          "md5": "f29490ae6796d5b77472d8d3db2e1249"
+          "size": 178218,
+          "sha512": "2e3c00b4714021b356ef894ac3748d46a42735b64033974d815aa429a09b64c3236288646ba0b4c4397a0c20de634304a195d13f5d05a66af74e09fbb2bd52a4",
+          "sha256": "9ab2de8764a28268a0658d4b8ad5664aa115f04ee4116dbfc956f9d5ff84465d",
+          "sha1": "bd654ad73f0b74f130bad7541b4dc1af7271546d",
+          "md5": "cd0d741ca2e157463472cb88c52ec27a"
         }
       ]
     },
