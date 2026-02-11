@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.3.0",
+      "version": "9.4.0-rc-1",
       "buildId:": "0"
     }
   },
@@ -62,7 +62,7 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib",
           "version": {
-            "requires": "2.0.21"
+            "requires": "2.1.20"
           }
         }
       ],
@@ -70,11 +70,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19164,
-          "sha512": "ae7807b6cdac31bf968f23b69b9a21ecc7a4b902665f8d3731011bedb72cdb090dc8da3345dad10ddb32a86715b33a0510a9915fcb9c47009b0b9dbfad3d2c55",
-          "sha256": "25b6eb7c7dfde4f924fc33c397523021ddb2ea8b72a8d8234dbb61f4fe184424",
-          "sha1": "319ff919759b661c548b6578e673b53ebd77d66d",
-          "md5": "5f40f4a3f0a6a16cf5a4468b8d36f6ce"
+          "size": 19182,
+          "sha512": "07f000dae21e995b774166425c160b65662f4c6e20cbd65333ea01b287c0980efa2a47a8289082804a5237e3b23425cb228174dff31e48c6ca79875c64e45a38",
+          "sha256": "37fcc1e86b91b90a92e8949c982145973dbb4ac3e42ea19c8ef073bc2633093c",
+          "sha1": "c35c21392e1afe621afbecbef7b467c35775084c",
+          "md5": "75dd4fd36bdeaef95947d2d8baf11d9c"
         }
       ]
     },
@@ -126,7 +126,7 @@
           "group": "org.jetbrains.kotlin",
           "module": "kotlin-stdlib",
           "version": {
-            "requires": "2.0.21"
+            "requires": "2.1.20"
           }
         }
       ],
@@ -134,11 +134,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19164,
-          "sha512": "ae7807b6cdac31bf968f23b69b9a21ecc7a4b902665f8d3731011bedb72cdb090dc8da3345dad10ddb32a86715b33a0510a9915fcb9c47009b0b9dbfad3d2c55",
-          "sha256": "25b6eb7c7dfde4f924fc33c397523021ddb2ea8b72a8d8234dbb61f4fe184424",
-          "sha1": "319ff919759b661c548b6578e673b53ebd77d66d",
-          "md5": "5f40f4a3f0a6a16cf5a4468b8d36f6ce"
+          "size": 19182,
+          "sha512": "07f000dae21e995b774166425c160b65662f4c6e20cbd65333ea01b287c0980efa2a47a8289082804a5237e3b23425cb228174dff31e48c6ca79875c64e45a38",
+          "sha256": "37fcc1e86b91b90a92e8949c982145973dbb4ac3e42ea19c8ef073bc2633093c",
+          "sha1": "c35c21392e1afe621afbecbef7b467c35775084c",
+          "md5": "75dd4fd36bdeaef95947d2d8baf11d9c"
         }
       ]
     },
