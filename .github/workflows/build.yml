@@ -36,13 +36,13 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 5fc4e0225a10d812728a4bece5a2f6e82737df85
+        git fetch aosp 82004373076cf552e53b43166e1b4ddfbcfec21e
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-video-Expose-some-private-information.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-output-format.patch
-        git fetch aosp 01cf577de72061596665dff7d96124c488f43cbb && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.3.0
+        git fetch aosp 974e16738836e9d7a6c6f07b4dece184eb0125f9 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.4.0-rc-1
         popd
 
     - name: Build
