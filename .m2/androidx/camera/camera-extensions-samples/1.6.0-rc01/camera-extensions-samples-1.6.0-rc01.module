@@ -1,0 +1,378 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera",
+    "module": "camera-extensions-samples",
+    "version": "1.6.0-rc01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.4.0-rc-1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-extensions-samples-1.6.0-rc01-sources.jar",
+          "url": "camera-extensions-samples-1.6.0-rc01-sources.jar",
+          "size": 6009,
+          "sha512": "18e44ae83640df8ddb9f31ef7feff5b4ed7af0fa38e02ad831bbbd11d2d57ad511c2c396f3a1aac2f7e23394acb003a803c5cd997ef38f084633dd8be458832a",
+          "sha256": "9f0e76783b1d99fc38942f7c61c7071c7f22ab327a9268e444b00b4432dcdd48",
+          "sha1": "c2b471577966b3265cc847c8d92cbeea1931a818",
+          "md5": "7d1ab3d534989bad3fa4bbcdbbfc6e18"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-extensions-samples-1.6.0-rc01.aar",
+          "url": "camera-extensions-samples-1.6.0-rc01.aar",
+          "size": 9250,
+          "sha512": "6c4305088d5bd691c29cd25c4ccf48b19f26f6acb5f1cd093dd3846bf4890d9eb5d44a341523249dfa08e4dbbba62b4cd400db171a03f43e1108d40682fa9bd3",
+          "sha256": "d96f95bfa5a823771d8542bdaeb733823a03e2cd837d7a64a0eb8f0567eee86a",
+          "sha1": "45b535d87f767717ae0e31c3dc5b56e42827cd35",
+          "md5": "37122f13017538d6f6038a6fbaf12a42"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-rc01"
+          }
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-rc01"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-camera2-pipe",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-compose",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-core",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-effects",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-extensions",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-lifecycle",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-mlkit-vision",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-video",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        },
+        {
+          "group": "androidx.camera",
+          "module": "camera-view",
+          "version": {
+            "requires": "1.6.0-rc01"
+          },
+          "reason": "camera-extensions-samples is in atomic group androidx.camera"
+        }
+      ],
+      "files": [
+        {
+          "name": "camera-extensions-samples-1.6.0-rc01.aar",
+          "url": "camera-extensions-samples-1.6.0-rc01.aar",
+          "size": 9250,
+          "sha512": "6c4305088d5bd691c29cd25c4ccf48b19f26f6acb5f1cd093dd3846bf4890d9eb5d44a341523249dfa08e4dbbba62b4cd400db171a03f43e1108d40682fa9bd3",
+          "sha256": "d96f95bfa5a823771d8542bdaeb733823a03e2cd837d7a64a0eb8f0567eee86a",
+          "sha1": "45b535d87f767717ae0e31c3dc5b56e42827cd35",
+          "md5": "37122f13017538d6f6038a6fbaf12a42"
+        }
+      ]
+    }
+  ]
+}

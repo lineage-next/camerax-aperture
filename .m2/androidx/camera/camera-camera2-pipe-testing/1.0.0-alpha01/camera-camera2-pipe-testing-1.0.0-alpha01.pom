@@ -68,14 +68,14 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2-pipe</artifactId>
-      <version>[1.6.0-beta02]</version>
+      <version>[1.6.0-rc01]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera.featurecombinationquery</groupId>
       <artifactId>featurecombinationquery</artifactId>
-      <version>1.6.0-beta02</version>
+      <version>1.6.0-rc01</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>

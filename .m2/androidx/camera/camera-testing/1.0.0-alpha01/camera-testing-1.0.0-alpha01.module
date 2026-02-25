@@ -81,21 +81,21 @@
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
@@ -220,28 +220,28 @@
           "group": "androidx.camera",
           "module": "camera-camera2",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-core",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-lifecycle",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
           "group": "androidx.camera",
           "module": "camera-video",
           "version": {
-            "requires": "1.6.0-beta02"
+            "requires": "1.6.0-rc01"
           }
         },
         {
