@@ -1,0 +1,286 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.camera.viewfinder",
+    "module": "viewfinder-view",
+    "version": "1.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.0-rc-1",
+      "buildId:": "0"
+    }
+  },
+  "variants": [
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.6.0-sources.jar",
+          "url": "viewfinder-view-1.6.0-sources.jar",
+          "size": 35376,
+          "sha512": "20bbff2e4548db4d7faf75ec2e85f4fee880d71bb93f81e38608d37a56eef9ffa2d44db89986781c0c73dd24a84cdd59d1be68345117754ebb9d1d2d5f25e1c0",
+          "sha256": "23c6ce7e3a2f00d4540b8e8b8989e2d45502e951d9f2b38afb841485d7020c0f",
+          "sha1": "c37445d9e989a29808bdfb9e9e4d9e7c3dea2a24",
+          "md5": "28d759c21a124aa352b90a4b6e8af4a2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.6.0.aar",
+          "url": "viewfinder-view-1.6.0.aar",
+          "size": 53445,
+          "sha512": "65dbdf9bfd5a347aea49bd8b40f43b40b625e85489db7ef42c90a6ac9c99290b395c1185f8ae8ffa7268567a23918bc95d0fe0d172fcc414bf0450f8ba48a0bd",
+          "sha256": "49777e52be54077b71067c79d6b203fcfccb7bcd6b56d4abcbb6477379569dce",
+          "sha1": "0d0a873615dae79e425d79a3da672df4b2ba7748",
+          "md5": "ee362564c979ae9c2853741528bb3a05"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures-ktx",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.test.espresso",
+          "module": "espresso-idling-resource",
+          "version": {
+            "requires": "3.7.0"
+          }
+        },
+        {
+          "group": "com.google.auto.value",
+          "module": "auto-value-annotations",
+          "version": {
+            "requires": "1.6.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jspecify",
+          "module": "jspecify",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.6.0.aar",
+          "url": "viewfinder-view-1.6.0.aar",
+          "size": 53445,
+          "sha512": "65dbdf9bfd5a347aea49bd8b40f43b40b625e85489db7ef42c90a6ac9c99290b395c1185f8ae8ffa7268567a23918bc95d0fe0d172fcc414bf0450f8ba48a0bd",
+          "sha256": "49777e52be54077b71067c79d6b203fcfccb7bcd6b56d4abcbb6477379569dce",
+          "sha1": "0d0a873615dae79e425d79a3da672df4b2ba7748",
+          "md5": "ee362564c979ae9c2853741528bb3a05"
+        }
+      ]
+    },
+    {
+      "name": "libraryVersionMetadata",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.usage": "library-version-metadata"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-compose",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        },
+        {
+          "group": "androidx.camera.viewfinder",
+          "module": "viewfinder-core",
+          "version": {
+            "requires": "1.6.0"
+          },
+          "reason": "viewfinder-view is in atomic group androidx.camera.viewfinder"
+        }
+      ],
+      "files": [
+        {
+          "name": "viewfinder-view-1.6.0-versionMetadata.json",
+          "url": "viewfinder-view-1.6.0-versionMetadata.json",
+          "size": 1351,
+          "sha512": "d8807caa09fad79d85b494826116612cabbb348771a08fb28100aabcc2a1e28771f1108caa46a132d13a714d31bbb4a8479d10854c55297bf251072ee0197867",
+          "sha256": "ce1d6d5286cb3aadee51b93c33ccb2c30a44f11c8202fe4595d22306185cf489",
+          "sha1": "60358c23932598b771607dffc8de97adc223ba22",
+          "md5": "f2dc60b3666c377150c3a799af86df71"
+        }
+      ]
+    }
+  ]
+}

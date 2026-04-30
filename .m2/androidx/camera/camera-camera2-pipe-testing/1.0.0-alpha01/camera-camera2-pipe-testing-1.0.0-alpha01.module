@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.4.0-rc-1",
+      "version": "9.5.0-rc-1",
       "buildId:": "0"
     }
   },
@@ -143,14 +143,14 @@
           "group": "androidx.camera",
           "module": "camera-camera2-pipe",
           "version": {
-            "requires": "1.6.0-rc01"
+            "requires": "1.6.0"
           }
         },
         {
           "group": "androidx.camera.featurecombinationquery",
           "module": "featurecombinationquery",
           "version": {
-            "requires": "1.6.0-rc01"
+            "requires": "1.6.0"
           }
         },
         {
