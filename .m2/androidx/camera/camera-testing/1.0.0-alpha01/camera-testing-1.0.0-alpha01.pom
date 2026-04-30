@@ -40,16 +40,6 @@
         <artifactId>camera-camera2-pipe-testing</artifactId>
         <version>1.0.0-alpha01</version>
       </dependency>
-      <dependency>
-        <groupId>androidx.camera</groupId>
-        <artifactId>camera-common</artifactId>
-        <version>1.0.0-alpha01</version>
-      </dependency>
-      <dependency>
-        <groupId>androidx.camera</groupId>
-        <artifactId>camera-common-testing</artifactId>
-        <version>1.0.0-alpha01</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -86,21 +76,21 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-core</artifactId>
-      <version>[1.6.0]</version>
+      <version>[1.7.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-lifecycle</artifactId>
-      <version>[1.6.0]</version>
+      <version>[1.7.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.6.0]</version>
+      <version>[1.7.0-alpha01]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
@@ -119,7 +109,7 @@
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2</artifactId>
-      <version>[1.6.0]</version>
+      <version>[1.7.0-alpha01]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
