@@ -36,19 +36,25 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 0dc6fa695e63a0bbc17f07b7368ba2567fb47d01
+        git fetch aosp 18899702605001b396c92fe1f50666948ce85048
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-video-Expose-some-private-information.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-output-format.patch
+        git fetch aosp 879a37c24ba1c679192e1736d4801457d9143ddf && git cherry-pick FETCH_HEAD # Remove usage of --Xuse-k2-uast / --Xuse-k1-uast metalava flags
+        git fetch aosp 4d08e8833371e89a3441899e143fd2a5f5fc4994 && git cherry-pick FETCH_HEAD # Stop relying on unsafe Metalava behavior
+        git fetch aosp 11f1a054e14107993fe0f433e76f6812f536ec93 && git cherry-pick FETCH_HEAD # Switch Metalava --format=v4 to --format=4.0
+        git fetch aosp 396929107a2342f82653a9b57cd53f8bd23d344f && git checkout FETCH_HEAD gradle/wrapper/gradle-wrapper.properties # Upgrade to Gradle 9.5.0-rc-1
+        sed -i '/poxedex-compose/d' compose/integration-tests/hero/pokedex/pokedex-macrobenchmark-target/build.gradle settings.gradle
+        rm gradle/verification-metadata.xml
         popd
 
     - name: Build
       working-directory: androidx-main/frameworks/support
       run: |
         rm -rf $GITHUB_WORKSPACE/.m2 || true
-        ./gradlew \
+        ALLOW_PUBLIC_REPOS=true ./gradlew \
           -Dgradle.user.home=$GITHUB_WORKSPACE/.gradle \
           -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
           --project-dir=camera \
