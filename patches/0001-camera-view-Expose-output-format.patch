@@ -1,4 +1,4 @@
-From 6c3067727960cc31ac2f5c1a8d5aec20e76d5e6e Mon Sep 17 00:00:00 2001
+From 5885b72a126e1ef7d43f34b89cd1a7bca75468ec Mon Sep 17 00:00:00 2001
 From: Luca Stefani <luca.stefani.ge1@gmail.com>
 Date: Wed, 10 Sep 2025 14:33:03 +0200
 Subject: [PATCH] camera-view: Expose output format
@@ -7,14 +7,22 @@ Bug: 364825889
 Test: manual
 Change-Id: I65fd1fc3f9bf3644fc39c04025cd8a6f433127e1
 ---
- .../camera/view/CameraController.java         | 106 ++++++++++++++++--
- 1 file changed, 96 insertions(+), 10 deletions(-)
+ .../camera/view/CameraController.java         | 107 ++++++++++++++++--
+ 1 file changed, 97 insertions(+), 10 deletions(-)
 
 diff --git a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
-index 74ce8fef401..3eacfddaf14 100644
+index da63183c4ec..1b1c49c439c 100644
 --- a/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
 +++ b/camera/camera-view/src/main/java/androidx/camera/view/CameraController.java
-@@ -373,7 +373,7 @@ public abstract class CameraController {
+@@ -103,6 +103,7 @@ import androidx.camera.video.Recording;
+ import androidx.camera.video.VideoCapture;
+ import androidx.camera.video.VideoRecordEvent;
+ import androidx.camera.video.internal.muxer.MuxerFactory;
++import androidx.camera.view.CameraController.OutputSize;
+ import androidx.camera.view.internal.ScreenFlashUiInfo;
+ import androidx.camera.view.video.AudioConfig;
+ import androidx.core.content.PermissionChecker;
+@@ -389,7 +390,7 @@ public abstract class CameraController {
              @NonNull ListenableFuture<ProcessCameraProviderWrapper> cameraProviderFuture) {
          mAppContext = ContextUtil.getPersistentApplicationContext(context);
          mPreview = createPreview();
@@ -23,7 +31,7 @@ index 74ce8fef401..3eacfddaf14 100644
          mImageAnalysis = createImageAnalysis(null, null, null);
          mVideoCapture = createVideoCapture();
  
-@@ -669,7 +669,7 @@ public abstract class CameraController {
+@@ -716,7 +717,7 @@ public abstract class CameraController {
              enabledUseCases |= IMAGE_CAPTURE;
              mImageCapture = imageCapture;
          } else {
@@ -32,7 +40,7 @@ index 74ce8fef401..3eacfddaf14 100644
          }
          ImageAnalysis imageAnalysis = UseCaseUtil.findImageAnalysis(useCases);
          if (imageAnalysis != null) {
-@@ -1118,6 +1118,53 @@ public abstract class CameraController {
+@@ -1156,6 +1157,53 @@ public abstract class CameraController {
          mImageCapture.takePicture(outputFileOptions, executor, imageSavedCallback);
      }
  
@@ -86,17 +94,17 @@ index 74ce8fef401..3eacfddaf14 100644
      /**
       * Updates {@link ImageCapture.OutputFileOptions} based on config.
       *
-@@ -1191,7 +1238,8 @@ public abstract class CameraController {
+@@ -1231,7 +1279,8 @@ public abstract class CameraController {
          if (mImageCapture.getCaptureMode() == captureMode) {
              return;
          }
--        recreateImageCapture(captureMode, /* unbindAllUseCases= */ true);
+-        recreateImageCapture(captureMode, /* shouldUnbind= */ true);
 +        recreateImageCapture(captureMode, getImageOutputFormat(),
-+                /* unbindAllUseCases= */ true);
++                /* shouldUnbind= */ true);
          startCameraAndTrackStates();
      }
  
-@@ -1206,6 +1254,36 @@ public abstract class CameraController {
+@@ -1246,6 +1295,36 @@ public abstract class CameraController {
          return mImageCapture.getCaptureMode();
      }
  
@@ -133,45 +141,45 @@ index 74ce8fef401..3eacfddaf14 100644
      /**
       * Sets the intended image size for {@link ImageCapture}.
       *
-@@ -1231,7 +1309,8 @@ public abstract class CameraController {
+@@ -1273,7 +1352,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureTargetSize = targetSize;
--        recreateImageCapture(getImageCaptureMode(), /* unbindAllUseCases= */ true);
+-        recreateImageCapture(getImageCaptureMode(), /* shouldUnbind= */ true);
 +        recreateImageCapture(getImageCaptureMode(), getImageOutputFormat(),
-+                /* unbindAllUseCases= */ true);
++                /* shouldUnbind= */ true);
          startCameraAndTrackStates();
      }
  
-@@ -1271,7 +1350,8 @@ public abstract class CameraController {
+@@ -1315,7 +1395,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureResolutionSelector = resolutionSelector;
--        recreateImageCapture(getImageCaptureMode(), /* unbindAllUseCases= */ true);
+-        recreateImageCapture(getImageCaptureMode(), /* shouldUnbind= */ true);
 +        recreateImageCapture(getImageCaptureMode(), getImageOutputFormat(),
-+                /* unbindAllUseCases= */ true);
++                /* shouldUnbind= */ true);
          startCameraAndTrackStates();
      }
  
-@@ -1313,7 +1393,8 @@ public abstract class CameraController {
+@@ -1359,7 +1440,8 @@ public abstract class CameraController {
              return;
          }
          mImageCaptureIoExecutor = executor;
--        recreateImageCapture(getImageCaptureMode(), /* unbindAllUseCases= */ true);
+-        recreateImageCapture(getImageCaptureMode(), /* shouldUnbind= */ true);
 +        recreateImageCapture(getImageCaptureMode(), getImageOutputFormat(),
-+                /* unbindAllUseCases= */ true);
++                /* shouldUnbind= */ true);
          startCameraAndTrackStates();
      }
  
-@@ -1333,22 +1414,26 @@ public abstract class CameraController {
+@@ -1379,22 +1461,26 @@ public abstract class CameraController {
       * Recreates {@link ImageCapture} with the latest parameters.
       */
      @MainThread
--    private void recreateImageCapture(Integer imageCaptureMode, boolean unbindAllUseCases) {
+-    private void recreateImageCapture(Integer imageCaptureMode, boolean shouldUnbind) {
 +    private void recreateImageCapture(Integer imageCaptureMode, Integer imageOutputFormat,
-+            boolean unbindAllUseCases) {
-         if (unbindAllUseCases) {
-             unbindAllUseCases();
++            boolean shouldUnbind) {
+         if (shouldUnbind) {
+             unbindSessionConfig();
          }
  
          int flashMode = mImageCapture.getFlashMode();
@@ -193,16 +201,16 @@ index 74ce8fef401..3eacfddaf14 100644
          configureResolution(builder, mImageCaptureResolutionSelector, mImageCaptureTargetSize);
          if (mImageCaptureIoExecutor != null) {
              builder.setIoExecutor(mImageCaptureIoExecutor);
-@@ -2341,7 +2426,8 @@ public abstract class CameraController {
+@@ -2409,7 +2495,8 @@ public abstract class CameraController {
      private void unbindAllAndRecreate() {
-         unbindAllUseCases();
-         recreatePreview(/* unbindAllUseCases= */ false);
--        recreateImageCapture(getImageCaptureMode(), /* unbindAllUseCases= */ false);
+         unbindSessionConfig();
+         recreatePreview(/* shouldUnbind= */ false);
+-        recreateImageCapture(getImageCaptureMode(), /* shouldUnbind= */ false);
 +        recreateImageCapture(getImageCaptureMode(), getImageOutputFormat(),
-+                /* unbindAllUseCases= */ false);
++                /* shouldUnbind= */ false);
          recreateImageAnalysis(mImageAnalysis.getBackpressureStrategy(),
                  mImageAnalysis.getImageQueueDepth(),
-                 mImageAnalysis.getOutputImageFormat(), /* unbindAllUseCases= */ false);
+                 mImageAnalysis.getOutputImageFormat(), /* shouldUnbind= */ false);
 -- 
-2.52.0
+2.55.0
 

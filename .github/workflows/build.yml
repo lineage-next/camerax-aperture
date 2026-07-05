@@ -36,21 +36,20 @@ jobs:
       working-directory: androidx-main
       run: |
         pushd frameworks/support
-        git fetch aosp 1a508f033de883ba2853b9f9ae1853eec7010638
+        git fetch aosp 01f3396e92df911805f22836f27c7057324e40ff
         git checkout FETCH_HEAD
         git am $GITHUB_WORKSPACE/patches/0001-Add-hacky-way-for-us-to-make-certain-camera-IDs-back.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-video-Expose-some-private-information.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-onPinchToZoom.patch
         git am $GITHUB_WORKSPACE/patches/0001-camera-view-Expose-output-format.patch
-        git fetch aosp 396929107a2342f82653a9b57cd53f8bd23d344f && git checkout FETCH_HEAD gradle/wrapper/gradle-wrapper.properties # Upgrade to Gradle 9.5.0-rc-1
-        rm gradle/verification-metadata.xml
+        git fetch aosp afab5ddf723680d8dde4b1be0b7d801d9cceb2b4 && git cherry-pick FETCH_HEAD # Upgrade to Gradle 9.6.0
         popd
 
     - name: Build
       working-directory: androidx-main/frameworks/support
       run: |
         rm -rf $GITHUB_WORKSPACE/.m2 || true
-        ALLOW_PUBLIC_REPOS=true ./gradlew \
+        ./gradlew \
           -Dgradle.user.home=$GITHUB_WORKSPACE/.gradle \
           -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
           --project-dir=camera \
