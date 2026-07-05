@@ -10,7 +10,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "9.5.0-rc-1",
+      "version": "9.6.0",
       "buildId:": "0"
     }
   },
@@ -70,11 +70,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19182,
-          "sha512": "07f000dae21e995b774166425c160b65662f4c6e20cbd65333ea01b287c0980efa2a47a8289082804a5237e3b23425cb228174dff31e48c6ca79875c64e45a38",
-          "sha256": "37fcc1e86b91b90a92e8949c982145973dbb4ac3e42ea19c8ef073bc2633093c",
-          "sha1": "c35c21392e1afe621afbecbef7b467c35775084c",
-          "md5": "75dd4fd36bdeaef95947d2d8baf11d9c"
+          "size": 19089,
+          "sha512": "db2e6eb3b9f9fdf87283e71b9e82740c4923e11b9252ce7ef861c62f3dea8fb93543d6a60e0d20c1f160d87615a6851c788078ef59e1122eb536a697648112e2",
+          "sha256": "c36ded4f6f78a47f3070ca8c8e19c936e4400bec8c921fd0749db6abe4b4168f",
+          "sha1": "582379a4f345669a710141373b4c9578127e853b",
+          "md5": "e168beabe02b234e0696731d3e90dd57"
         }
       ]
     },
@@ -134,11 +134,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19182,
-          "sha512": "07f000dae21e995b774166425c160b65662f4c6e20cbd65333ea01b287c0980efa2a47a8289082804a5237e3b23425cb228174dff31e48c6ca79875c64e45a38",
-          "sha256": "37fcc1e86b91b90a92e8949c982145973dbb4ac3e42ea19c8ef073bc2633093c",
-          "sha1": "c35c21392e1afe621afbecbef7b467c35775084c",
-          "md5": "75dd4fd36bdeaef95947d2d8baf11d9c"
+          "size": 19089,
+          "sha512": "db2e6eb3b9f9fdf87283e71b9e82740c4923e11b9252ce7ef861c62f3dea8fb93543d6a60e0d20c1f160d87615a6851c788078ef59e1122eb536a697648112e2",
+          "sha256": "c36ded4f6f78a47f3070ca8c8e19c936e4400bec8c921fd0749db6abe4b4168f",
+          "sha1": "582379a4f345669a710141373b4c9578127e853b",
+          "md5": "e168beabe02b234e0696731d3e90dd57"
         }
       ]
     },
