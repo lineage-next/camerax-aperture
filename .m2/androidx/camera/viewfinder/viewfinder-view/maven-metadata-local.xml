@@ -3,11 +3,11 @@
   <groupId>androidx.camera.viewfinder</groupId>
   <artifactId>viewfinder-view</artifactId>
   <versioning>
-    <latest>1.7.0-alpha02</latest>
-    <release>1.7.0-alpha02</release>
+    <latest>1.7.0-alpha03</latest>
+    <release>1.7.0-alpha03</release>
     <versions>
-      <version>1.7.0-alpha02</version>
+      <version>1.7.0-alpha03</version>
     </versions>
-    <lastUpdated>20260705195334</lastUpdated>
+    <lastUpdated>20260811221635</lastUpdated>
   </versioning>
 </metadata>

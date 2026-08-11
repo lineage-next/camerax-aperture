@@ -75,24 +75,23 @@
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
-      <artifactId>camera-core</artifactId>
-      <version>[1.7.0-alpha02]</version>
-      <scope>compile</scope>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>androidx.camera</groupId>
       <artifactId>camera-lifecycle</artifactId>
-      <version>[1.7.0-alpha02]</version>
+      <version>[1.7.0-alpha03]</version>
       <scope>compile</scope>
       <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-video</artifactId>
-      <version>[1.7.0-alpha02]</version>
+      <version>[1.7.0-alpha03]</version>
       <scope>compile</scope>
       <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>androidx.annotation</groupId>
+      <artifactId>annotation</artifactId>
+      <version>1.8.1</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jspecify</groupId>
@@ -101,15 +100,22 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-core</artifactId>
+      <version>[1.7.0-alpha03]</version>
+      <scope>compile</scope>
+      <type>aar</type>
+    </dependency>
+    <dependency>
       <groupId>androidx.test.uiautomator</groupId>
       <artifactId>uiautomator</artifactId>
-      <version>2.2.0</version>
+      <version>2.4.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>androidx.camera</groupId>
       <artifactId>camera-camera2</artifactId>
-      <version>[1.7.0-alpha02]</version>
+      <version>[1.7.0-alpha03]</version>
       <scope>runtime</scope>
       <type>aar</type>
     </dependency>
@@ -144,10 +150,11 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.annotation</groupId>
-      <artifactId>annotation</artifactId>
-      <version>1.8.1</version>
+      <groupId>androidx.camera</groupId>
+      <artifactId>camera-common-testing</artifactId>
+      <version>[1.7.0-alpha03]</version>
       <scope>compile</scope>
+      <type>aar</type>
     </dependency>
     <dependency>
       <groupId>androidx.test.espresso</groupId>

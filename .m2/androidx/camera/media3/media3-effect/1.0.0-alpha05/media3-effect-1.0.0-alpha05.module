@@ -70,11 +70,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19089,
-          "sha512": "db2e6eb3b9f9fdf87283e71b9e82740c4923e11b9252ce7ef861c62f3dea8fb93543d6a60e0d20c1f160d87615a6851c788078ef59e1122eb536a697648112e2",
-          "sha256": "c36ded4f6f78a47f3070ca8c8e19c936e4400bec8c921fd0749db6abe4b4168f",
-          "sha1": "582379a4f345669a710141373b4c9578127e853b",
-          "md5": "e168beabe02b234e0696731d3e90dd57"
+          "size": 19090,
+          "sha512": "8171c511c10755ab9dd72e4012d80523bf7cfd545cc5614d99c6e4bfcb46afc738de26a2d6b7117611c6fa14b9d3b68b5735103ab010c33c371cff9ee2a657fd",
+          "sha256": "d61cbe4e64259616ed9fac1ce8633a0dd49dcacc20205ab559da2308a3b4bb4d",
+          "sha1": "22853b6fbbd7e01b489c6b510588b836f707d5a3",
+          "md5": "76dbc7d0a02cb27314b42144c0860aa7"
         }
       ]
     },
@@ -134,11 +134,11 @@
         {
           "name": "media3-effect-1.0.0-alpha05.aar",
           "url": "media3-effect-1.0.0-alpha05.aar",
-          "size": 19089,
-          "sha512": "db2e6eb3b9f9fdf87283e71b9e82740c4923e11b9252ce7ef861c62f3dea8fb93543d6a60e0d20c1f160d87615a6851c788078ef59e1122eb536a697648112e2",
-          "sha256": "c36ded4f6f78a47f3070ca8c8e19c936e4400bec8c921fd0749db6abe4b4168f",
-          "sha1": "582379a4f345669a710141373b4c9578127e853b",
-          "md5": "e168beabe02b234e0696731d3e90dd57"
+          "size": 19090,
+          "sha512": "8171c511c10755ab9dd72e4012d80523bf7cfd545cc5614d99c6e4bfcb46afc738de26a2d6b7117611c6fa14b9d3b68b5735103ab010c33c371cff9ee2a657fd",
+          "sha256": "d61cbe4e64259616ed9fac1ce8633a0dd49dcacc20205ab559da2308a3b4bb4d",
+          "sha1": "22853b6fbbd7e01b489c6b510588b836f707d5a3",
+          "md5": "76dbc7d0a02cb27314b42144c0860aa7"
         }
       ]
     },
